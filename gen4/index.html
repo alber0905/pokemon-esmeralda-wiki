@@ -142,38 +142,94 @@
       <div class="section__head">
         <span class="section__kicker">Preparación</span>
         <h2><span class="emo">🕹️</span> Emulador y trucos base</h2>
-        <p class="section__intro">Para el 100% de la 4ª generación necesitas un emulador de NDS que soporte enlace local (para intercambios y evoluciones) y códigos de trucos o inyección con PKHeX (para los legendarios de evento). Estas son las mejores opciones.</p>
+        <p class="section__intro">Para el 100% de la 4ª generación te conviene combinar tres herramientas: un emulador de NDS para jugar (DeSmuME o melonDS), cheats Action Replay para atajos, y sobre todo <b>PKHeX</b> (editor de guardado) para intercambios, exclusivos de versión y los legendarios de evento. Aquí tienes qué usar en cada caso.</p>
       </div>
 
       <div class="grid grid--3">
-        <div class="card card--accent"><div class="card__icon">🟢</div><h4>DeSmuME</h4><p>El emulador de NDS más veterano para PC (Windows/Mac/Linux). Muy preciso, con sistema de trucos Action Replay integrado y grabación de partidas guardadas. Ideal para eventos por código.</p></div>
-        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS</h4><p>Emulador moderno de NDS con soporte de Wi-Fi local real: permite intercambiar y evolucionar (Machoke, Haunter, Graveler...) entre dos instancias. La opción recomendada para jugar en 2026.</p></div>
-        <div class="card"><div class="card__icon">🟣</div><h4>DraStic / Lemuroid</h4><p>Para Android. DraStic (de pago) va muy fino en móviles; Lemuroid/RetroArch con núcleo melonDS es la alternativa gratuita. Soportan cheats y guardado en la nube.</p></div>
+        <div class="card card--accent"><div class="card__icon">🟢</div><h4>DeSmuME <span class="code">mejor para cheats</span></h4><p>El emulador de NDS más veterano para PC (Windows/Mac/Linux). Muy preciso y con un <b>sistema de trucos Action Replay integrado</b> muy cómodo. Su punto débil: <b>no emula el enlace local</b> del DS, así que con él no puedes intercambiar entre dos instancias. Úsalo para jugar la historia y para cheats.</p></div>
+        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS <span class="code">mejor para enlace local</span></h4><p>Emulador moderno con <b>multijugador local experimental</b> (menú <span class="code">System → Multiplayer → Launch new instance</span>). Es el único emulador de escritorio que permite, con paciencia, intercambiar/evolucionar entre dos ventanas. Recomendado para 2026 y el mejor para Gen 4/5.</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>DraStic / Lemuroid</h4><p>Para Android. DraStic (de pago) va muy fino en móviles y admite cheats; Lemuroid/RetroArch con núcleo melonDS es la alternativa gratuita. Guardado en la nube.</p></div>
         <div class="card"><div class="card__icon">🎮</div><h4>RetroArch (núcleo melonDS/DeSmuME)</h4><p>Multiplataforma con rebobinado, save states y shaders. Cómodo si ya lo usas para otras consolas; los cheats se cargan desde la base de datos o manualmente.</p></div>
+      </div>
+
+      <div class="callout callout--warn">
+        <span class="emo">⚠️</span>
+        <div>
+          <p><b>La realidad del intercambio en emulador (léelo antes de nada):</b></p>
+          <ul>
+            <li><b>DeSmuME NO tiene enlace inalámbrico</b>: no sirve para intercambiar ni para evoluciones por intercambio entre dos partidas.</li>
+            <li><b>melonDS SÍ, pero es multijugador local <i>experimental</i></b>: funciona entre dos instancias, aunque puede ser lento o inestable y exige la misma configuración/BIOS en ambas ventanas.</li>
+            <li>Por eso, para <b>evoluciones por intercambio, exclusivos de versión y eventos</b> lo más práctico y fiable es <b>PKHeX</b> (editor de partida guardada): añades el Pokémon/objeto directamente al .sav sin depender del enlace.</li>
+          </ul>
+          <p>Regla de oro: <b>DeSmuME para jugar + cheats</b>, <b>melonDS si de verdad quieres intercambiar de forma "legítima"</b>, y <b>PKHeX para todo lo demás</b>.</p>
+        </div>
       </div>
 
       <h3><span class="emo">🎮</span> Trucos imprescindibles para el 100%</h3>
       <div class="callout callout--emu">
         <span class="emo">🔗</span>
-        <p><b>Wi-Fi local para evolucionar/intercambiar</b>: abre dos instancias de <b>melonDS</b> (o dos dispositivos) y activa el multijugador local; así completas evoluciones por intercambio (Machoke→Machamp, Haunter→Gengar, Kadabra→Alakazam, Graveler→Golem) sin cortar la partida. Es la vía más limpia y compatible.</p>
+        <p><b>Wi-Fi local para evolucionar/intercambiar (melonDS)</b>: abre <span class="code">System → Multiplayer → Launch new instance</span> para tener dos ventanas, carga la misma ROM en cada una con dos partidas distintas y usa el Club de Intercambio (2ª planta de un Centro Pokémon) para completar Machoke→Machamp, Haunter→Gengar, Kadabra→Alakazam, Graveler→Golem, Electabuzz→Electivire (con Electrizador), Magmar→Magmortar (con Magmarizador), Rhydon→Rhyperior (Protector) y Porygon→Porygon2 (Mejora). Si falla o va muy lento, tira de PKHeX.</p>
       </div>
 
       <div class="accordion open">
-        <div class="accordion__head"><span class="emo">🎟️</span> Objetos de evento (los legendarios "imposibles") <span class="chev">›</span></div>
+        <div class="accordion__head"><span class="emo">🎛️</span> Cómo activar cheats Action Replay en DeSmuME <span class="chev">›</span></div>
         <div class="accordion__body"><div class="accordion__inner">
-          <p>El <b>Carné de socio</b> (Darkrai), la <b>Carta del Profesor Oak</b> (Shaymin), la <b>Flauta Azur</b> (Arceus), la <b>Llave secreta</b> (formas de Rotom) y el <b>Huevo de Manaphy</b> nunca se distribuyeron de forma amplia. En emulador tienes dos caminos:</p>
-          <ul>
-            <li><b>PKHeX</b> (recomendado): abre tu partida guardada (.sav de DeSmuME/melonDS), añade el Objeto Clave (Member Card, Oak's Letter, Azure Flute, Secret Key) o inyecta el Huevo/Pokémon directamente, y guarda. Luego dispara el evento en el juego.</li>
-            <li><b>Códigos Action Replay</b> en DeSmuME/DraStic (menú Cheats): existen códigos para dar los objetos de evento o forzar encuentros. Úsalos con cuidado y guarda copia del .sav antes.</li>
-          </ul>
-          <p><b>Distribuciones "Mystery Gift"</b>: si prefieres autenticidad, hay archivos <b>.pgt/.wc4</b> de los eventos originales que se pueden servir con herramientas tipo servidor local, pero requieren montar Wi-Fi emulado; para la mayoría, PKHeX es más rápido.</p>
+          <ol>
+            <li>Con la ROM cargada, abre el menú <b>Cheats → List…</b> (en algunas compilaciones, <span class="code">Emulation → Cheats</span>).</li>
+            <li>Pulsa <b>Add</b> y elige el tipo <b>Action Replay</b>.</li>
+            <li>Pega el código (una o varias líneas de 16 caracteres hexadecimales), ponle un nombre, marca la casilla para <b>activarlo</b> y pulsa <b>OK</b>.</li>
+            <li>Muchos códigos de objeto se "cobran" pulsando <b>L+R</b> dentro del juego y recogiendo el objeto en la tienda/mochila; desactiva el código después de usarlo.</li>
+          </ol>
+          <p><small>Comprueba siempre que el código es para <b>Pokémon Platino</b> y para <b>tu región</b> (los códigos de la versión USA no valen para la europea/española). <b>Guarda copia del .sav antes de aplicar cualquier cheat.</b></small></p>
         </div></div>
       </div>
 
       <div class="accordion">
-        <div class="accordion__head"><span class="emo">💾</span> Save states y buenas prácticas <span class="chev">›</span></div>
+        <div class="accordion__head"><span class="emo">💾</span> Copias de seguridad, soft reset y save states <span class="chev">›</span></div>
         <div class="accordion__body"><div class="accordion__inner">
-          <p><b>Buenas prácticas</b>: usa <b>save states</b> antes de cada legendario (así reintentas capturas sin repetir el combate), pero guarda también en la <b>partida interna</b> del juego para que los cambios de Pokédex/objetos persistan. Sube la velocidad de emulación para eclosionar huevos (Togepi, Happiny, Riolu, Manaphy) y para las esperas de los árboles de miel.</p>
+          <ul>
+            <li><b>Copia de seguridad del guardado</b>: antes de tocar cheats o PKHeX, duplica tu archivo <span class="code">.sav</span> (o <span class="code">.dsv</span> en DeSmuME). Si algo se corrompe, restauras la copia y listo.</li>
+            <li><b>Soft reset en el DS</b>: pulsa <b>L + R + Start + Select</b> a la vez para reiniciar el juego sin cerrar el emulador. Es la forma clásica de "resetear" ante un legendario/inicial hasta que salga con la <b>naturaleza</b> o los IV que quieres.</li>
+            <li><b>Save states para capturas y naturalezas</b>: haz un save state justo antes de un legendario o del inicial; si la captura falla o la naturaleza no te gusta, recargas el estado y repites al instante. Ojo: para que el cambio sea permanente hay que <b>guardar también en la partida interna</b> del juego (los save states por sí solos no persisten la Pokédex/mochila si luego cargas otra partida).</li>
+            <li><b>Velocidad de emulación</b>: acelera (tecla de <i>fast-forward</i>) para eclosionar huevos (Togepi, Happiny, Riolu, Manaphy) y para las esperas de los árboles de miel.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <h3><span class="emo">🎟️</span> Contenido de evento y cómo conseguirlo en emulador</h3>
+      <p class="section__intro">El <b>Carné de socio</b> (Darkrai), la <b>Carta del Profesor Oak</b> (Shaymin), la <b>Flauta Azur</b> (Arceus), el <b>Huevo de Manaphy</b> y la <b>Llave secreta</b> (formas de Rotom) casi nunca se distribuyeron. La vía más fiable en emulador es <b>PKHeX</b>: abres tu <span class="code">.sav</span> y añades el <b>Objeto Clave</b> a la mochila (pestaña Objetos Clave) o inyectas la <b>Carta Regalo</b> (Wonder Card, archivos .pgt/.wc4). Después disparas el evento dentro del juego.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Evento</th><th>Objeto / Carta (nombre exacto en PKHeX)</th><th>Dónde se activa</th><th>Método en emulador</th></tr></thead>
+          <tbody>
+            <tr><td><b>Darkrai</b> Lv50</td><td>Carné de socio · <span class="code">Member Card</span> (Objeto Clave)</td><td>Isla Lunanueva (marinero de Ciudad Canal)</td><td>PKHeX: añade <span class="code">Member Card</span> a Objetos Clave, o inyecta la Wonder Card del evento. Luego habla con el marinero.</td></tr>
+            <tr><td><b>Shaymin</b> Lv30</td><td>Carta del Profesor Oak · <span class="code">Oak's Letter</span> (Objeto Clave)</td><td>Jardín Floral (Ruta 224)</td><td>PKHeX: añade <span class="code">Oak's Letter</span> a Objetos Clave. Úsala en la Ruta 224 para que Oak abra el Jardín Floral.</td></tr>
+            <tr><td><b>Arceus</b> Lv80</td><td>Flauta Azur · <span class="code">Azure Flute</span> (Objeto Clave)</td><td>Columna Lanza → Sala Origen (Cámara Origen)</td><td>PKHeX: añade <span class="code">Azure Flute</span> a Objetos Clave. Tócala en la Columna Lanza para abrir la escalera. (Nunca se distribuyó en Occidente.)</td></tr>
+            <tr><td><b>Manaphy</b> Lv1</td><td>Huevo de Manaphy · <span class="code">Manaphy Egg</span> (o inyectar Manaphy)</td><td>Eclosiona andando; se criaba desde Pokémon Ranger</td><td>PKHeX: inyecta el <span class="code">Manaphy Egg</span> o directamente a Manaphy. Criado con Ditto da Phione (nº 489).</td></tr>
+            <tr><td><b>Rotom</b> (5 formas)</td><td>Llave secreta · <span class="code">Secret Key</span> (Objeto Clave)</td><td>Sala secreta del Edificio Galáctico (Ciudad Vetusta)</td><td>PKHeX: añade <span class="code">Secret Key</span> a Objetos Clave. Abre la sala con los electrodomésticos para cambiar la forma de Rotom (Calor, Lavado, Frío, Ventilador, Corte).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--info">
+        <span class="emo">🔢</span>
+        <div>
+          <p><b>Sobre los códigos Action Replay concretos:</b> circulan códigos para dar estos objetos de evento (se activan con <b>L+R</b> y recoges el objeto), pero <b>varían según la región</b> (USA ≠ Europa) y las versiones que se copian por internet no siempre coinciden entre sí. Para evitar corromper tu partida con un código equivocado, esta guía recomienda la <b>vía PKHeX</b> de la tabla, que es determinista y funciona en cualquier región. Si usas un código, verifica que sea para <b>Platino de tu región</b> y <b>haz copia del .sav antes</b>.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🧰</span> PKHeX paso a paso (objetos de evento y colección) <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <ol>
+            <li>En el juego, <b>guarda la partida en el interior</b> (no basta el save state) y cierra el emulador.</li>
+            <li>Localiza el <span class="code">.sav</span> (DeSmuME: junto a la ROM o en <span class="code">Battery/</span>; melonDS: carpeta de la ROM). <b>Haz una copia.</b></li>
+            <li>Abre PKHeX → <b>Archivo → Abrir</b> y selecciona el <span class="code">.sav</span>.</li>
+            <li>Para un <b>Objeto Clave</b>: pestaña de la <b>mochila → Objetos Clave</b>, elige el objeto (Member Card, Oak's Letter, Azure Flute, Secret Key) y pon cantidad 1.</li>
+            <li>Para una <b>Carta Regalo</b> auténtica: menú <b>Herramientas → Carta Regalo (Mystery Gift)</b> e importa el archivo <span class="code">.pgt/.wc4</span> del evento.</li>
+            <li>Para <b>inyectar un Pokémon</b> (p. ej. Manaphy o exclusivos que no puedes intercambiar): arrastra un archivo <span class="code">.pk4</span> a un hueco de caja o edítalo a mano.</li>
+            <li><b>Archivo → Guardar</b>, vuelve a cargar el <span class="code">.sav</span> en el emulador y dispara el evento en el juego.</li>
+          </ol>
         </div></div>
       </div>
     </section>

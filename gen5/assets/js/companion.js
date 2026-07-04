@@ -45,6 +45,7 @@
   "465": "Tangrowth",
   "471": "Glaceon",
   "486": "Regigigas",
+  "494": "Victini",
   "495": "Snivy",
   "496": "Servine",
   "497": "Serperior",
@@ -191,6 +192,13 @@
           498,
           501
         ]
+      },
+      {
+        "cat": "missable",
+        "t": "Elección única (irreversible)",
+        "d": "Solo obtienes <b>un inicial por partida</b>: los otros dos requieren intercambio (o PKHeX en emulador). Elige con calma; luego, en Castelia, te darán además el <b>mono elemental</b> que hace ventaja a tu inicial.",
+        "link": "",
+        "mons": []
       },
       {
         "cat": "boss",
@@ -639,9 +647,9 @@
     ],
     "highlights": [
       {
-        "cat": "item",
-        "t": "Fósil del Monte Espira",
-        "d": "Un minero te da un <b>fósil</b> (Cubierta→Tirtouga o Pluma→Archen) que se revive en el <b>Museo de Nacrene City</b>. Elige bien: es tu elección.",
+        "cat": "missable",
+        "t": "Fósil del Monte Espira (elección única)",
+        "d": "Un minero te da <b>un solo fósil</b>: <b>Cubierta</b> (→Tirtouga/Carracosta) o <b>Pluma</b> (→Archen/Archeops). Se revive en el <b>Museo de Nacrene City</b>. La elección es <b>irreversible</b>: para tener el otro necesitas intercambio (o PKHeX en emulador).",
         "link": "",
         "mons": [
           564,
@@ -1249,14 +1257,24 @@
   },
   {
     "area": "Míticos por evento",
-    "name": "Meloetta y Genesect",
+    "name": "Victini, Meloetta y Genesect",
     "emoji": "🎁",
     "goal": "Completa los míticos de la generación.",
     "mons": [
+      494,
       648,
       649
     ],
     "highlights": [
+      {
+        "cat": "missable",
+        "t": "Victini (Isla Liberty)",
+        "d": "El <b>Pase Liberty</b> (2011) llevaba a la Isla Liberty a capturar a <b>Victini</b>. En B2W2 la isla es accesible pero <b>Victini ya no aparece</b> sin evento/transferencia. En emulador: inyecta la Carta Regalo (.pgf) o el propio Victini con PKHeX. Si lo llevas a la isla, sale de la Ball y baila.",
+        "link": "emulador",
+        "mons": [
+          494
+        ]
+      },
       {
         "cat": "secret",
         "t": "Solo distribución",
@@ -1270,7 +1288,7 @@
       {
         "cat": "tip",
         "t": "En emulador",
-        "d": "Consíguelos con el <b>regalo misterioso</b> inyectado (.pgf), editando el guardado con <b>PKHeX</b> o mediante cheats. Son necesarios para el 100% de la Pokédex Nacional (aunque no cuentan para el Diploma nativo).",
+        "d": "Consíguelos con la <b>Carta Regalo</b> inyectada (.pgf, «Mystery Gift → Import → Set» en PKHeX) o como .pk5. Son necesarios para el 100% de la Pokédex Nacional (aunque no cuentan para el Diploma nativo).",
         "link": "emulador",
         "mons": []
       }

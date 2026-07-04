@@ -84,7 +84,7 @@
 
       <div class="grid grid--3">
         <div class="card"><div class="card__icon">🏅</div><h4>8 Medallas + Liga</h4><p>Cada gimnasio de Teselia con su tipo, su Pokémon estrella, la MT que entrega y cómo vencer al Alto Mando y a la Campeona Iris.</p></div>
-        <div class="card"><div class="card__icon">🌟</div><h4>Todos los legendarios</h4><p>Kyurem y su fusión, Zekrom/Reshiram, el trío de espadachines, el trío del clima, los colosos Regi y los míticos Keldeo, Meloetta y Genesect.</p></div>
+        <div class="card"><div class="card__icon">🌟</div><h4>Todos los legendarios</h4><p>Kyurem y su fusión, Zekrom/Reshiram, el trío de espadachines, el trío del clima, los colosos Regi y los míticos Victini, Keldeo, Meloetta y Genesect.</p></div>
         <div class="card"><div class="card__icon">🧬</div><h4>La fusión de Kyurem</h4><p>Con la Punta ADN une a Kyurem con Zekrom o Reshiram para obtener Kyurem Negro/Blanco, paso a paso.</p></div>
         <div class="card"><div class="card__icon">🏆</div><h4>Postgame completo</h4><p>PWT, Metro de Combate, Torre Negra / Arboleda Blanca, Cynthia en Undella y las Cuevas Ocultas rotativas.</p></div>
         <div class="card"><div class="card__icon">📕</div><h4>Pokédex de Teselia</h4><p>Las 300 de la región y cómo desbloquear y completar la Nacional, con intercambios evolutivos y transferencias.</p></div>
@@ -146,22 +146,51 @@
       </div>
 
       <div class="grid grid--3">
-        <div class="card"><div class="card__icon">🟢</div><h4>DeSmuME</h4><p>El emulador de DS más extendido en PC. Muy compatible, ideal para introducir cheats Action Replay y para depurar. Soporta save states y grabación.</p></div>
-        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS</h4><p>El más preciso hoy en día. Su gran ventaja: enlace local entre dos instancias, imprescindible para los intercambios evolutivos (Gigalith, Conkeldurr, Escavalier/Accelgor).</p></div>
-        <div class="card"><div class="card__icon">🟣</div><h4>DraStic</h4><p>La mejor opción en Android: rápido, estable y con controles configurables. Perfecto para jugar la campaña sobre la marcha.</p></div>
-        <div class="card"><div class="card__icon">🟠</div><h4>No$GBA / NO$Zoomer</h4><p>Ligero y veterano. Útil para cargar cheats sencillos y partidas antiguas, aunque menos preciso que melonDS.</p></div>
+        <div class="card"><div class="card__icon">🟢</div><h4>DeSmuME (DS)</h4><p>El emulador de Nintendo DS más extendido en PC. Muy compatible, la mejor opción para <b>cheats Action Replay</b> y depuración. Soporta save states y grabación, pero <b>no tiene enlace local</b> entre instancias: no sirve para intercambios.</p></div>
+        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS (DS)</h4><p>El emulador de DS más preciso hoy. Incluye <b>multijugador local experimental</b> (Modo Indirecto en ajustes de Wi-Fi + «Launch New Instance»), que permite <b>intercambiar entre dos instancias</b> en la Sala de Unión. Es inestable: puede fallar o cortarse a mitad del intercambio.</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>DraStic (Android)</h4><p>La mejor opción en Android: rápido, estable y con controles configurables. Perfecto para jugar la campaña sobre la marcha (sin enlace local).</p></div>
+        <div class="card"><div class="card__icon">🟠</div><h4>No$GBA / NO$Zoomer</h4><p>Ligero y veterano. Útil para cheats sencillos y partidas antiguas, aunque menos preciso que melonDS.</p></div>
       </div>
 
-      <div class="callout callout--emu" style="margin-top:18px"><span class="emo">🔗</span><p><b>Lo más importante:</b> muchas evoluciones son por intercambio (Gigalith, Conkeldurr, Escavalier, Accelgor). Con <b>melonDS</b> puedes enlazar dos instancias en local y hacértelos tú solo.</p></div>
+      <div class="callout callout--warn" style="margin-top:18px"><span class="emo">🔗</span><p><b>El enlace/intercambio entre instancias es limitado.</b> El multijugador local de <b>melonDS es experimental</b> (funciona pero puede cortarse); <b>DeSmuME no lo soporta</b>. Por eso, para <b>evoluciones por intercambio</b> (Gigalith, Conkeldurr, Escavalier/Accelgor), <b>exclusivos de versión</b> (Zekrom/Reshiram, Registeel/Regice, y su llave del Unova Link) y <b>eventos</b> (Victini, Keldeo, Meloetta, Genesect...), lo <b>práctico</b> es editar el guardado con <b>PKHeX</b>. Es rápido, fiable y no depende de dos partidas sincronizadas.</p></div>
 
-      <div class="callout callout--info" style="margin-top:18px"><span class="emo">📝</span><p><b>Enlace local (lo más importante):</b> muchas evoluciones son por intercambio. Usa <b>melonDS</b>, que permite conectar dos instancias por red local (o Wi-Fi emulada): abre dos copias del juego con dos guardados y realiza el intercambio para obtener <b>Gigalith, Conkeldurr, Escavalier y Accelgor</b>. DeSmuME es más limitado para esto.</p>
+      <h3 style="margin-top:26px"><span class="emo">⚙️</span> Cheats Action Replay en DeSmuME</h3>
+      <div class="callout callout--emu"><span class="emo">🎮</span><p><b>Cómo activar códigos Action Replay (AR):</b></p>
+<ol>
+<li>Con la ROM cargada, abre el menú <b>Emulation → Cheats → List</b> (en algunas versiones, <b>Tools → Cheats → List</b>).</li>
+<li>Pulsa el botón <b>«Action Replay»</b>, pega el código en el recuadro y ponle un nombre.</li>
+<li>Pulsa <b>«Update»</b> y luego <b>«Save»</b>. Marca la casilla del cheat para que quede <b>activo</b>.</li>
+</ol>
+<p><b>Avisos:</b> los códigos <b>CodeBreaker no funcionan</b> en DeSmuME (comparten formato con AR y se confunden). Un código de <b>región equivocada</b> (EUR/USA/JPN) o mal copiado puede no hacer nada o <b>corromper la partida</b>: haz copia de seguridad antes.</p></div>
+
+      <div class="callout callout--info" style="margin-top:18px"><span class="emo">💾</span><p><b>Copias de seguridad, soft reset y save states:</b></p>
 <ul>
-<li><b>Eventos (Keldeo, Meloetta, Genesect, Tornadus, Thundurus, Espejo Veraz):</b> originalmente por distribución o Dream Radar. En emulador: 1) inyecta el archivo de <b>regalo misterioso (.pgf)</b> desde el menú del juego; 2) edita el guardado (.sav/.dsv) con <b>PKHeX</b>; o 3) usa <b>cheats Action Replay</b> en DeSmuME/No$GBA.</li>
-<li><b>Reloj y estaciones:</b> el juego usa la hora real del sistema. Ajusta la fecha/hora del PC para forzar <b>estaciones</b> (afectan a rutas, apariciones y al Monte Espira) y para rotar las <b>Cuevas Ocultas</b>.</li>
-<li><b>Enlace de Memoria con Negro/Blanco:</b> necesitas una ROM y guardado de la primera Teselia; desbloquea escenas y objetos extra.</li>
-<li><b>Save states:</b> úsalos para cazar legendarios (naturaleza/IV) y shinies, pero recuerda que retos como el Metro de Combate o la Torre Negra están pensados sin guardado intermedio.</li>
-<li><b>Rendimiento:</b> si va lento en batallas 3D (Fragata Plasma, gimnasios), baja la resolución interna o activa el frameskip; melonDS con JIT es lo más fluido.</li>
+<li><b>Copia de seguridad:</b> antes de inyectar cheats o editar con PKHeX, copia tu archivo de guardado (<span class="code">.dsv</span> en DeSmuME, <span class="code">.sav</span> en melonDS). Si algo sale mal, restauras y listo.</li>
+<li><b>Soft reset:</b> mantén <b>L + R + Start + Select</b> para reiniciar el juego sin cerrar el emulador. Útil para reintentar un legendario o un starter/regalo con buena naturaleza.</li>
+<li><b>Save states:</b> guarda estado justo antes de un legendario o un shiny para reintentar naturaleza/IV. Recuerda que retos como el <b>Metro de Combate</b> o la <b>Torre Negra / Arboleda Blanca</b> están pensados sin guardado intermedio.</li>
+<li><b>Reloj y estaciones:</b> el juego usa la hora real del sistema. Ajusta la fecha/hora del PC para forzar <b>estaciones</b> (afectan a rutas, apariciones, Monte Espira y a Cynthia en Undella) y para <b>rotar las Cuevas Ocultas</b>.</li>
+<li><b>Rendimiento:</b> en batallas 3D (Fragata Plasma, gimnasios) baja la resolución interna o activa el frameskip; melonDS con JIT es lo más fluido.</li>
 </ul></div>
+
+      <h3 style="margin-top:26px"><span class="emo">🎁</span> Contenido de evento y cómo conseguirlo en emulador</h3>
+      <div class="callout callout--info"><span class="emo">📥</span><p><b>Inyectar un evento con PKHeX (Carta Regalo / Wonder Card):</b> abre tu guardado, pulsa <b>«Mystery Gift»</b>, luego <b>«Import»</b> y elige la Carta Regalo (archivo <span class="code">.pgf</span> de 5.ª gen, del <i>Event Gallery</i> de Project Pokémon). Haz clic derecho en una ranura vacía y elige <b>«Set»</b>. Después reclamas el regalo dentro del juego (o inyectas directamente el Pokémon como <span class="code">.pk5</span> en el PC/equipo). Guarda y recarga.</p></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Pokémon</th><th>Cómo era el evento</th><th>Método en emulador (PKHeX)</th></tr></thead>
+          <tbody>
+            <tr><td><b>Victini</b> (mítico)</td><td>Pase Liberty (2011) → Nave Libertad a la Isla Liberty (Liberty Garden). <b>En B2W2 la isla es accesible pero Victini ya NO aparece</b> sin evento/transferencia.</td><td>Inyecta la Wonder Card «Liberty Pass Victini» (<span class="code">.pgf</span>) o el propio Victini como <span class="code">.pk5</span>. Curiosidad: si lo llevas a la Isla Liberty, sale de la Ball y baila.</td></tr>
+            <tr><td><b>Keldeo</b> (mítico)</td><td>Distribución oficial (Mystery Gift). Con Cobalion, Virizion y Terrakion en el equipo aprende Tajo Sagrado (Forma Brío).</td><td>Wonder Card «Keldeo» (<span class="code">.pgf</span>) o <span class="code">.pk5</span> con PKHeX.</td></tr>
+            <tr><td><b>Genesect</b> (mítico)</td><td>Distribución de Team Plasma. Lleva el ROM-Fusión; con los Módulos (Agua/Fuego/Rayo/Hielo) cambia el tipo de Tecno Explosión.</td><td>Wonder Card «Genesect» (<span class="code">.pgf</span>) o <span class="code">.pk5</span> con PKHeX.</td></tr>
+            <tr><td><b>Meloetta</b> (mítico)</td><td>Distribución oficial. Aprende Canto Relicto (Café de Ciudad Fayenza) para su Forma Danza.</td><td>Wonder Card «Meloetta» (<span class="code">.pgf</span>) o <span class="code">.pk5</span> con PKHeX.</td></tr>
+            <tr><td><b>Reshiram / Zekrom</b></td><td>Exclusivos de versión: Reshiram en Blanco 2, Zekrom en Negro 2 (Torre Dragóspira, Nv.70). Para tener ambos hace falta intercambio con la otra versión.</td><td>Inyecta el legendario contrario como <span class="code">.pk5</span> con PKHeX (o intercambio local en melonDS).</td></tr>
+            <tr><td><b>Registeel (N2) / Regice (B2)</b></td><td>Cada versión captura uno; la <b>llave contraria</b> (Llave de Hierro / Llave de Hielo) se recibe por el <b>Unova Link</b> desde la otra versión.</td><td>Con PKHeX puedes darte el Regi que falta como <span class="code">.pk5</span> directamente (evita depender del Unova Link y dos partidas).</td></tr>
+            <tr><td><b>Tornadus / Thundurus</b></td><td>No nativos de B2W2: se traían de Negro/Blanco o del Pokémon Dream Radar (3DS). Se necesitan ambos para desbloquear a Landorus.</td><td>Inyéctalos como <span class="code">.pk5</span> con PKHeX (o intercambio local). Landorus sí se captura en el juego (Santuario Pradera, Nv.65).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--tip" style="margin-top:18px"><span class="emo">🧩</span><p><b>¿Y los códigos Action Replay?</b> Existen bases de datos de códigos AR para Negro 2/Blanco 2, pero varían por <b>región</b> y un código erróneo puede corromper el guardado. Como no podemos garantizar aquí un código verificado para tu versión y región, la vía <b>recomendada y segura es PKHeX</b>. Si usas AR, cópialos de una fuente fiable para tu ROM exacta y haz copia de seguridad antes.</p></div>
     </section>
 
     <!-- ============ GIMNASIOS ============ -->
@@ -254,7 +283,7 @@
       <div class="section__head">
         <span class="section__kicker">Los grandes</span>
         <h2><span class="emo">🌟</span> Todos los legendarios</h2>
-        <p class="section__intro">Teselia reúne un enorme plantel de legendarios y míticos. Aquí están todos, dónde y cómo conseguirlos. Los de <b>evento</b> (Keldeo, Meloetta, Genesect, Tornadus, Thundurus) requieren distribución o herramientas de emulador — mira la sección <a href="#emulador">Emulador</a>.</p>
+        <p class="section__intro">Teselia reúne un enorme plantel de legendarios y míticos. Aquí están todos, dónde y cómo conseguirlos. Los de <b>evento</b> (Victini, Keldeo, Meloetta, Genesect) y los no nativos (Tornadus, Thundurus) requieren distribución, transferencia o herramientas de emulador — mira la sección <a href="#emulador">Emulador</a>.</p>
       </div>
 
       <div class="callout callout--tip"><span class="emo">🎯</span><p><b>Consejo universal:</b> guarda antes de cada legendario. Baja sus PS con daño no letal (Falsotortazo), <b>paralízalo o congélalo/duérmelo</b>, y lanza <b>Ultra Ball</b> o <b>Ball Turno</b> (mejor cuantos más turnos pasan). Contra los de Nv.70 (Kyurem, Zekrom, Reshiram) ten paciencia y muchas Balls.</p></div>
@@ -309,6 +338,10 @@
           <div class="mon-card__body"><ul><li>Mítico paleontológico de Team Plasma, solo por evento. Viene con el ROM-Fusión y puede llevar los Módulos (Agua/Fuego/Rayo/Hielo) que cambian el tipo de Tecno Explosión. En emulador, .pgf o PKHeX.</li></ul></div>
         </div>
         <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/494.png" alt="Victini" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Victini</div><div class="mon-card__loc">Isla Liberty · Evento (Pase Liberty) · Nv.15</div></div></div>
+          <div class="mon-card__body"><ul><li>Mítico solo por evento. El Pase Liberty (2011) daba acceso a la Nave Libertad rumbo a la Isla Liberty (Liberty Garden), donde se capturaba. <b>En Negro 2/Blanco 2 la isla es accesible, pero Victini ya NO aparece</b> sin el evento o una transferencia. En emulador: inyecta la Carta Regalo (.pgf) o el propio Victini con <b>PKHeX</b>. Si lo llevas a la Isla Liberty, sale de la Ball y baila.</li></ul></div>
+        </div>
+        <div class="mon-card">
           <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/377.png" alt="Regirock" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Regirock</div><div class="mon-card__loc">Ruinas Subterráneas (Clay Tunnel) · Nv.65</div></div></div>
           <div class="mon-card__body"><ul><li>El primero de los colosos de Hoenn. En las Ruinas Subterráneas del Clay Tunnel (bajo Driftveil City; necesitas Fuerza y Surf) resuelve el puzle de losas para llegar hasta él. Capturarlo desbloquea la Llave de Hierro (Negro 2) o la Llave de Hielo (Blanco 2).</li></ul></div>
         </div>
@@ -340,6 +373,7 @@
         <li><label class="check-item" data-key="gen5-leg-642" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Thundurus <small>Transferencia / Dream Radar</small></span></label></li>
         <li><label class="check-item" data-key="gen5-leg-648" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Meloetta <small>Evento (distribución)</small></span></label></li>
         <li><label class="check-item" data-key="gen5-leg-649" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Genesect <small>Evento (distribución)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-494" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Victini <small>Isla Liberty · Evento (Pase Liberty)</small></span></label></li>
         <li><label class="check-item" data-key="gen5-leg-377" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Regirock <small>Ruinas Subterráneas (Clay Tunnel)</small></span></label></li>
         <li><label class="check-item" data-key="gen5-leg-379" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Registeel <small>Ruinas Subterráneas · Llave de Hierro (Negro 2)</small></span></label></li>
         <li><label class="check-item" data-key="gen5-leg-378" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Regice <small>Ruinas Subterráneas · Llave de Hielo (Blanco 2)</small></span></label></li>
@@ -393,7 +427,8 @@
 <li><b>Diferencias de zona:</b> ciertas rutas y cuevas cambian qué Pokémon aparecen según la versión y la <b>estación</b> (primavera/verano/otoño/invierno). Cambia el reloj del emulador para acceder a Pokémon y zonas exclusivas de cada estación (p. ej. Monte Espira en invierno).</li>
 <li><b>Intercambios evolutivos:</b> Boldore→<b>Gigalith</b>, Gurdurr→<b>Conkeldurr</b>, Karrablast↔Shelmet→<b>Escavalier/Accelgor</b>, Feebas→Milotic (intercambio con objeto). Sin dos partidas enlazadas no evolucionan: usa el <b>enlace local de melonDS</b>.</li>
 <li><b>Transferencia:</b> muchas especies solo se obtienen migrando de la 4ª gen (Poké Transfer) o del <b>Dream Radar</b> (Tornadus/Thundurus, formas alternativas, Pokémon con Habilidad Oculta).</li>
-<li><b>Míticos por evento</b> (Keldeo, Meloetta, Genesect): no cuentan para el Diploma nativo, pero sí para un 100% real de la Nacional.</li>
+<li><b>Míticos por evento</b> (Victini, Keldeo, Meloetta, Genesect): no cuentan para el Diploma nativo, pero sí para un 100% real de la Nacional.</li>
+<li><b>Legendarios solo por transferencia (para la Nacional):</b> muchos de generaciones anteriores no aparecen en Teselia y solo entran migrando de la 4.ª gen (Poké Transfer) o del Dream Radar: Tornadus/Thundurus y, para la Nacional completa, <b>Heatran, Cresselia, los lagos (Uxie/Mesprit/Azelf), Dialga/Palkia/Giratina, Darkrai, Shaymin, Arceus</b> y los legendarios de Kanto/Johto/Hoenn. En emulador se resuelven todos con <b>PKHeX</b>.</li>
 </ul>
 <p>Truco: con <b>PKHeX</b> puedes revisar tu guardado, ver qué te falta y (si buscas el 100% completo) rellenar los huecos imposibles sin intercambio online.</p></div>
 
@@ -427,7 +462,7 @@
             <li><label class="check-item" data-key="gen5-ck-dex" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Pokédex Nacional completa</span></label></li>
             <li><label class="check-item" data-key="gen5-ck-legend" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Todos los legendarios capturados</span></label></li>
             <li><label class="check-item" data-key="gen5-ck-fusion" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Fusión de Kyurem conseguida</span></label></li>
-            <li><label class="check-item" data-key="gen5-ck-events" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Míticos de evento (Keldeo, Meloetta, Genesect)</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-events" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Míticos de evento (Victini, Keldeo, Meloetta, Genesect)</span></label></li>
           </ul>
         </div>
       </div>
