@@ -153,6 +153,14 @@
 .wt-hl__tag { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; padding: 2px 7px; border-radius: 5px; }
 .wt-hl__d { font-size: 13.5px; color: var(--text-dim); }
 .wt-hl__d b { color: var(--text); }
+.wt-hl__d ol, .wt-hl__d ul { margin: 8px 0 2px; padding-left: 20px; }
+.wt-hl__d li { margin-bottom: 5px; }
+.wt-hl__d ol { counter-reset: none; }
+.wt-hl__d code, .wt-hl__d .code {
+  font-family: "Consolas", "SF Mono", monospace; font-size: 12px;
+  background: var(--bg); padding: 1px 6px; border-radius: 5px;
+  border: 1px solid var(--border); color: var(--gold-400);
+}
 .wt-hl__mons { display: flex; gap: 5px; margin-top: 9px; flex-wrap: wrap; }
 
 /* colores por categoría */

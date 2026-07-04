@@ -22,7 +22,9 @@
     356:"Dusclops",357:"Tropius",359:"Absol",360:"Wynaut",365:"Walrein",371:"Bagon",
     373:"Salamence",374:"Beldum",376:"Metagross",227:"Skarmory",230:"Kingdra",183:"Marill",
     382:"Kyogre",383:"Groudon",384:"Rayquaza",380:"Latias",381:"Latios",
-    377:"Regirock",378:"Regice",379:"Registeel"
+    377:"Regirock",378:"Regice",379:"Registeel",
+    151:"Mew",249:"Lugia",250:"Ho-Oh",385:"Jirachi",386:"Deoxys",
+    202:"Wobbuffet",321:"Wailord",369:"Relicanth",235:"Smeargle"
   };
 
   // Categorías: boss, catch, item, secret, missable, tip
@@ -218,14 +220,114 @@
       { cat:"tip", t:"Dos ataques resuelven media Liga", d:"Un buen <b>Hielo</b> arrasa a Dracón (dragones) y <b>Eléctrico/Planta</b> hunde el equipo Agua de la Campeona. Milotic es un muro especial: usa físicos o estados." },
       { cat:"catch", t:"Camino Victoria", d:"Lairon, Hariyama, Mawile, Sableye, Medicham, Golbat… y objetos valiosos (Full Restore, MTs) escondidos." }
     ]},
-    { area:"¡Postgame!", name:"Empieza el 100% de verdad", emo:"🏆", mons:[382,383,380,377],
-      goal:"Ahora sí: legendarios, Frontera, Pokédex Nacional y coleccionables.",
+    /* ==================== CAPÍTULO POSTGAME ==================== */
+    { area:"🏆 POSTGAME", name:"Prepárate para el 100%", emo:"🏆", mons:[382,383,384],
+      goal:"Tras el Salón de la Fama se abre casi todo. Desbloquea el Nacional y equípate para cazar legendarios.",
       hl:[
-      { cat:"secret", t:"Se abre TODO el contenido secreto", d:"Kyogre/Groudon (cuevas por clima), los tres <b>Regis</b> (puzzle Braille), <b>Latios/Latias</b>, y por evento <b>Deoxys, Mew, Ho-Oh, Lugia</b>. Sigue la guía paso a paso de cada uno.", mons:[382,383,380,377], link:L.leg },
-      { cat:"secret", t:"Puzzles Braille resueltos", d:"Cámara Sellada (Wailord+Relicanth), santuarios Regi y triángulo de Deoxys, sin margen de error.", link:L.puzzles },
-      { cat:"item", t:"Tickets de evento (por código)", d:"Deoxys, Mew, Ho-Oh/Lugia y Latios/Latias necesitan tickets: consíguelos en emulador con Gameshark.", link:L.tickets },
-      { cat:"boss", t:"Frontera de Batalla (14 símbolos)", d:"El gran reto: 7 instalaciones con sus Cerebros, símbolos de plata y oro.", link:L.frontera },
-      { cat:"catch", t:"Pokédex Nacional y Feebas→Milotic", d:"Completa los 386 (con intercambios) y evoluciona a Milotic maximizando Belleza.", link:L.pokedex }
+      { cat:"tip", t:"Desbloquea el Pokédex Nacional (primero de todo)", d:"Es requisito para varias evoluciones y para registrar bien la colección.<ol><li>Debes haber <b>visto los ~200 Pokémon de Hoenn</b> (los combates de líderes, Alto Mando y entrenadores completan casi todos los avistamientos).</li><li>Ve al laboratorio del <b>Prof. Abedul</b> en Villa Raíz: te amplía la Pokédex al <b>modo Nacional</b>.</li></ol>", link:L.pokedex },
+      { cat:"item", t:"🎒 Kit de cazador de legendarios", d:"Antes de salir, abastécete:<ul><li><b>20+ Ultra Balls</b> y varias <b>Ball Turno</b> (Timer Ball: más eficaz cuantos más turnos pasan).</li><li>Un Pokémon con <b>Falso Tortazo</b> (deja al rival a 1 PS sin debilitarlo) y otro con <b>Hipnosis/Paralizador</b> o Cara Susto para infligir estado.</li><li>Para los <b>errantes</b> (la Lati): un Pokémon con <b>Mal de Ojo</b> o un <b>Wobbuffet</b> (habilidad Sombra Trampa) para que no huyan.</li></ul>", mons:[202] },
+      { cat:"tip", t:"Método de captura universal", d:"<b>Guarda SIEMPRE dentro del juego antes de tocar al legendario.</b> Baja sus PS con Falso Tortazo, <b>duérmelo o paralízalo</b>, y lanza Balls con paciencia. En emulador, un <b>save state</b> justo antes de la tirada te deja reintentar hasta capturarlo o sacar buena naturaleza.", link:L.emu }
+    ]},
+    { area:"🏆 POSTGAME · Eón", name:"Latios y Latias", emo:"💠", mons:[380,381],
+      goal:"Consigue uno errando por Hoenn (según el color que elijas) y el otro en la Isla Sur.",
+      hl:[
+      { cat:"boss", t:"La Lati errante (Nv. 40)", d:"<ol><li>Ve a tu casa de Villa Raíz y <b>mira la televisión</b>: sale una noticia y tu madre/Norman te pregunta por un <b>color</b>.</li><li><b>Azul → Latios</b>; <b>Rojo → Latias</b>. Ese Pokémon empieza a <b>deambular</b> por todo Hoenn.</li><li>Rastréalo con el mapa del <b>PokéNav</b>. Al toparte con él, usa <b>Mal de Ojo</b> o Sombra Trampa (Wobbuffet) para que no escape y captúralo con calma (huye cada turno si no lo atrapas).</li></ol>", mons:[380,381], link:L.leg },
+      { cat:"item", t:"El otro Lati con el Ticket Eón (Nv. 50)", d:"<ol><li>Consigue el <b>Ticket Eón</b> (era evento; en emulador se añade con código Gameshark).</li><li>Ve al <b>puerto de Ciudad Portual</b> y embarca hacia la <b>Isla Sur</b>.</li><li>Allí te espera, quieto y fácil, el Latios/Latias que NO deambula.</li></ol>", link:L.tickets }
+    ]},
+    { area:"🏆 POSTGAME · Torre Celeste", name:"Rayquaza", emo:"🐉", mons:[384],
+      goal:"Si no lo capturaste en la historia, vuelve a por él a la cima de la Torre Celeste.",
+      hl:[
+      { cat:"boss", t:"Rayquaza (Nv. 70)", d:"Tras calmar la crisis de Arrecípolis, Rayquaza <b>vuelve a la cima de la Torre Celeste</b> (este de Pueblo Oromar). Sube con la <b>Mach Bike</b> por los suelos que se agrietan sin frenar. Guarda antes; es de Nv. 70, ten paciencia con las Balls.", mons:[384], link:L.leg }
+    ]},
+    { area:"🏆 POSTGAME · Cueva Marina", name:"Kyogre", emo:"🌊", mons:[382],
+      goal:"Provoca lluvia anómala para que aparezca la Cueva Submarina y captura a Kyogre.",
+      hl:[
+      { cat:"secret", t:"Cómo forzar su aparición", d:"Kyogre vive en la <b>Cueva Submarina (Marine Cave)</b>, que solo aparece con clima anómalo.<ol><li>Recorre rutas del este/sur hasta ver el aviso de <b>tiempo extraño</b> (lluvia intensa). El <b>meteorólogo de la Casa del Tiempo</b> (Ruta 119) te orienta.</li><li>Ve a esa ruta y busca la nueva entrada surfeando/buceando.</li><li>La ubicación <b>rota</b> entre varias rutas; si sales sin capturarlo, el ciclo se reinicia.</li></ol>" },
+      { cat:"boss", t:"Kyogre (Nv. 42)", d:"Recorre el laberinto de agua hasta el fondo. <b>Guarda antes.</b> Falso Tortazo + Sueño y Ball Turno. Con lluvia, su Hidrobomba pega fortísimo: lleva algo resistente al Agua (Planta/Dragón).", mons:[382], link:L.leg }
+    ]},
+    { area:"🏆 POSTGAME · Cueva Terrestre", name:"Groudon", emo:"🌋", mons:[383],
+      goal:"Igual que Kyogre pero con sequía: aparece la Cueva Terrestre.",
+      hl:[
+      { cat:"secret", t:"Cómo forzar su aparición", d:"Groudon vive en la <b>Cueva Terrestre (Terra Cave)</b>, ligada a clima de <b>sequía/sol abrasador</b>.<ol><li>Recorre rutas hasta ver el aviso de tiempo extraño (sol intenso); confírmalo con el meteorólogo de la Ruta 119.</li><li>Busca la entrada a la cueva en esa ruta.</li><li>Como con Kyogre, la posición rota y se reinicia si sales sin capturarlo.</li></ol>" },
+      { cat:"boss", t:"Groudon (Nv. 42)", d:"Cruza la cueva de roca hasta el fondo. <b>Guarda antes.</b> Con sol, sus ataques de Fuego/Tierra son demoledores: lleva Agua/Planta resistente y usa estado + Ball Turno.", mons:[383], link:L.leg }
+    ]},
+    { area:"🏆 POSTGAME · Cámara Sellada", name:"Desbloquear a los Regis", emo:"🔓", mons:[321,369],
+      goal:"Abre la Cámara Sellada para liberar los tres santuarios Regi.",
+      hl:[
+      { cat:"item", t:"Lo que necesitas antes", d:"MO <b>Buceo</b>, <b>Fuerza</b> y <b>Excavar</b>, más un <b>Wailord</b> (o Wailmer) y un <b>Relicanth</b> en el equipo: son las 'llaves'.", mons:[321,369] },
+      { cat:"secret", t:"Abrir la Cámara Sellada (paso a paso)", d:"<ol><li>En la <b>Ruta 134</b> (oeste de Pueblo Oromar) navega por las corrientes hasta el <b>punto de buceo</b>.</li><li><b>Bucea</b> hasta el fondo; encuentra el Braille que indica subir y <b>emerge</b> ahí para entrar en la Cámara Sellada.</li><li>Lee el Braille del norte y usa <b>Excavar</b> para abrir la sala interior.</li><li>Coloca <b>Wailord el 1.º</b> y <b>Relicanth el último</b> del equipo.</li><li>Interactúa con la <b>pared Braille del fondo</b>: la cueva tiembla y los tres santuarios quedan abiertos.</li></ol>", link:L.puzzles }
+    ]},
+    { area:"🏆 POSTGAME · Santuarios", name:"Los tres Regis", emo:"🗿", mons:[377,378,379],
+      goal:"Resuelve cada santuario. Los tres son de Nv. 40 y no tienen género (llévate varias Balls).",
+      hl:[
+      { cat:"secret", t:"Regirock — Ruinas Desérticas (Ruta 111)", d:"En la cámara, desde el panel central: muévete <b>2 pasos a la IZQUIERDA</b>, luego <b>2 pasos ABAJO</b> y usa <b>Golpe Roca</b> ahí mismo. (En Esmeralda el paso final es Golpe Roca.)", mons:[377] },
+      { cat:"secret", t:"Regice — Cueva Ancestral (Ruta 105)", d:"En Esmeralda: <b>da una vuelta COMPLETA a la sala pegado a la pared</b> (recorre todo el perímetro sin cortar por el centro). Al cerrar la vuelta aparece Regice.", mons:[378] },
+      { cat:"secret", t:"Registeel — Tumba Ancestral (Ruta 120)", d:"Colócate en el <b>centro EXACTO</b> de la sala (usa el patrón del suelo) y usa <b>Destello</b>. (En Esmeralda es Destello, no Fuerza como en Rubí/Zafiro.)", mons:[379] }
+    ]},
+    { area:"🏆 POSTGAME · Isla Génesis", name:"Deoxys", emo:"🛸", mons:[386],
+      goal:"Con el Ticket Auréola, resuelve el puzzle del triángulo.",
+      hl:[
+      { cat:"item", t:"Cómo llegar", d:"Consigue el <b>Ticket Auréola</b> (evento; en emulador, código Gameshark) y embarca desde <b>Ciudad Portual</b> hacia la <b>Isla Génesis (Birth Island)</b>.", link:L.tickets },
+      { cat:"secret", t:"El puzzle del triángulo", d:"Verás un triángulo negro en el centro. Al tocarlo se teletransporta al lado <b>opuesto</b> a tu movimiento; debes ir acorralándolo hasta dejarlo en el centro (~10 toques). <ol><li>Avanza hacia él y pulsa A; repite persiguiendo el clon reducido.</li><li>Si te pierdes, <b>sal y vuelve a entrar</b> en la isla para reiniciarlo.</li><li>Cuando el triángulo quede quieto en el centro, tócalo: aparece <b>Deoxys (Nv. 30)</b>, en su forma <b>Velocidad</b>.</li></ol> La secuencia exacta paso a paso está en la guía.", mons:[386], link:L.puzzles }
+    ]},
+    { area:"🏆 POSTGAME · Isla Lejana", name:"Mew", emo:"🐱", mons:[151],
+      goal:"Con la Carta Naval Vieja, acorrala a Mew en la hierba.",
+      hl:[
+      { cat:"item", t:"Cómo llegar", d:"Consigue la <b>Carta Naval Vieja (Old Sea Map)</b> (evento; en emulador, código Gameshark) y navega desde <b>Ciudad Portual</b> a la <b>Isla Lejana (Faraway Island)</b>.", link:L.tickets },
+      { cat:"secret", t:"La persecución de Mew", d:"Cruza el tronco hasta la hierba alta. Mew se esconde y <b>huye</b> al acercarte. Muévete despacio y ve <b>acorralándolo contra un borde</b>; al alcanzarlo entra el combate contra <b>Mew (Nv. 30)</b>. Guarda antes.", mons:[151], link:L.leg }
+    ]},
+    { area:"🏆 POSTGAME · Roca Ombligo", name:"Ho-Oh y Lugia", emo:"🌈", mons:[250,249],
+      goal:"Con el Ticket Místico, captura a los dos: uno arriba y otro abajo.",
+      hl:[
+      { cat:"item", t:"Cómo llegar", d:"Consigue el <b>Ticket Místico</b> (evento; en emulador, código Gameshark) y embarca desde <b>Ciudad Portual</b> a la <b>Roca Ombligo (Navel Rock)</b>.", link:L.tickets },
+      { cat:"boss", t:"Ho-Oh (arriba) y Lugia (abajo) — Nv. 70", d:"Dentro, un camino sube a <b>Ho-Oh</b> y otro baja a <b>Lugia</b>. Ambos de Nv. 70: <b>guarda antes</b> de cada uno, usa estado + Ball Turno y ten paciencia. Puedes capturar los dos en la misma visita.", mons:[250,249], link:L.leg }
+    ]},
+    { area:"🏆 POSTGAME · Evento", name:"Jirachi (y Deoxys de Colosseum)", emo:"⭐", mons:[385],
+      goal:"Completar la colección de 386 requiere este de evento externo.",
+      hl:[
+      { cat:"item", t:"Jirachi no sale en la partida", d:"Venía del <b>disco extra de Pokémon Colosseum</b>. Para el 386 de colección, en emulador se obtiene con <b>editor de guardado (PKHeX)</b> o con la distribución del bonus disc emulada. Sin él no se cierra la Pokédex Nacional.", mons:[385], link:L.pokedex }
+    ]},
+    { area:"🏆 POSTGAME · Ruta 119", name:"Feebas → Milotic", emo:"🐟", mons:[349,350],
+      goal:"Encuentra Feebas en sus 6 casillas y evolúcialo maximizando la Belleza.",
+      hl:[
+      { cat:"secret", t:"Encontrar a Feebas (lo más esquivo)", d:"<ol><li>Ve a la <b>Ruta 119</b> (zona de agua junto a la Casa del Tiempo).</li><li>Feebas vive solo en <b>6 de las ~400 casillas</b> de agua. Pesca <b>casilla por casilla</b> con cualquier caña (¡vale la Vieja!).</li><li>Las casillas dependen de la <b>frase de moda de Azuliza</b>: si cambias la frase (hablando con el chico moderno de Dewford), <b>cambian las casillas</b>.</li><li>Cuando piques un Feebas, esa es una de las 6: quédate ahí y captura varios.</li></ol>", mons:[349], link:L.feebas },
+      { cat:"secret", t:"Evolucionar a Milotic", d:"Feebas evoluciona al <b>subir de nivel con la Belleza al máximo</b>:<ol><li>Cocina <b>Pokoblocks azules</b> (bayas secas/azules) que suben <b>Belleza</b>.</li><li>Dáselos a Feebas hasta llenar su barra de Belleza (una naturaleza que no reduzca ese sabor ayuda).</li><li>Con la Belleza al máximo, <b>sube 1 nivel</b> (un Caramelo Raro o un combate) → <b>Milotic</b>.</li></ol>", mons:[350], link:L.concursos }
+    ]},
+    { area:"🏆 POSTGAME · Colección", name:"Completar la Pokédex Nacional", emo:"📕", mons:[386,151,385],
+      goal:"Cierra los 386. Sin intercambios es imposible: planifícalo.",
+      hl:[
+      { cat:"tip", t:"Qué te faltará y cómo conseguirlo", d:"<ul><li><b>Iniciales</b>: solo tienes 1 de 3 → cría copias e intercámbialas.</li><li><b>Exclusivos de versión</b> y líneas de <b>Kanto/Johto</b> → intercambio con Rubí/Zafiro/Rojo Fuego/Verde Hoja.</li><li><b>Evoluciones por intercambio</b>: Kadabra→Alakazam, Machoke→Machamp, Graveler→Golem, Haunter→Gengar, etc.</li></ul>", link:L.pokedex },
+      { cat:"tip", t:"Intercambiar tú solo en emulador", d:"Abre <b>dos instancias</b> de mGBA (o multiplayer), ambas con el <b>Nacional</b> desbloqueado, y usa el <b>Club de Intercambio</b> (2.ª planta del Centro Pokémon). Alternativa de colección: inyectar con <b>PKHeX</b>.", link:L.emu }
+    ]},
+    { area:"🏆 POSTGAME · El gran reto", name:"Frontera de Batalla", emo:"⚔️", mons:[376,373,350],
+      goal:"Gana los 14 símbolos (plata y oro) de las 7 instalaciones.",
+      hl:[
+      { cat:"boss", t:"Las 7 instalaciones y sus Cerebros", d:"<ul><li>🗼 <b>Torre</b> (Anabel) · combates 3vs3 clásicos.</li><li>🏛️ <b>Cúpula</b> (Tucker) · torneo, ves al rival antes.</li><li>🏯 <b>Palacio</b> (Spenser) · no das órdenes: mandan las naturalezas.</li><li>🥊 <b>Arena</b> (Greta) · combates de 3 turnos.</li><li>🏭 <b>Fábrica</b> (Noland) · Pokémon de alquiler.</li><li>🐍 <b>Ruleta</b> (Lucy) · puertas al azar.</li><li>🔺 <b>Pirámide</b> (Brandon) · pisos a oscuras.</li></ul> Cada una da <b>símbolo de plata</b> (1.ª victoria) y <b>de oro</b> (2.ª, mucho más difícil).", mons:[376,373], link:L.frontera },
+      { cat:"item", t:"Puntos de Combate (PC/BP)", d:"Ganas PC que canjeas por <b>vitaminas, MTs, objetos de fuerza (para EVs) y tutores</b>. Es la mejor fuente de material competitivo: prepara un buen equipo (Metagross, Salamence, Milotic…) antes de ir en serio.", link:L.cria }
+    ]},
+    { area:"🏆 POSTGAME · Concursos", name:"Rango Maestro en las 5 categorías", emo:"🎀", mons:[350],
+      goal:"Gana el Rango Maestro de Belleza, Hermosura, Dulzura, Ingenio y Dureza.",
+      hl:[
+      { cat:"secret", t:"Cómo dominarlos", d:"<ol><li>Cocina <b>Pokoblocks</b> del sabor de cada categoría (mejor en multijugador, salen de más calidad).</li><li>Sube el atributo del Pokémon sin pasarte del máximo y enséñale movimientos que <b>encadenen combos</b> en escena.</li><li>Sube de rango: <b>Normal → Súper → Hiper → Maestro</b> en las 5 categorías.</li></ol> Ganar los 5 Maestros te da un <b>retrato</b> en el museo de Lilycove.", mons:[350], link:L.concursos }
+    ]},
+    { area:"🏆 POSTGAME · Rincones ocultos", name:"Áreas secretas restantes", emo:"🗺️", mons:[235,360],
+      goal:"Visita las zonas que casi nadie encuentra para no dejarte nada.",
+      hl:[
+      { cat:"secret", t:"🌴 Isla Espejismo (Mirage Island)", d:"Frente a la Ruta 130. Solo aparece los días en que un <b>valor aleatorio diario</b> coincide con el valor oculto de un Pokémon de tu equipo (rarísimo). Pregunta al <b>anciano de Pueblo Oromar</b> si hoy es visible. Dentro: <b>Wynaut</b> salvajes y bayas raras.", mons:[360] },
+      { cat:"secret", t:"🎨 Cueva Artesana (Artisan Cave)", d:"Cerca de la Frontera de Batalla. Llena de <b>Smeargle</b> (aprende cualquier movimiento con Esquema) y minerales.", mons:[235] },
+      { cat:"secret", t:"🦴 Pasadizo Desértico (Desert Underpass)", d:"Bajo la casa del Maníaco de los Fósiles (Ruta 114). Tras completar el <b>Pokédex Nacional</b>, aquí reaparece el <b>fósil que NO elegiste</b> en la Torre Espejismo: así consigues ambos.", link:L.islas },
+      { cat:"secret", t:"🏟️ Monte Batalla / Trainer Hill", d:"Cerca de Pueblo Verdegal: retos de combate en cadena por premios. Parte del contenido dependía del <b>e-Reader</b>; el acceso básico sigue disponible.", link:L.islas }
+    ]},
+    { area:"🏆 POSTGAME · Perfección", name:"Cría, EVs e IVs (competitivo)", emo:"🥚", mons:[374],
+      goal:"Opcional: crea el equipo perfecto para dominar la Frontera.",
+      hl:[
+      { cat:"tip", t:"Lo esencial", d:"<ul><li><b>Cría</b> en la Guardería (Ruta 117): naturaleza heredable con <b>Piedra Eterna</b>, movimientos huevo del padre.</li><li><b>EVs</b>: máx. 510 (252 por stat útil). Acelera con <b>vitaminas</b> y objetos de la Frontera.</li><li><b>IVs</b> (0–31): aleatorios; para estacionarios haz <b>soft reset</b> (A+B+Start+Select) hasta buena naturaleza/IVs.</li></ul>", mons:[374], link:L.cria }
+    ]},
+    { area:"🏆 ¡100% COMPLETADO!", name:"Lo tienes todo", emo:"🎉", mons:[386,151,385,382,384],
+      goal:"Pokédex Nacional + todos los legendarios + Liga + 14 símbolos + 5 concursos Maestro.",
+      hl:[
+      { cat:"tip", t:"¡Enhorabuena, entrenador!", d:"Si has marcado todo esto tienes uno de los saves más completos posibles de Pokémon Esmeralda. <b>Haz una copia de seguridad de tu <code>.sav</code></b> y presume de colección. 🏆", mons:[386,151,385] },
+      { cat:"item", t:"Repaso final del 100%", d:"Comprueba en la guía de referencia la <b>checklist maestra</b> por si queda alguna casilla suelta (símbolos dorados, algún legendario, algún concurso).", link:{ t:"Checklist maestra", href:"index.html#checklist" } }
     ]}
   ];
 
