@@ -35,12 +35,16 @@
   "329": "Vibrava",
   "330": "Flygon",
   "350": "Milotic",
+  "377": "Regirock",
+  "378": "Regice",
+  "379": "Registeel",
   "442": "Spiritomb",
   "445": "Garchomp",
   "447": "Riolu",
   "448": "Lucario",
   "465": "Tangrowth",
   "471": "Glaceon",
+  "486": "Regigigas",
   "495": "Snivy",
   "496": "Servine",
   "497": "Serperior",
@@ -268,7 +272,7 @@
       {
         "cat": "boss",
         "t": "Gimnasio 2: Roxie",
-        "d": "Tipo Veneno. Koffing Nv.18 y <b>Whirlipede Nv.20</b>. Lleva <b>Psíquico o Tierra</b>. Da <b>MT09 Ecoveneno</b> y la Medalla Tóxica.",
+        "d": "Tipo Veneno. Koffing Nv.16 y <b>Whirlipede Nv.18</b>. Lleva <b>Psíquico o Tierra</b>. Da <b>MT09 Ecoveneno</b> y la Medalla Tóxica.",
         "link": "gimnasios",
         "mons": [
           109,
@@ -324,7 +328,7 @@
       {
         "cat": "boss",
         "t": "Gimnasio 3: Burgh",
-        "d": "Tipo Bicho. Swadloon, Dwebble y <b>Leavanny Nv.23</b>. El <b>Fuego</b> lo arrasa. Da <b>MT76 Estoicidad</b> y la Medalla Insecto.",
+        "d": "Tipo Bicho. Swadloon y Dwebble Nv.22 y <b>Leavanny Nv.24</b>. El <b>Fuego</b> lo arrasa. Da <b>MT76 Estoicidad</b> y la Medalla Insecto.",
         "link": "gimnasios",
         "mons": [
           542,
@@ -404,7 +408,7 @@
       {
         "cat": "boss",
         "t": "Gimnasio 4: Elesa",
-        "d": "Tipo Eléctrico. Dos Emolga Nv.25 (inmunes a Tierra), Flaaffy y <b>Zebstrika Nv.27</b>. Lleva <b>Roca/Hielo</b> para los Emolga y Tierra para el resto. Da <b>MT72 Voltiocambio</b> y la Medalla Voltaje.",
+        "d": "Tipo Eléctrico. Emolga Nv.28 (inmune a Tierra), Flaaffy Nv.28 y <b>Zebstrika Nv.30</b>. Lleva <b>Roca/Hielo</b> para Emolga y Tierra para el resto. Da <b>MT72 Voltiocambio</b> y la Medalla Voltaje.",
         "link": "gimnasios",
         "mons": [
           587,
@@ -477,7 +481,7 @@
       {
         "cat": "boss",
         "t": "Gimnasio 5: Clay",
-        "d": "Tipo Tierra. Krokorok, Sandslash y <b>Excadrill Nv.31</b> (Tierra/Acero, muy rápido). Lleva <b>Agua/Planta/Lucha</b>. Da <b>MT78 Terratemblor</b> y la Medalla Temblor.",
+        "d": "Tipo Tierra. Krokorok y Sandslash Nv.31 y <b>Excadrill Nv.33</b> (Tierra/Acero, muy rápido). Lleva <b>Agua/Planta/Lucha</b>. Da <b>MT78 Terratemblor</b> y la Medalla Temblor.",
         "link": "gimnasios",
         "mons": [
           552,
@@ -508,20 +512,19 @@
     "area": "Ruta 6 y cueva",
     "name": "Ruta 6 y Cueva Loza (Mistralton Cave)",
     "emoji": "🕳️",
-    "goal": "Captura a Cobalion y prepárate para Chargestone.",
+    "goal": "Explora la Cueva Loza y prepárate para Chargestone.",
     "gym": "",
     "mons": [
       585,
       588,
       590,
-      529,
-      638
+      529
     ],
     "highlights": [
       {
-        "cat": "catch",
-        "t": "Cobalion (legendario)",
-        "d": "Al fondo de la <b>Cueva Loza</b> (con Fuerza) está <b>Cobalion Nv.45</b>. Capturarlo/vencerlo activa la aparición de Virizion y Terrakion.",
+        "cat": "tip",
+        "t": "Los espadachines (postgame)",
+        "d": "Los <b>tres espadachines</b> son capturas de <b>postgame</b>: <b>Cobalion Nv.45</b> aparece en la <b>Ruta 13</b>, y al tratar con él surgen <b>Virizion</b> (Ruta 11) y <b>Terrakion</b> (Ruta 22). En la Cueva Loza usa <b>Fuerza</b> para llegar a rincones con objetos.",
         "link": "legendarios",
         "mons": [
           638
@@ -602,7 +605,7 @@
       {
         "cat": "boss",
         "t": "Gimnasio 6: Skyla",
-        "d": "Tipo Volador. Swoobat, Skarmory y <b>Swanna Nv.35</b> (usa Vendaval infalible). Lleva un <b>Eléctrico fuerte</b> (x4 a Swanna) y Fuego para Skarmory. Da <b>MT62 Acróbata</b> y la Medalla Jet.",
+        "d": "Tipo Volador. Swoobat y Skarmory Nv.37 y <b>Swanna Nv.39</b> (usa Vendaval infalible). Lleva un <b>Eléctrico fuerte</b> (x4 a Swanna) y Fuego para Skarmory. Da <b>MT62 Acróbata</b> y la Medalla Jet.",
         "link": "gimnasios",
         "mons": [
           227,
@@ -638,7 +641,7 @@
       {
         "cat": "item",
         "t": "Fósil del Monte Espira",
-        "d": "Un minero te da un <b>fósil</b> (Cubierta→Tirtouga o Pluma→Archen) que reviven en el Museo de Ciudad Esmalte. Elige bien: son de version/gustos.",
+        "d": "Un minero te da un <b>fósil</b> (Cubierta→Tirtouga o Pluma→Archen) que se revive en el <b>Museo de Nacrene City</b>. Elige bien: es tu elección.",
         "link": "",
         "mons": [
           564,
@@ -925,7 +928,7 @@
       {
         "cat": "catch",
         "t": "Terrakion (legendario)",
-        "d": "En una cámara de la Calle Victoria (tras Cobalion) está <b>Terrakion Nv.45</b>, el tercer espadachín. No sigas de largo.",
+        "d": "En la <b>Ruta 22</b> (tras tratar con Cobalion) está <b>Terrakion Nv.45</b>, el tercer espadachín. No sigas de largo.",
         "link": "legendarios",
         "mons": [
           639
@@ -1051,7 +1054,7 @@
       {
         "cat": "catch",
         "t": "Orden de captura",
-        "d": "<ol><li><b>Cobalion</b> Nv.45 al fondo de la <b>Cueva Loza</b> (con Fuerza).</li><li>Eso activa a <b>Virizion</b> Nv.45 en el interior del <b>Bosque Azulejo</b>.</li><li>Y a <b>Terrakion</b> Nv.45 en una cámara de la <b>Calle Victoria</b>.</li></ol>",
+        "d": "<ol><li><b>Cobalion</b> Nv.45 en la <b>Ruta 13</b>.</li><li>Tratar con él activa a <b>Virizion</b> Nv.45 en la <b>Ruta 11</b>.</li><li>Y a <b>Terrakion</b> Nv.45 en la <b>Ruta 22</b>.</li></ol>",
         "link": "legendarios",
         "mons": [
           638,
@@ -1130,6 +1133,40 @@
         "link": "legendarios",
         "mons": [
           637
+        ]
+      }
+    ]
+  },
+  {
+    "area": "Clay Tunnel",
+    "name": "Los colosos Regi y Regigigas",
+    "emoji": "🗿",
+    "goal": "Reúne al trío Regi y despierta a Regigigas.",
+    "mons": [
+      377,
+      379,
+      378,
+      486
+    ],
+    "highlights": [
+      {
+        "cat": "catch",
+        "t": "El trío Regi",
+        "d": "<ol><li><b>Regirock</b> Nv.65 en las <b>Ruinas Subterráneas</b> del Clay Tunnel (bajo Ciudad Esmalte; con Fuerza y Surf). Resuelve el puzle de losas.</li><li>Capturarlo te da la <b>Llave de Hierro</b> (Negro 2 → <b>Registeel</b>) o la <b>Llave de Hielo</b> (Blanco 2 → <b>Regice</b>), ambos Nv.65. La llave contraria se recibe por el Unova Link.</li></ol>",
+        "link": "legendarios",
+        "mons": [
+          377,
+          379,
+          378
+        ]
+      },
+      {
+        "cat": "catch",
+        "t": "Regigigas",
+        "d": "Con los <b>tres Regi</b> en el equipo, baja a lo más hondo del <b>Monte Espira</b> (Twist Mountain) para despertar a <b>Regigigas Nv.68</b>.",
+        "link": "legendarios",
+        "mons": [
+          486
         ]
       }
     ]
