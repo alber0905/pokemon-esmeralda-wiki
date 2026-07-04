@@ -147,7 +147,7 @@
       <div class="grid grid--3">
         <div class="card card--accent"><div class="card__icon">🟢</div><h4>Azahar (recomendado)</h4><p>Fork moderno y mantenido de Citra. Es la opción recomendada hoy para PC (Windows/Linux/macOS): buen rendimiento, texturas, guardado rápido y estados.</p></div>
         <div class="card"><div class="card__icon">🔵</div><h4>Citra (clásico)</h4><p>El emulador de 3DS original. Ya descontinuado, pero sigue funcionando con X/Y. Muchas guías y builds antiguas lo mencionan; si puedes, usa Azahar/Lime3DS.</p></div>
-        <div class="card"><div class="card__icon">🟣</div><h4>Lime3DS</h4><p>Otro fork abierto de Citra, alternativa a Azahar con soporte de shaders y guardado por estados. Compatible con X/Y.</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>Lime3DS (histórico)</h4><p>Fork abierto de Citra que en octubre de 2024 se <b>fusionó con el fork de Citra de PabloMK7 para crear Azahar</b> y dejó de desarrollarse por separado. Si tienes una build antigua funciona con X/Y, pero hoy instala directamente Azahar.</p></div>
         <div class="card"><div class="card__icon">📱</div><h4>Citra MMJ / Enhanced (Android)</h4><p>Versiones para móvil Android. Permiten jugar X/Y en el teléfono; rinden mejor con chips potentes.</p></div>
         <div class="card"><div class="card__icon">🧰</div><h4>PKHeX</h4><p>No es un emulador, sino un editor de partidas .sav. Imprescindible en emulador para inyectar los Pokémon de evento (Diancie, Hoopa, Volcanion) ya que los servidores oficiales de Regalo Misterioso están cerrados.</p></div>
       </div>
@@ -164,6 +164,59 @@
           <li><b>Hora del sistema:</b> ajústala en el propio emulador/SO para forzar la franja de <b>megapiedras (20:00-21:00)</b> y el crecimiento de bayas.</li>
         </ul>
       </div>
+
+      <div class="callout callout--info" style="margin-top:20px">
+        <span class="emo">ℹ️</span>
+        <p><b>Citra ya no existe (cerró a principios de 2024).</b> Sus sucesores <b>Lime3DS</b> y el fork de Citra de <b>PabloMK7</b> se fusionaron en octubre de 2024 en un único emulador: <b>Azahar</b>. Para X/Y, instala Azahar (o, en su defecto, Lime3DS). En Android, Citra MMJ/Enhanced siguen siendo una alternativa.</p>
+      </div>
+
+      <h3><span class="emo">🔗</span> Intercambios contigo mismo (y sus límites)</h3>
+      <div class="callout callout--emu">
+        <p>Muchas evoluciones y la Pokédex Nacional exigen <b>intercambiar</b>. En emulador puedes abrir <b>dos instancias</b> de Azahar/Citra con dos partidas y usar la <b>sala de red local / multijugador</b> para comerciar contigo mismo.</p>
+        <ul>
+          <li><b>Sirve para:</b> evoluciones por intercambio (Kadabra→Alakazam, Machoke→Machamp, Graveler→Golem, Haunter→Gengar, Boldore→Gigalith, Gurdurr→Conkeldurr, Phantump→Trevenant, Pumpkaboo→Gourgeist) y las de intercambio con objeto (Swirlix→Slurpuff con Nata Montada, Spritzee→Aromatisse con Aromático, Scyther→Scizor, Seadra→Kingdra, etc.).</li>
+          <li><b>Límite real:</b> el enlace local entre instancias es <b>inestable</b> y no todas las builds lo soportan bien. Para <b>exclusivos de versión</b> (X vs Y), <b>evoluciones por intercambio</b> masivas y, sobre todo, <b>eventos y míticos</b>, lo práctico y fiable es <b>PKHeX</b> (editor de guardado 3DS).</li>
+        </ul>
+      </div>
+
+      <h3><span class="emo">🎛️</span> Cómo usar CHEATS en Citra / Azahar</h3>
+      <div class="callout callout--emu">
+        <p>El buscador de trucos de Citra/Azahar admite códigos en <b>formato Gateway / Action Replay (CTRPF)</b>, los mismos que se usaban en 3DS con flashcart.</p>
+        <ul>
+          <li><b>Ruta en Azahar/Citra:</b> haz clic derecho sobre el juego → <b>Properties (Propiedades)</b> → pestaña <b>Cheats</b> → <b>Add Cheat</b>. Pon un nombre, pega el código en el campo <i>Code</i>, guarda y marca la casilla para activarlo. También accesible desde <b>Emulation → Configure Current Application → Cheats</b> con el juego abierto.</li>
+          <li><b>Archivo de cheats:</b> en <b>File → Open Azahar/Citra folder</b> hay una carpeta <span class="code">cheats</span>; el .txt debe llamarse igual que el <b>Title ID</b> del juego (X = <span class="code">0004000000055D00</span>, Y = <span class="code">0004000000055E00</span>).</li>
+          <li><b>Códigos concretos:</b> en 3DS los "códigos" son formato Gateway. <b>No inventes códigos:</b> úsalos solo si los verificas en una base fiable (por ejemplo el repositorio comunitario <span class="code">CTRPF-AR-CHEAT-CODES</span>). Para Pokémon/objetos legales es más seguro y limpio usar <b>PKHeX</b>.</li>
+        </ul>
+      </div>
+
+      <h3><span class="emo">🧰</span> PKHeX: inyectar Pokémon, objetos y Cartas Regalo</h3>
+      <div class="callout callout--emu">
+        <p><b>PKHeX</b> es un editor de partidas <span class="code">.sav</span>/<span class="code">.main</span>. Es la vía práctica para todo lo que el enlace local no cubre bien: exclusivos de versión, evoluciones por intercambio y, sobre todo, los <b>míticos de evento</b> (los servidores de Regalo Misterioso están cerrados).</p>
+        <ul>
+          <li><b>Extraer el guardado:</b> en Azahar/Citra, clic derecho sobre el juego → <b>Open Save Data Location</b>; ahí está el fichero <span class="code">main</span>. Ábrelo en PKHeX.</li>
+          <li><b>Inyectar un Pokémon:</b> arrastra un <span class="code">.pk6</span> legal a un hueco de la caja, o créalo con el editor (especie, nivel, naturaleza, IVs, cinta, bola). Usa el <b>Comprobador de legalidad</b> antes de guardar.</li>
+          <li><b>Cartas Regalo (Wonder Cards):</b> menú <b>Tools → Data → Mystery Gift Database</b> (Base de datos de Regalo Misterioso). Elige la carta oficial (<span class="code">.wc6</span>), añádela al álbum y recíbela en el juego; así el Pokémon queda con datos de evento legales.</li>
+          <li><b>Objetos clave:</b> desde <b>SAV → Items (Mochila)</b> puedes añadir Master Balls, Balextra, <b>Megapiedras</b>, el <b>Amuleto Iris</b> (Shiny Charm), pañuelos y objetos de cría.</li>
+          <li><b>Guarda con cuidado:</b> <b>Export SAV</b> sobre el mismo fichero y no toques la partida en el emulador mientras editas.</li>
+        </ul>
+      </div>
+
+      <h3><span class="emo">💾</span> Copias de seguridad y save states</h3>
+      <div class="callout callout--tip"><span class="emo">💾</span><p>Antes de tocar nada con PKHeX o cheats, <b>copia el fichero <span class="code">main</span></b> a otra carpeta. Usa además los <b>save states</b> del emulador (F5 guardar / F8 cargar en PC) para reintentar tiradas de legendarios y variocolor. Ojo: los save states guardan el estado de RAM, mientras que la copia del <span class="code">main</span> protege tu partida real; ten siempre ambas.</p></div>
+
+      <h3><span class="emo">🎁</span> Contenido de evento / mítico y cómo conseguirlo en emulador</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Contenido</th><th>Qué es</th><th>Método en emulador (PKHeX)</th><th>Nombre exacto de carta / objeto</th></tr></thead>
+          <tbody>
+            <tr><td><b>Diancie</b></td><td>Mítico Roca/Hada · Nv50 (megaevoluciona con la Diancita)</td><td>Recíbelo por Carta Regalo desde la <i>Mystery Gift Database</i> de PKHeX, o inyecta un <span class="code">.pk6</span> legal.</td><td>Carta <span class="code">Diancie Gift</span> (.wc6). La Diancita venía con el propio evento.</td></tr>
+            <tr><td><b>Hoopa</b></td><td>Mítico Psíquico/Fantasma · Nv50 (forma Contenido en X/Y)</td><td>Carta Regalo en PKHeX o <span class="code">.pk6</span> legal. La forma Desatado se usa en juegos posteriores con el Prisma Anular.</td><td>Carta <span class="code">Hoopa distribution!</span> (.wc6).</td></tr>
+            <tr><td><b>Volcanion</b></td><td>Mítico Fuego/Agua · Nv70 (no aparece en el mapa de X/Y)</td><td>Carta Regalo en PKHeX (distribución por código de serie de 2016) o <span class="code">.pk6</span> legal.</td><td>Carta Regalo <span class="code">Volcanion</span> (.wc6, distribución por código).</td></tr>
+            <tr><td><b>Blazikenite (Torchic)</b></td><td>Megapiedra que fue <b>distribución por evento</b> (Wi-Fi el 12/10/2013, al lanzarse X/Y): un Torchic la portaba.</td><td>Inyecta el Torchic de evento con su objeto, o añade la Megapiedra <b>Blazikenite</b> directamente en la Mochila. Nota: Blaziken no está en la Pokédex de Kalos, requiere PKHeX/transferencia.</td><td>Carta <span class="code">Mega Stone Torchic</span> / objeto <span class="code">Blazikenite</span>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout--warn"><span class="emo">⚠️</span><p><b>Sobre "códigos" en 3DS:</b> los códigos son formato Gateway/AR y varían por región y versión. Esta guía <b>no inventa códigos</b>: usa PKHeX (más fiable y legal) o, si necesitas un cheat concreto, verifícalo antes en una base de datos comunitaria de confianza.</p></div>
     </section>
 
     <!-- ============ GIMNASIOS ============ -->
@@ -307,9 +360,10 @@
       </div>
 
       <div class="grid grid--2">
-        <div class="card"><div class="card__icon">🦋</div><h4>El patrón de tu Vivillon depende de tu 'región'</h4><p>El diseño de las alas de Vivillon se decide por la región/país configurado en la 3DS (o en el emulador). Hay ~18 patrones; en España sale el patrón 'Continental'. Cambiar la región del sistema antes de evolucionar Spewpa da un patrón distinto.</p></div>
+        <div class="card"><div class="card__icon">🦋</div><h4>Vivillon tiene 20 patrones (regionales)</h4><p>El diseño de las alas se decide por la región/país configurado en la 3DS (o el emulador). Hay <b>20 patrones en total: 18 regionales</b> (el tuyo en España es el <b>Continental</b>) más los <b>2 de evento</b>, <b>Fancy</b> (Fantasía) y <b>Poké Ball</b>. Para completar los 18 regionales necesitas <b>intercambiar</b> con jugadores de otras zonas; en emulador, cambiar la región del sistema antes de evolucionar Spewpa da otro patrón, o inyéctalos con <b>PKHeX</b>. Los de Fancy y Poké Ball solo salían por evento: hoy, PKHeX.</p></div>
         <div class="card"><div class="card__icon">🔄</div><h4>Inkay solo evoluciona girando la consola</h4><p>Para que Inkay evolucione a Malamar (a partir de Nv30) debes poner la 3DS boca abajo al subir de nivel. En emulador, activa el sensor de movimiento/giroscopio o el atajo correspondiente en ese momento.</p></div>
         <div class="card"><div class="card__icon">🎀</div><h4>Sylveon necesita cariño, no una piedra</h4><p>Eevee evoluciona a Sylveon subiendo de nivel con al menos 2 corazones de afecto en el Poké Recreo (Pokémon-Amie) y conociendo un movimiento de tipo Hada (p. ej. Beso Dulce).</p></div>
+        <div class="card"><div class="card__icon">🦊</div><h4>Las 8 evoluciones de Eevee</h4><p>Para la Pokédex necesitas <b>varios Eevee</b> (Ruta 10): Vaporeon/Jolteon/Flareon con piedra Agua/Trueno/Fuego; Espeon (día) y Umbreon (noche) con afecto; Leafeon junto al musgo de la <b>Cueva Reflejo</b> y Glaceon junto a la roca helada de la <b>Gruta Helada</b>; y Sylveon con afecto + movimiento Hada. Cría con Ditto para no quedarte corto.</p></div>
         <div class="card"><div class="card__icon">🎁</div><h4>Inicial de Kanto + Megapiedra gratis</h4><p>En la 1ª visita a Ciudad Luminalia, el Prof. Ciprés te regala Bulbasaur, Charmander o Squirtle Y su Megapiedra. Solo puedes elegir UNO por partida; el resto requiere intercambio.</p></div>
         <div class="card"><div class="card__icon">💎</div><h4>Megapiedras solo de 20:00 a 21:00</h4><p>Tras ganar la Liga y revisitar a Corelia en la Torre Maestría, tu Anillo Mega se mejora. Desde entonces aparecen megapiedras brillantes por rutas y ciudades, pero SOLO en la franja horaria de 20:00 a 21:00.</p></div>
         <div class="card"><div class="card__icon">🌸</div><h4>AZ y el Floette eterno</h4><p>Tras la Liga, el gigante AZ te espera en Pueblo Boceto para un combate; al terminar te regala un Floette Eterno de flor especial (no obtenible de otra forma en juego normal).</p></div>
@@ -346,11 +400,16 @@
           <li><b>Evoluciones por intercambio:</b> Kadabra→Alakazam, Machoke→Machamp, Graveler→Golem, Haunter→Gengar, Boldore→Gigalith, Gurdurr→Conkeldurr, y las de Kalos <b>Phantump→Trevenant</b> y <b>Pumpkaboo→Gourgeist</b>.</li>
           <li><b>Intercambio con objeto:</b> Swirlix→Slurpuff (Nata Montada), Spritzee→Aromatisse (Aromático), Scyther→Scizor (Revestimiento Metálico), Onix→Steelix, Seadra→Kingdra (Escama Dragón), Poliwhirl→Politoed (Piedra del Rey), etc.</li>
           <li><b>Legendario de portada:</b> Xerneas (X) o Yveltal (Y). El otro solo entra por intercambio.</li>
-          <li><b>Míticos (Diancie, Hoopa, Volcanion):</b> no salen en el mapa; requieren evento. En emulador, PKHeX.</li>
+          <li><b>Fósiles:</b> revive <b>Tyrunt</b> (Fósil Mandíbula → Roca/Dragón) y <b>Amaura</b> (Fósil Aleta → Roca/Hielo) en el Instituto Paleontológico. Solo obtienes uno por partida; el otro, por intercambio o PKHeX.</li>
+          <li><b>Vivillon (20 patrones):</b> tu región solo te da uno (Continental en España). Los otros 17 regionales y los 2 de evento (Fancy y Poké Ball) requieren intercambio o PKHeX. No cuentan para la Pokédex (es la misma especie), pero sí para coleccionismo.</li>
+          <li><b>Eevee y sus 8 evoluciones:</b> Vaporeon/Jolteon/Flareon (piedras), Espeon/Umbreon (afecto día/noche), Leafeon (Cueva Reflejo), Glaceon (Gruta Helada) y Sylveon (afecto + movimiento Hada).</li>
+          <li><b>Míticos (Diancie, Hoopa, Volcanion):</b> no salen en el mapa; requieren evento. En emulador, PKHeX (ver la tabla de eventos en <a href="#emulador">Emulador y trucos</a>).</li>
         </ul>
       </div>
 
       <div class="callout callout--tip"><span class="emo">🥚</span><p><b>Truco de intercambios:</b> abre dos instancias del emulador con dos partidas y usa el enlace local para completar evoluciones por intercambio y exclusivos de versión sin necesidad de otra persona. Ver <a href="#emulador">Emulador y trucos</a>.</p></div>
+
+      <div class="callout callout--emu"><p><b>Atajo con PKHeX para el 100% Nacional:</b> si el enlace local te falla, extrae tu guardado y usa PKHeX para inyectar <span class="code">.pk6</span> legales de los exclusivos de la otra versión, las evoluciones por intercambio y los míticos. Pasa siempre el <b>Comprobador de legalidad</b> para que cuenten como capturas válidas y no rompas la partida.</p></div>
 
       <ul class="checklist">
         <li><label class="check-item" data-key="k6-dex-central" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Completar la Pokédex Central (→ Radar Pokémon)</span></label></li>
