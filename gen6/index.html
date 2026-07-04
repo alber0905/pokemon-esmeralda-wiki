@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía 100% Pokémon X y Y (Kalos) · Todos los secretos</title>
+  <meta name="description" content="Guía completa e interactiva de la 6.ª generación (Kalos: Pokémon X y Pokémon Y) para emulador de 3DS: gimnasios, Alto Mando, legendarios de portada, Mewtwo, Zygarde, aves errantes, megaevolución, secretos, Pokédex Nacional y trucos de emulador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%234f7cff' stroke='%231a2a5c' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%231a2a5c' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%231a2a5c' stroke-width='6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ===================== TOPBAR ===================== -->
+<header class="topbar">
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+  <div class="topbar__brand">
+    <svg class="ball" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#4f7cff" stroke="#1a2a5c" stroke-width="6"/><path d="M4 50h92" stroke="#1a2a5c" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="#fff" stroke="#1a2a5c" stroke-width="6"/></svg>
+    <span class="txt">Guía 100% · Kalos (X/Y)</span>
+  </div>
+  <div class="topbar__spacer"></div>
+  <div class="mini-progress" title="Tu progreso global">
+    <span class="lbl">Progreso</span>
+    <div class="mini-progress__bar"><div class="mini-progress__fill" id="miniFill"></div></div>
+    <span id="miniPct">0%</span>
+  </div>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Tema claro/oscuro">🌙</button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <input type="search" class="sidebar__search" id="navSearch" placeholder="🔎 Buscar sección...">
+    <nav id="nav">
+      <div class="nav-group">
+        <div class="nav-group__title">Empezar</div>
+        <a class="nav-link" href="../index.html"><span class="emo">↩️</span> Otras guías</a>
+        <a class="nav-link" href="#inicio"><span class="emo">🏠</span> Inicio</a>
+        <a class="nav-link" href="jugando.html"><span class="emo">🎮</span> Guía paso a paso</a>
+        <a class="nav-link" href="#progreso"><span class="emo">📊</span> Tu progreso 100%</a>
+        <a class="nav-link" href="#emulador"><span class="emo">🕹️</span> Emulador y trucos</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Historia</div>
+        <a class="nav-link" href="#gimnasios"><span class="emo">🏅</span> Gimnasios</a>
+        <a class="nav-link" href="#liga"><span class="emo">👑</span> Alto Mando y Campeona</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Legendarios y secretos</div>
+        <a class="nav-link" href="#legendarios"><span class="emo">🌟</span> Legendarios</a>
+        <a class="nav-link" href="#secretos"><span class="emo">🗝️</span> Secretos de Kalos</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Colección</div>
+        <a class="nav-link" href="#pokedex"><span class="emo">📕</span> Pokédex de Kalos</a>
+        <a class="nav-link" href="#checklist"><span class="emo">✅</span> Checklist maestra</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ===================== CONTENIDO ===================== -->
+  <main class="content">
+
+    <!-- ============ HERO / INICIO ============ -->
+    <section id="inicio" class="section" style="margin-bottom:40px">
+      <div class="hero">
+        <span class="hero__eyebrow">Guía definitiva · 6.ª generación · Emulador 3DS</span>
+        <h1>Completa Pokémon X y Y al 100%</h1>
+        <p>Guía 100% de la sexta generación (región de Kalos: Pokémon X y Pokémon Y), pensada para jugar en emulador de 3DS. Recorre la aventura parada por parada resaltando SOLO lo importante y lo que es fácil perderse: capturas únicas, regalos irrepetibles, megaevolución, los legendarios de portada y todo el postgame (Mewtwo, Zygarde, aves errantes, megapiedras nocturnas y Pokédex Nacional). Los datos (líderes, niveles, MT y ubicaciones) son los reales del juego.</p>
+        <div class="hero__cta">
+          <a href="jugando.html" class="btn btn--gold">🎮 Guía paso a paso (mientras juegas)</a>
+          <a href="#progreso" class="btn btn--ghost">📊 Ver mi progreso</a>
+          <a href="../index.html" class="btn btn--ghost">← Otras guías</a>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card"><div class="card__icon">🏅</div><h4>8 Medallas + Liga</h4><p>Cada gimnasio de Kalos, su tipo, su Pokémon estrella, la MT que dan y cómo vencer al Alto Mando y a la Campeona Dianta.</p></div>
+        <div class="card"><div class="card__icon">🌟</div><h4>Todos los legendarios</h4><p>Xerneas/Yveltal, Zygarde, Mewtwo con su Megapiedra, las aves errantes de Kanto y los míticos Diancie, Hoopa y Volcanion.</p></div>
+        <div class="card"><div class="card__icon">💠</div><h4>Megaevolución</h4><p>Anillo Mega, un inicial de Kanto con su megapiedra gratis y las megapiedras que solo aparecen de 20:00 a 21:00.</p></div>
+        <div class="card"><div class="card__icon">✨</div><h4>Variocolor</h4><p>Cadena de pesca, Radar Pokémon, Safari Amigo y el Amuleto Iris para cazar shiny de forma eficiente.</p></div>
+        <div class="card"><div class="card__icon">📕</div><h4>Pokédex de Kalos</h4><p>Central, Costa y Montaña; exclusivos de versión, evoluciones por intercambio y el 100% Nacional.</p></div>
+        <div class="card"><div class="card__icon">🕹️</div><h4>Trucos de emulador</h4><p>Azahar/Lime3DS, el giro de consola para Malamar, intercambios contigo mismo y PKHeX para los míticos de evento.</p></div>
+      </div>
+
+      <div class="callout callout--info" style="margin-top:24px">
+        <span class="emo">💡</span>
+        <p><b>¿Cómo funciona esta guía?</b> Marca las casillas ✅ a medida que avanzas: tu progreso se guarda automáticamente en tu navegador (no se pierde al cerrar). El panel <a href="#progreso">Tu progreso 100%</a> resume cuánto te falta en cada categoría. ¿Prefieres una guía para llevar mientras juegas? Abre la <a href="jugando.html">compañera paso a paso</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROGRESO ============ -->
+    <section id="progreso" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Panel de control</span>
+        <h2><span class="emo">📊</span> Tu progreso al 100%</h2>
+        <p class="section__intro">Este panel se actualiza solo con las casillas que marcas en toda la guía. El objetivo del 100% real combina la Liga, todos los legendarios (portada, Mewtwo, Zygarde, aves y míticos) y los grandes secretos de Kalos.</p>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-ring-wrap">
+          <div class="ring" id="ring">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#4f7cff"/>
+                  <stop offset="100%" stop-color="#f4c430"/>
+                </linearGradient>
+              </defs>
+              <circle class="ring__track" cx="65" cy="65" r="56" fill="none" stroke-width="14"/>
+              <circle class="ring__bar" id="ringBar" cx="65" cy="65" r="56" fill="none" stroke-width="14"
+                      stroke-dasharray="351.86" stroke-dashoffset="351.86"/>
+            </svg>
+            <div class="ring__label">
+              <span class="ring__pct" id="ringPct">0%</span>
+              <span class="ring__sub" id="ringCount">0 / 0</span>
+            </div>
+          </div>
+          <div style="flex:1; min-width:240px">
+            <div class="stat-bar" data-cat="medallas"><div class="stat-bar__top"><b>🏅 Medallas y Liga</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="legendarios"><div class="stat-bar__top"><b>🌟 Legendarios y míticos</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="secretos"><div class="stat-bar__top"><b>🗝️ Secretos y colección</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+          </div>
+        </div>
+        <div style="margin-top:18px; display:flex; justify-content:flex-end">
+          <button class="reset-btn" id="resetProgress">↺ Reiniciar progreso</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMULADOR ============ -->
+    <section id="emulador" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Preparación</span>
+        <h2><span class="emo">🕹️</span> Emulador y trucos base</h2>
+        <p class="section__intro">Para jugar X/Y en PC o móvil necesitas un emulador de 3DS. Para el 100% te hará falta además el giroscopio (Malamar), intercambios contigo mismo y PKHeX para los míticos de evento. Estas son las mejores opciones.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card card--accent"><div class="card__icon">🟢</div><h4>Azahar (recomendado)</h4><p>Fork moderno y mantenido de Citra. Es la opción recomendada hoy para PC (Windows/Linux/macOS): buen rendimiento, texturas, guardado rápido y estados.</p></div>
+        <div class="card"><div class="card__icon">🔵</div><h4>Citra (clásico)</h4><p>El emulador de 3DS original. Ya descontinuado, pero sigue funcionando con X/Y. Muchas guías y builds antiguas lo mencionan; si puedes, usa Azahar/Lime3DS.</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>Lime3DS</h4><p>Otro fork abierto de Citra, alternativa a Azahar con soporte de shaders y guardado por estados. Compatible con X/Y.</p></div>
+        <div class="card"><div class="card__icon">📱</div><h4>Citra MMJ / Enhanced (Android)</h4><p>Versiones para móvil Android. Permiten jugar X/Y en el teléfono; rinden mejor con chips potentes.</p></div>
+        <div class="card"><div class="card__icon">🧰</div><h4>PKHeX</h4><p>No es un emulador, sino un editor de partidas .sav. Imprescindible en emulador para inyectar los Pokémon de evento (Diancie, Hoopa, Volcanion) ya que los servidores oficiales de Regalo Misterioso están cerrados.</p></div>
+      </div>
+
+      <h3><span class="emo">🎮</span> Notas de emulador para el 100%</h3>
+      <div class="callout callout--emu">
+        <p><b>Emulador recomendado:</b> usa <b>Azahar</b> (o Lime3DS) en PC; son forks mantenidos de Citra. En Android, Citra MMJ/Enhanced. Activa los guardados por estado para farmear legendarios y variocolor con reintentos.</p>
+        <ul>
+          <li><b>Giroscopio (Inkay→Malamar):</b> X/Y usa el sensor de movimiento. Configura la tecla/gesto de inclinación del emulador y actívalo justo al subir de nivel a Inkay para que evolucione.</li>
+          <li><b>Intercambios contigo mismo:</b> para las evoluciones por intercambio y completar la Pokédex, abre <b>dos instancias</b> del emulador con dos partidas y usa la <b>sala de red local / multijugador</b> de Citra/Azahar para comerciar entre ellas.</li>
+          <li><b>Eventos (Diancie, Hoopa, Volcanion, Floette Eterno):</b> los servidores de Regalo Misterioso están cerrados. Extrae tu <b>.sav</b>, edítalo con <b>PKHeX</b> e inyecta un .pk6 legal del mítico, o edita objetos clave (Master Balls, megapiedras, Amuleto Iris).</li>
+          <li><b>Trucos/cheats:</b> el buscador de trucos de Citra/Azahar (o códigos tipo Gateway) permite objetos raros, dinero o encuentros. Úsalo con cuidado para no romper la partida ni la legalidad del Pokémon.</li>
+          <li><b>Rendimiento:</b> X/Y sufre bajones en Ciudad Luminalia; baja la resolución interna o activa el limitador de FPS si va a tirones.</li>
+          <li><b>Hora del sistema:</b> ajústala en el propio emulador/SO para forzar la franja de <b>megapiedras (20:00-21:00)</b> y el crecimiento de bayas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ GIMNASIOS ============ -->
+    <section id="gimnasios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">🏅</span> Los 8 Gimnasios de Kalos</h2>
+        <p class="section__intro">Cada líder entrega una medalla y una MT. Aquí tienes su ciudad, tipo, Pokémon estrella, la MT y un consejo para vencerlo. Marca cada medalla al conseguirla.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Ciudad</th><th>Líder</th><th>Tipo</th><th>Estrella</th><th>Medalla / MT</th><th>Consejo</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Ciudad Novarte</td><td>Violeta</td><td><span class="type t-bicho">Bicho</span></td><td>Vivillon (Nv12)</td><td>Bicho · <span class="code">MT83 Acoso</span></td><td>Lleva Surskit (Nv10) y Vivillon (Nv12). Fuego, Volador y Roca lo arrasan. Un Fletchling o Litleo lo resuelven solos.</td></tr>
+            <tr><td>2</td><td>Ciudad Relieve</td><td>Lino</td><td><span class="type t-roca">Roca</span></td><td>Tyrunt/Amaura (Nv25)</td><td>Muro · <span class="code">MT39 Trampa Rocas</span></td><td>Gimnasio de escalada. Su fósil estrella depende de tu versión. Agua, Planta, Lucha y Acero lo destrozan; cuidado con las Rocas.</td></tr>
+            <tr><td>3</td><td>Ciudad Yantra</td><td>Corelia</td><td><span class="type t-lucha">Lucha</span></td><td>Mega-Lucario (Nv32)</td><td>Lid · <span class="code">MT98 Puño Incremento</span></td><td>¡Megaevoluciona a Lucario! Usa Psíquico, Volador o Hada. Su Mega gana Velocidad y Ataque, no le des tiempo.</td></tr>
+            <tr><td>4</td><td>Ciudad Témpera</td><td>Amaro</td><td><span class="type t-planta">Planta</span></td><td>Gogoat (Nv34)</td><td>Hoja · <span class="code">MT86 Hierba Lazo</span></td><td>Fuego, Hielo y Volador son ideales. Talonflame o un buen Fuego barren el gimnasio.</td></tr>
+            <tr><td>5</td><td>Ciudad Luminalia</td><td>Lem</td><td><span class="type t-electrico">Eléctrico</span></td><td>Heliolisk (Nv37)</td><td>Voltaje · <span class="code">MT24 Rayo</span></td><td>Resuelve el mini-quiz del ascensor. Un tipo Tierra es inmune a sus ataques Eléctricos: Diggersby o cualquier Tierra gana casi solo.</td></tr>
+            <tr><td>6</td><td>Ciudad Romantis</td><td>Valeria</td><td><span class="type t-hada">Hada</span></td><td>Sylveon (Nv42)</td><td>Hada · <span class="code">MT99 Brillo Mágico</span></td><td>Acero y Veneno resisten y pegan fuerte. Un Aegislash/Klefki o cualquier Acero domina el combate.</td></tr>
+            <tr><td>7</td><td>Ciudad Fluxus</td><td>Ástrid</td><td><span class="type t-psiquico">Psíquico</span></td><td>Meowstic (Nv48)</td><td>Psique · <span class="code">MT04 Paz Mental</span></td><td>Lleva Sigilyph, Slowking y Meowstic. Siniestro, Fantasma, Bicho y Hada la superan. Un Malamar (Siniestro/Psíquico) va perfecto.</td></tr>
+            <tr><td>8</td><td>Ciudad Fractal</td><td>Édel</td><td><span class="type t-hielo">Hielo</span></td><td>Avalugg (Nv59)</td><td>Iceberg · <span class="code">MT13 Rayo Hielo</span></td><td>Édel aparece tras buscarlo por la Ruta 20/Pueblo Escondido. Acero, Fuego, Lucha y Roca ganan; su Avalugg es un muro físico enorme.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--warn"><span class="emo">⚠️</span><p><b>Exclusivos de versión:</b> el fósil estrella de Lino (Tyrunt en Y, Amaura en X según hallazgo) y otras capturas cambian según juegues X o Y. La estrategia por tipos no cambia.</p></div>
+
+      <h3><span class="emo">✅</span> Medallas conseguidas</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="k6-gym1" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Bicho <small>Ciudad Novarte — Violeta</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym2" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Muro <small>Ciudad Relieve — Lino (Roca)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym3" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Lid <small>Ciudad Yantra — Corelia (Lucha)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym4" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Hoja <small>Ciudad Témpera — Amaro (Planta)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym5" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Voltaje <small>Ciudad Luminalia — Lem (Eléctrico)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym6" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Hada <small>Ciudad Romantis — Valeria (Hada)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym7" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Psique <small>Ciudad Fluxus — Ástrid (Psíquico)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-gym8" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Iceberg <small>Ciudad Fractal — Édel (Hielo)</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ LIGA ============ -->
+    <section id="liga" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">👑</span> Alto Mando y Campeona</h2>
+        <p class="section__intro">Tras las 8 medallas, cruza la Ruta 21 y el Camino Victoria hacia la Liga Pokémon. Puedes retar a los cuatro del Alto Mando en el <b>orden que quieras</b> y luego a la Campeona Dianta. Lleva curas de sobra y coberturas variadas.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🔥</div><div><div class="mon-card__name">Malva</div><div class="mon-card__loc">Alto Mando · <span class="type t-fuego">Fuego</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Pyroar (Nv63), Torkoal (Nv63), Chandelure (Nv63), Talonflame (Nv65).</li><li>Agua, Roca y Tierra la funden. Cuidado con Chandelure (Fantasma/Fuego): no uses Lucha ni Normal contra él.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🌊</div><div><div class="mon-card__name">Narciso</div><div class="mon-card__loc">Alto Mando · <span class="type t-agua">Agua</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Clawitzer (Nv63), Starmie (Nv63), Gyarados (Nv63), Barbaracle (Nv65).</li><li>Eléctrico y Planta arrasan. Su Gyarados es Agua/Volador (x4 a Eléctrico); Barbaracle (Roca/Agua) cae ante Planta y Lucha.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">⚙️</div><div><div class="mon-card__name">Tileo</div><div class="mon-card__loc">Alto Mando · <span class="type t-acero">Acero</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Klefki (Nv63), Probopass (Nv63), Scizor (Nv63), Aegislash (Nv65).</li><li>Fuego, Lucha y Tierra son clave. Ojo con Aegislash: cambia de forma; golpéalo con Fuego fuerte antes de que ataque.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🐉</div><div><div class="mon-card__name">Drácena</div><div class="mon-card__loc">Alto Mando · <span class="type t-dragon">Dragón</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Dragalge (Nv63), Druddigon (Nv63), Altaria (Nv63), Noivern (Nv65).</li><li>Hada la anula por completo (inmune a Dragón). Hielo y Dragón también sirven. Un buen tipo Hada gana el combate casi solo.</li></ul></div>
+        </div>
+      </div>
+
+      <div class="mon-card" style="margin-top:18px; border-color:var(--gold-500)">
+        <div class="mon-card__head" style="background:linear-gradient(135deg,#26407f,#182c5c)"><div class="mon-card__sprite">👑</div><div><div class="mon-card__name">Campeona Dianta</div><div class="mon-card__loc">Campeona de Kalos · <span class="type t-hada">Variado</span></div></div></div>
+        <div class="mon-card__body"><ul>
+          <li>Equipo: Hawlucha (Nv64), Tyrantrum (Nv65), Aurorus (Nv65), Gourgeist (Nv65), Goodra (Nv66), Mega-Gardevoir (Nv68).</li>
+          <li><b>Estrategia:</b> equipo variadísimo, sin debilidad común. Lleva Acero, Veneno, Hielo, Fantasma y Hada. Su remate es Mega-Gardevoir (Psíquico/Hada) con Ataque Especial brutal: frénala con Acero o Veneno y pega antes de que megaevolucione.</li>
+        </ul></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:18px">
+        <li><label class="check-item" data-key="k6-e4-malva" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Malva (Fuego)</span></label></li>
+        <li><label class="check-item" data-key="k6-e4-narciso" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Narciso (Agua)</span></label></li>
+        <li><label class="check-item" data-key="k6-e4-tileo" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Tileo (Acero)</span></label></li>
+        <li><label class="check-item" data-key="k6-e4-dracena" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Drácena (Dragón)</span></label></li>
+        <li><label class="check-item" data-key="k6-champ" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Vencer a la Campeona Dianta y entrar en el Salón de la Fama</span></label></li>
+      </ul>
+
+      <div class="callout callout--tip"><span class="emo">🎉</span><p>Entrar en el <b>Salón de la Fama</b> desbloquea el postgame: el <b>Pase TAV</b> hacia Ciudad Batik, Mewtwo y Zygarde de Nv70, las aves errantes, la mejora del Anillo Mega (megapiedras 20:00-21:00), el combate con AZ en Pueblo Boceto y la trama del Detective Mirto.</p></div>
+    </section>
+
+    <!-- ============ LEGENDARIOS ============ -->
+    <section id="legendarios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Los grandes</span>
+        <h2><span class="emo">🌟</span> Legendarios y míticos de Kalos</h2>
+        <p class="section__intro">La 6.ª gen combina los legendarios de portada, Zygarde, el mítico Mewtwo con su Megapiedra, las tres aves errantes de Kanto (según tu inicial) y los míticos de evento. Aquí están todos, dónde y cómo conseguirlos.</p>
+      </div>
+
+      <div class="callout callout--tip"><span class="emo">🎯</span><p><b>Consejo universal:</b> guarda antes de cada legendario. Baja sus PS con <b>Falso Tortazo</b>, infli­ge <b>sueño o parálisis</b> y lanza <b>Balextra</b> (mejor cuantos más turnos pasan) o <b>Ball Veloz</b> en el primer turno para los errantes. En emulador, un save state antes de la tirada te deja reintentar.</p></div>
+
+      <h3><span class="emo">📕</span> Portada y postgame</h3>
+      <div class="grid grid--2">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🦌</div><div><div class="mon-card__name">Xerneas</div><div class="mon-card__loc">Cuartel de Lysandre · Nv50</div></div></div><div class="mon-card__body">Solo en <b>Pokémon X</b>. Se captura durante la trama, en su capullo, en los Laboratorios de Lysandre (Ciudad Luminalia). Guarda antes: usa la Master Ball o debilítalo y lánzale Balextra. Tipo Hada puro.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🦅</div><div><div class="mon-card__name">Yveltal</div><div class="mon-card__loc">Cuartel de Lysandre · Nv50</div></div></div><div class="mon-card__body">Solo en <b>Pokémon Y</b>. Se captura durante la trama, igual que Xerneas. Guarda antes y usa Master Ball o balas de estado. Tipo Siniestro/Volador.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🐍</div><div><div class="mon-card__name">Zygarde</div><div class="mon-card__loc">Cueva Desenlace (Ruta 18) · Nv70</div></div></div><div class="mon-card__body">Postgame. Cruza el laberinto de la Cueva Desenlace (Terminus) hasta el fondo. Tipo Dragón/Tierra: sensible a Hielo, Dragón y Hada. Guarda y usa Balextra de noche.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🧬</div><div><div class="mon-card__name">Mewtwo</div><div class="mon-card__loc">Cueva Desconocida (Ruta 20) · Nv70</div></div></div><div class="mon-card__body">Postgame tras el Salón de la Fama, junto al Pueblo Escondido. Porta su Megapiedra: <b>Mewtwoita X</b> (en X) o <b>Mewtwoita Y</b> (en Y). Baja sus PS con Falso Tortazo, duérmelo y lanza Ultra Balls/Balextra.</div></div>
+      </div>
+
+      <h3><span class="emo">🦅</span> Aves errantes de Kanto (según tu inicial)</h3>
+      <div class="grid grid--3">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">❄️</div><div><div class="mon-card__name">Articuno</div><div class="mon-card__loc">Errante por Kalos · Nv70</div></div></div><div class="mon-card__body">Postgame si elegiste a <b>Chespin</b>. Vuela huyendo: usa Ball Veloz el primer turno o redúcele PS entre encuentros.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">⚡</div><div><div class="mon-card__name">Zapdos</div><div class="mon-card__loc">Errante por Kalos · Nv70</div></div></div><div class="mon-card__body">Postgame si elegiste a <b>Fennekin</b>. Mismo método que las demás aves: Ball Veloz al inicio o desgaste progresivo.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🔥</div><div><div class="mon-card__name">Moltres</div><div class="mon-card__loc">Errante por Kalos · Nv70</div></div></div><div class="mon-card__body">Postgame si elegiste a <b>Froakie</b>. Errante y huidizo; captúralo con Ball Veloz o reduciendo su vida poco a poco.</div></div>
+      </div>
+
+      <h3><span class="emo">🎁</span> Míticos de evento (en emulador, PKHeX)</h3>
+      <div class="grid grid--3">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">💎</div><div><div class="mon-card__name">Diancie</div><div class="mon-card__loc">Evento (Regalo Misterioso) · Nv50</div></div></div><div class="mon-card__body">Mítico de evento. Con los servidores cerrados, en emulador se inyecta con PKHeX un .pk6 legal. Megaevoluciona a Mega-Diancie con la Diancita.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌀</div><div><div class="mon-card__name">Hoopa</div><div class="mon-card__loc">Evento (Regalo Misterioso) · Nv50</div></div></div><div class="mon-card__body">Mítico de evento. En emulador, inyéctalo con PKHeX. Puede cambiar a su forma Desatado con el Prisma Anular en juegos posteriores.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌋</div><div><div class="mon-card__name">Volcanion</div><div class="mon-card__loc">Evento (Regalo Misterioso) · Nv70</div></div></div><div class="mon-card__body">Mítico de evento (Fuego/Agua). En emulador, inyéctalo con PKHeX. No es capturable en el mapa de X/Y.</div></div>
+      </div>
+
+      <h3><span class="emo">✅</span> Legendarios y míticos capturados</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="k6-leg-xerneas" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Xerneas <small>Solo en X — trama</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-yveltal" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Yveltal <small>Solo en Y — trama</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-zygarde" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Zygarde <small>Cueva Desenlace (postgame)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-mewtwo" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Mewtwo <small>Cueva Desconocida + Megapiedra</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-articuno" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Articuno <small>Errante (inicial Chespin)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-zapdos" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Zapdos <small>Errante (inicial Fennekin)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-moltres" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Moltres <small>Errante (inicial Froakie)</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-diancie" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Diancie <small>Evento / PKHeX</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-hoopa" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Hoopa <small>Evento / PKHeX</small></span></label></li>
+        <li><label class="check-item" data-key="k6-leg-volcanion" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Volcanion <small>Evento / PKHeX</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ SECRETOS ============ -->
+    <section id="secretos" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Secretos</span>
+        <h2><span class="emo">🗝️</span> Secretos de Kalos</h2>
+        <p class="section__intro">Detalles fáciles de perderse y mecánicas ocultas de la 6.ª generación: patrones de Vivillon, la evolución girando la consola, megapiedras nocturnas, el Floette eterno de AZ y los métodos de variocolor.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card"><div class="card__icon">🦋</div><h4>El patrón de tu Vivillon depende de tu 'región'</h4><p>El diseño de las alas de Vivillon se decide por la región/país configurado en la 3DS (o en el emulador). Hay ~18 patrones; en España sale el patrón 'Continental'. Cambiar la región del sistema antes de evolucionar Spewpa da un patrón distinto.</p></div>
+        <div class="card"><div class="card__icon">🔄</div><h4>Inkay solo evoluciona girando la consola</h4><p>Para que Inkay evolucione a Malamar (a partir de Nv30) debes poner la 3DS boca abajo al subir de nivel. En emulador, activa el sensor de movimiento/giroscopio o el atajo correspondiente en ese momento.</p></div>
+        <div class="card"><div class="card__icon">🎀</div><h4>Sylveon necesita cariño, no una piedra</h4><p>Eevee evoluciona a Sylveon subiendo de nivel con al menos 2 corazones de afecto en el Poké Recreo (Pokémon-Amie) y conociendo un movimiento de tipo Hada (p. ej. Beso Dulce).</p></div>
+        <div class="card"><div class="card__icon">🎁</div><h4>Inicial de Kanto + Megapiedra gratis</h4><p>En la 1ª visita a Ciudad Luminalia, el Prof. Ciprés te regala Bulbasaur, Charmander o Squirtle Y su Megapiedra. Solo puedes elegir UNO por partida; el resto requiere intercambio.</p></div>
+        <div class="card"><div class="card__icon">💎</div><h4>Megapiedras solo de 20:00 a 21:00</h4><p>Tras ganar la Liga y revisitar a Corelia en la Torre Maestría, tu Anillo Mega se mejora. Desde entonces aparecen megapiedras brillantes por rutas y ciudades, pero SOLO en la franja horaria de 20:00 a 21:00.</p></div>
+        <div class="card"><div class="card__icon">🌸</div><h4>AZ y el Floette eterno</h4><p>Tras la Liga, el gigante AZ te espera en Pueblo Boceto para un combate; al terminar te regala un Floette Eterno de flor especial (no obtenible de otra forma en juego normal).</p></div>
+        <div class="card"><div class="card__icon">🔮</div><h4>Amuleto Iris por completar la Pokédex</h4><p>Completar la Pokédex NACIONAL da el Amuleto Iris (Shiny Charm), que triplica la probabilidad de Pokémon variocolor. Completar la Central desbloquea antes el Radar Pokémon.</p></div>
+        <div class="card"><div class="card__icon">🎣</div><h4>Cadena de pesca para variocolor</h4><p>Pescar repetidamente en el mismo punto sin fallar encadena capturas y dispara la probabilidad de variocolor (llega a ~1/100 con cadenas largas). Es el método shiny más rápido de la gen.</p></div>
+        <div class="card"><div class="card__icon">🏞️</div><h4>Safari Amigo lleno de ocultas y variocolor</h4><p>En Ciudad Batik, el Safari Amigo da Pokémon según los amigos de tu 3DS, muchos con su habilidad oculta y mayor tasa de variocolor. En emulador depende de los IDs de amigos configurados.</p></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:8px">
+        <li><label class="check-item" data-key="k6-sec-vivillon" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Conseguir tu patrón de Vivillon</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-malamar" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Evolucionar Inkay a Malamar (giro de consola)</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-sylveon" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Obtener Sylveon (afecto + movimiento Hada)</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-kanto" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Inicial de Kanto + su megapiedra</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-mega" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Mejorar el Anillo Mega (megapiedras 20:00-21:00)</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-az" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Combatir a AZ y recibir el Floette Eterno</span></label></li>
+        <li><label class="check-item" data-key="k6-sec-shiny" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Conseguir un variocolor (cadena de pesca / Radar)</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ POKEDEX ============ -->
+    <section id="pokedex" class="section">
+      <div class="section__head">
+        <span class="section__kicker">La colección</span>
+        <h2><span class="emo">📕</span> Completar la Pokédex</h2>
+        <p class="section__intro">La Pokédex de Kalos se divide en tres bloques y, para el 100% Nacional, hará falta intercambiar. Aquí están los exclusivos de versión, las evoluciones por intercambio y los legendarios/míticos que cierran la colección.</p>
+      </div>
+
+      <div class="callout callout--info">
+        <p>La Pokédex de Kalos se divide en tres bloques (<b>Central</b>, <b>Costa</b> y <b>Montaña</b>). Para el 100% (Nacional) tendrás que intercambiar sí o sí. Puntos clave:</p>
+        <ul>
+          <li><b>Exclusivos de Pokémon X:</b> Staryu/Starmie, Pinsir, Houndour/Houndoom, Poochyena/Mightyena, Aron/Lairon/Aggron, <b>Swirlix/Slurpuff</b> y <b>Clauncher/Clawitzer</b>. Megapiedras propias: Pinsirita, Charizardita X, Mewtwoita X y Tyranitarita.</li>
+          <li><b>Exclusivos de Pokémon Y:</b> Shellder/Cloyster, Heracross, Larvitar/Pupitar/Tyranitar, Electrike/Manectric, Purrloin/Liepard, Throh, <b>Spritzee/Aromatisse</b> y <b>Skrelp/Dragalge</b>. Megapiedras propias: Heracronita, Charizardita Y, Mewtwoita Y, Houndoominita y Aggronita.</li>
+          <li><b>Inicial y su Mega:</b> solo obtienes uno de los tres iniciales de Kalos y un solo inicial de Kanto (con su megapiedra). El resto, por intercambio.</li>
+          <li><b>Evoluciones por intercambio:</b> Kadabra→Alakazam, Machoke→Machamp, Graveler→Golem, Haunter→Gengar, Boldore→Gigalith, Gurdurr→Conkeldurr, y las de Kalos <b>Phantump→Trevenant</b> y <b>Pumpkaboo→Gourgeist</b>.</li>
+          <li><b>Intercambio con objeto:</b> Swirlix→Slurpuff (Nata Montada), Spritzee→Aromatisse (Aromático), Scyther→Scizor (Revestimiento Metálico), Onix→Steelix, Seadra→Kingdra (Escama Dragón), Poliwhirl→Politoed (Piedra del Rey), etc.</li>
+          <li><b>Legendario de portada:</b> Xerneas (X) o Yveltal (Y). El otro solo entra por intercambio.</li>
+          <li><b>Míticos (Diancie, Hoopa, Volcanion):</b> no salen en el mapa; requieren evento. En emulador, PKHeX.</li>
+        </ul>
+      </div>
+
+      <div class="callout callout--tip"><span class="emo">🥚</span><p><b>Truco de intercambios:</b> abre dos instancias del emulador con dos partidas y usa el enlace local para completar evoluciones por intercambio y exclusivos de versión sin necesidad de otra persona. Ver <a href="#emulador">Emulador y trucos</a>.</p></div>
+
+      <ul class="checklist">
+        <li><label class="check-item" data-key="k6-dex-central" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Completar la Pokédex Central (→ Radar Pokémon)</span></label></li>
+        <li><label class="check-item" data-key="k6-dex-costa" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Completar la Pokédex Costa</span></label></li>
+        <li><label class="check-item" data-key="k6-dex-montana" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Completar la Pokédex Montaña</span></label></li>
+        <li><label class="check-item" data-key="k6-dex-nacional" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Completar la Pokédex Nacional (→ Amuleto Iris)</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ CHECKLIST MAESTRA ============ -->
+    <section id="checklist" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Recta final</span>
+        <h2><span class="emo">✅</span> Checklist maestra del 100%</h2>
+        <p class="section__intro">Los grandes hitos de la 6.ª generación. Si todo esto está marcado (y tu Pokédex Nacional está completa), habrás completado Pokémon X/Y al 100%.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div>
+          <h4>🏆 Historia y combate</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="k6-ck-liga" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">8 medallas + Liga superada</span></label></li>
+            <li><label class="check-item" data-key="k6-ck-maison" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Racha de 50 en la Casa de Combate (Batik)</span></label></li>
+            <li><label class="check-item" data-key="k6-ck-looker" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Trama del Detective Mirto completada</span></label></li>
+          </ul>
+        </div>
+        <div>
+          <h4>🌟 Colección</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="k6-ck-dex" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Pokédex Nacional completa</span></label></li>
+            <li><label class="check-item" data-key="k6-ck-legend" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Todos los legendarios y míticos capturados</span></label></li>
+            <li><label class="check-item" data-key="k6-ck-mega" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Megapiedras nocturnas recolectadas</span></label></li>
+            <li><label class="check-item" data-key="k6-ck-shiny" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Amuleto Iris obtenido</span></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--tip" style="margin-top:20px"><span class="emo">🎊</span><p><b>¡Enhorabuena!</b> Si has llegado hasta aquí con todo marcado, tienes uno de los saves más completos posibles de Pokémon X/Y. Haz una copia de seguridad de tu <span class="code">.sav</span> y presume de colección. ¿Aún jugando? Lleva la <a href="jugando.html">compañera paso a paso</a>.</p></div>
+    </section>
+
+    <footer class="footer">
+      <p><b>Guía 100% Pokémon X y Y (Kalos)</b> — guía comunitaria no oficial. Pokémon es propiedad de Nintendo / Game Freak / The Pokémon Company. Esta página es un recurso educativo y de fans.</p>
+      <p>Tu progreso se guarda localmente en tu navegador. <a href="../index.html">← Otras guías</a></p>
+    </footer>
+
+  </main>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

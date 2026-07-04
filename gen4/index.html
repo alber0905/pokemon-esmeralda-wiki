@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía 100% Pokémon 4ª Gen · Sinnoh (Platino) · Todos los secretos</title>
+  <meta name="description" content="Guía completa e interactiva de la 4ª generación (Sinnoh) con Pokémon Platino como referencia: los 8 gimnasios, Alto Mando, todos los legendarios (incluidos los de evento), secretos, Pokédex y trucos de emulador NDS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2316a06a' stroke='%23063c28' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%23063c28' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%23063c28' stroke-width='6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ===================== TOPBAR ===================== -->
+<header class="topbar">
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+  <div class="topbar__brand">
+    <svg class="ball" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#16a06a" stroke="#063c28" stroke-width="6"/><path d="M4 50h92" stroke="#063c28" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="#fff" stroke="#063c28" stroke-width="6"/></svg>
+    <span class="txt">Guía 100% · Sinnoh (Gen 4)</span>
+  </div>
+  <div class="topbar__spacer"></div>
+  <div class="mini-progress" title="Tu progreso global">
+    <span class="lbl">Progreso</span>
+    <div class="mini-progress__bar"><div class="mini-progress__fill" id="miniFill"></div></div>
+    <span id="miniPct">0%</span>
+  </div>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Tema claro/oscuro">🌙</button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <input type="search" class="sidebar__search" id="navSearch" placeholder="🔎 Buscar sección...">
+    <nav id="nav">
+      <div class="nav-group">
+        <div class="nav-group__title">Empezar</div>
+        <a class="nav-link" href="../index.html"><span class="emo">↩️</span> Otras guías</a>
+        <a class="nav-link" href="#inicio"><span class="emo">🏠</span> Inicio</a>
+        <a class="nav-link" href="jugando.html"><span class="emo">🎮</span> Guía paso a paso</a>
+        <a class="nav-link" href="#progreso"><span class="emo">📊</span> Tu progreso 100%</a>
+        <a class="nav-link" href="#emulador"><span class="emo">🕹️</span> Emulador y trucos</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Historia</div>
+        <a class="nav-link" href="#gimnasios"><span class="emo">🏅</span> Gimnasios</a>
+        <a class="nav-link" href="#liga"><span class="emo">👑</span> Alto Mando y Campeona</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Legendarios y secretos</div>
+        <a class="nav-link" href="#legendarios"><span class="emo">🌟</span> Legendarios</a>
+        <a class="nav-link" href="#secretos"><span class="emo">🗝️</span> Secretos</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Colección</div>
+        <a class="nav-link" href="#pokedex"><span class="emo">📕</span> Pokédex completa</a>
+        <a class="nav-link" href="#checklist"><span class="emo">✅</span> Checklist maestra</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ===================== CONTENIDO ===================== -->
+  <main class="content">
+
+    <!-- ============ HERO / INICIO ============ -->
+    <section id="inicio" class="section" style="margin-bottom:40px">
+      <div class="hero">
+        <span class="hero__eyebrow">Guía definitiva · Emulador NDS · Pokémon Platino</span>
+        <h1>Completa la 4ª generación (Sinnoh) al 100%</h1>
+        <p>Guía 100% de la 4ª generación (Sinnoh) tomando Pokémon Platino como referencia, el juego más completo del trío Diamante/Perla/Platino. Ruta principal en orden, los 8 gimnasios, Alto Mando, todos los legendarios (incluidos los de evento) y los secretos que la mayoría se pierde. Pensada para jugarse en emulador de NDS con todo desbloqueado.</p>
+        <div class="hero__cta">
+          <a href="jugando.html" class="btn btn--gold">🎮 Guía paso a paso (mientras juegas)</a>
+          <a href="#progreso" class="btn btn--ghost">📊 Ver mi progreso</a>
+          <a href="../index.html" class="btn btn--ghost">↩️ Otras guías</a>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card"><div class="card__icon">🏅</div><h4>8 Medallas + Liga</h4><p>Guía de cada gimnasio, su tipo, el Pokémon estrella, la MT que dan y cómo vencer al Alto Mando y a la Campeona Cintia.</p></div>
+        <div class="card"><div class="card__icon">🌟</div><h4>Todos los legendarios</h4><p>Dialga, Palkia, Giratina, el trío del lago, Heatran, Regigigas, Cresselia y los de evento: Darkrai, Shaymin, Arceus y Manaphy.</p></div>
+        <div class="card"><div class="card__icon">🗝️</div><h4>Secretos resueltos</h4><p>Spiritomb y las 32 charlas, Feebas, Rotom, Munchlax, el Huevo de Riolu, las Placas de Arceus y mucho más.</p></div>
+        <div class="card"><div class="card__icon">📕</div><h4>Pokédex Nacional</h4><p>Cómo ver los 210 de Sinnoh, desbloquear el Nacional y completar la colección con intercambios y migración.</p></div>
+        <div class="card"><div class="card__icon">🕹️</div><h4>Emulador NDS</h4><p>DeSmuME, melonDS, DraStic y RetroArch: Wi-Fi local para evolucionar por intercambio y objetos de evento con PKHeX.</p></div>
+        <div class="card"><div class="card__icon">🎖️</div><h4>Frente de Batalla</h4><p>Las 5 instalaciones del postgame, los Impresos de Batalla y los ases de la Frontera como Palmer.</p></div>
+      </div>
+
+      <div class="callout callout--info" style="margin-top:24px">
+        <span class="emo">💡</span>
+        <p><b>¿Cómo funciona esta guía?</b> Marca las casillas ✅ a medida que avanzas: tu progreso se guarda automáticamente en tu navegador (no se pierde al cerrar). El panel <a href="#progreso">Tu progreso 100%</a> resume cuánto te falta en cada categoría.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROGRESO ============ -->
+    <section id="progreso" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Panel de control</span>
+        <h2><span class="emo">📊</span> Tu progreso al 100%</h2>
+        <p class="section__intro">Este panel se actualiza solo con las casillas que marcas en toda la guía. El objetivo del 100% real combina Pokédex Nacional, todos los legendarios, la Liga y los secretos de Sinnoh.</p>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-ring-wrap">
+          <div class="ring" id="ring">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#16a06a"/>
+                  <stop offset="100%" stop-color="#f4c430"/>
+                </linearGradient>
+              </defs>
+              <circle class="ring__track" cx="65" cy="65" r="56" fill="none" stroke-width="14"/>
+              <circle class="ring__bar" id="ringBar" cx="65" cy="65" r="56" fill="none" stroke-width="14"
+                      stroke-dasharray="351.86" stroke-dashoffset="351.86"/>
+            </svg>
+            <div class="ring__label">
+              <span class="ring__pct" id="ringPct">0%</span>
+              <span class="ring__sub" id="ringCount">0 / 0</span>
+            </div>
+          </div>
+          <div style="flex:1; min-width:240px">
+            <div class="stat-bar" data-cat="medallas"><div class="stat-bar__top"><b>🏅 Medallas y Liga</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="legendarios"><div class="stat-bar__top"><b>🌟 Legendarios</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="secretos"><div class="stat-bar__top"><b>🗝️ Secretos y áreas</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="pokedex"><div class="stat-bar__top"><b>📕 Pokédex y colección</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+          </div>
+        </div>
+        <div style="margin-top:18px; display:flex; justify-content:flex-end">
+          <button class="reset-btn" id="resetProgress">↺ Reiniciar progreso</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMULADOR ============ -->
+    <section id="emulador" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Preparación</span>
+        <h2><span class="emo">🕹️</span> Emulador y trucos base</h2>
+        <p class="section__intro">Para el 100% de la 4ª generación necesitas un emulador de NDS que soporte enlace local (para intercambios y evoluciones) y códigos de trucos o inyección con PKHeX (para los legendarios de evento). Estas son las mejores opciones.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card card--accent"><div class="card__icon">🟢</div><h4>DeSmuME</h4><p>El emulador de NDS más veterano para PC (Windows/Mac/Linux). Muy preciso, con sistema de trucos Action Replay integrado y grabación de partidas guardadas. Ideal para eventos por código.</p></div>
+        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS</h4><p>Emulador moderno de NDS con soporte de Wi-Fi local real: permite intercambiar y evolucionar (Machoke, Haunter, Graveler...) entre dos instancias. La opción recomendada para jugar en 2026.</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>DraStic / Lemuroid</h4><p>Para Android. DraStic (de pago) va muy fino en móviles; Lemuroid/RetroArch con núcleo melonDS es la alternativa gratuita. Soportan cheats y guardado en la nube.</p></div>
+        <div class="card"><div class="card__icon">🎮</div><h4>RetroArch (núcleo melonDS/DeSmuME)</h4><p>Multiplataforma con rebobinado, save states y shaders. Cómodo si ya lo usas para otras consolas; los cheats se cargan desde la base de datos o manualmente.</p></div>
+      </div>
+
+      <h3><span class="emo">🎮</span> Trucos imprescindibles para el 100%</h3>
+      <div class="callout callout--emu">
+        <span class="emo">🔗</span>
+        <p><b>Wi-Fi local para evolucionar/intercambiar</b>: abre dos instancias de <b>melonDS</b> (o dos dispositivos) y activa el multijugador local; así completas evoluciones por intercambio (Machoke→Machamp, Haunter→Gengar, Kadabra→Alakazam, Graveler→Golem) sin cortar la partida. Es la vía más limpia y compatible.</p>
+      </div>
+
+      <div class="accordion open">
+        <div class="accordion__head"><span class="emo">🎟️</span> Objetos de evento (los legendarios "imposibles") <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>La <b>Carta Especial</b> (Darkrai), la <b>Carta Botánica</b> (Shaymin), la <b>Flauta Azul</b> (Arceus), la <b>Llave Mágica</b> (formas de Rotom) y el <b>Huevo de Manaphy</b> nunca se distribuyeron de forma amplia. En emulador tienes dos caminos:</p>
+          <ul>
+            <li><b>PKHeX</b> (recomendado): abre tu partida guardada (.sav de DeSmuME/melonDS), añade el Objeto Clave (Member Card, Oak's Letter, Azure Flute, Secret Key) o inyecta el Huevo/Pokémon directamente, y guarda. Luego dispara el evento en el juego.</li>
+            <li><b>Códigos Action Replay</b> en DeSmuME/DraStic (menú Cheats): existen códigos para dar los objetos de evento o forzar encuentros. Úsalos con cuidado y guarda copia del .sav antes.</li>
+          </ul>
+          <p><b>Distribuciones "Mystery Gift"</b>: si prefieres autenticidad, hay archivos <b>.pgt/.wc4</b> de los eventos originales que se pueden servir con herramientas tipo servidor local, pero requieren montar Wi-Fi emulado; para la mayoría, PKHeX es más rápido.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">💾</span> Save states y buenas prácticas <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p><b>Buenas prácticas</b>: usa <b>save states</b> antes de cada legendario (así reintentas capturas sin repetir el combate), pero guarda también en la <b>partida interna</b> del juego para que los cambios de Pokédex/objetos persistan. Sube la velocidad de emulación para eclosionar huevos (Togepi, Happiny, Riolu, Manaphy) y para las esperas de los árboles de miel.</p>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- ============ GIMNASIOS ============ -->
+    <section id="gimnasios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">🏅</span> Los 8 Gimnasios</h2>
+        <p class="section__intro">Cada líder entrega una medalla y una MT. Aquí tienes su tipo, su Pokémon estrella, la MT y un consejo para vencerlo. El orden es el de Pokémon Platino. Marca cada medalla al conseguirla.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Ciudad</th><th>Líder</th><th>Tipo</th><th>Estrella</th><th>Medalla / MT</th><th>Consejo</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Ciudad Pirita</td><td>Roco (Roark)</td><td><span class="type t-roca">Roca</span></td><td>Cranidos Lv14</td><td>Medalla Carbón · <span class="code">MT76 Trampa Rocas</span></td><td>Su Cranidos pega durísimo con Cabezazo Zen/Testarazo. Un Piplup con Burbuja o un Machop con Golpe Roca lo desmontan. Antes de retarlo baja a la Mina de Pirita y consigue un fósil (Cráneo o Coraza).</td></tr>
+            <tr><td>2</td><td>Ciudad Vetusta</td><td>Gardenia</td><td><span class="type t-planta">Planta</span></td><td>Roserade Lv22</td><td>Medalla Bosque · <span class="code">MT86 Hierba Lazo</span></td><td>Roserade tiene Ojos Llorosos + Recurrente y puede envenenar. Lleva Fuego, Vuelo o Bicho. Un Ponyta (Ruta 206/211) o Staravia con Tornado hacen el trabajo.</td></tr>
+            <tr><td>3</td><td>Ciudad Rocavelo</td><td>Brega (Maylene)</td><td><span class="type t-lucha">Lucha</span></td><td>Lucario Lv32</td><td>Medalla Adoquín · <span class="code">MT60 Puño Drenaje</span></td><td>Su Lucario usa Cabeza de Hierro y Esfera Aural. Tipos Psíquico (Kadabra), Voladores o Hadas... aquí un Volador rápido con Ala de Acero, o un Psíquico, dominan. Cuidado con el Meditite de subidón.</td></tr>
+            <tr><td>4</td><td>Ciudad Pantanal</td><td>Fausto (Crasher Wake)</td><td><span class="type t-agua">Agua</span></td><td>Floatzel Lv33</td><td>Medalla Ciénaga · <span class="code">MT55 Salmuera</span></td><td>Floatzel es rapidísimo con Aqua Jet. Roserade, Torterra o un Luxray con Colmillo Rayo lo barren. Ojo con su Gyarados y su Quagsire (inmune a Eléctrico).</td></tr>
+            <tr><td>5</td><td>Ciudad Corazón</td><td>Fantina</td><td><span class="type t-fantasma">Fantasma</span></td><td>Mismagius Lv36</td><td>Medalla Reliquia · <span class="code">MT65 Garra Umbría</span></td><td>En Platino es el 5º gimnasio. Mismagius abusa de Bola Sombra y Confusión. Lleva un Siniestro (Stunky/Skuntank) para Mordisco/Triturar sin recibir daño, o tu propio Fantasma.</td></tr>
+            <tr><td>6</td><td>Ciudad Canal</td><td>Acerón (Byron)</td><td><span class="type t-acero">Acero</span></td><td>Bastiodon Lv39</td><td>Medalla Mina · <span class="code">MT91 Foco Resplandor</span></td><td>Bastiodon es un muro Roca/Acero. Machacálo con Lucha (Lucario/Machoke), Tierra (Terremoto de Hippowdon) o Fuego. Su Steelix también cae ante Agua/Tierra.</td></tr>
+            <tr><td>7</td><td>Ciudad Nevada</td><td>Inverna (Candice)</td><td><span class="type t-hielo">Hielo</span></td><td>Froslass Lv42</td><td>Medalla Carámbano · <span class="code">MT72 Alud</span></td><td>Froslass (Hielo/Fantasma) es frágil pero rápida con Ventisca. Su Medicham golpea fuerte con Puño Fuego. Lleva Fuego, Acero o Lucha; un Infernape aquí es oro.</td></tr>
+            <tr><td>8</td><td>Ciudad Marina</td><td>Lectro (Volkner)</td><td><span class="type t-electrico">Eléctrico</span></td><td>Electivire Lv50</td><td>Medalla Faro · <span class="code">MT57 Rayo Carga</span></td><td>Electivire lleva Puño Trueno y Tierra Viva para tus Pokémon Tierra. Un Torterra o un Hippowdon (inmunes a Eléctrico y con Terremoto) lo destrozan; cuidado con su Luxray.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--warn"><span class="emo">⚠️</span><p><b>Nombres:</b> los nombres de líderes varían entre la versión inglesa y española. La estrella, el tipo y la MT son lo que importa para tu estrategia y no cambian.</p></div>
+
+      <h3><span class="emo">✅</span> Medallas conseguidas</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="g4-gym1" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Carbón <small>Gimnasio de Ciudad Pirita — Roca</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym2" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Bosque <small>Gimnasio de Ciudad Vetusta — Planta</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym3" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Adoquín <small>Gimnasio de Ciudad Rocavelo — Lucha</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym4" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Ciénaga <small>Gimnasio de Ciudad Pantanal — Agua</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym5" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Reliquia <small>Gimnasio de Ciudad Corazón — Fantasma</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym6" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Mina <small>Gimnasio de Ciudad Canal — Acero</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym7" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Carámbano <small>Gimnasio de Ciudad Nevada — Hielo</small></span></label></li>
+        <li><label class="check-item" data-key="g4-gym8" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Faro <small>Gimnasio de Ciudad Marina — Eléctrico</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ LIGA ============ -->
+    <section id="liga" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">👑</span> Alto Mando y Campeona</h2>
+        <p class="section__intro">Tras las 8 medallas, cruza la Calle Victoria hacia la Liga Pokémon. Cuatro miembros del Alto Mando seguidos (sin curar entre ellos) y la Campeona Cintia. Lleva Restaura Todo y revivir de sobra; no hay Centro Pokémon entre combates.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🐛</div><div><div class="mon-card__name">Alecrán (Aaron)</div><div class="mon-card__loc">Alto Mando 1 · <span class="type t-bicho">Bicho</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Drapion Lv53 (as), Heracross Lv51, Vespiquen Lv50, Scizor Lv49, Yanmega Lv49.</li><li><b>Consejo:</b> Ojo: su as Drapion es Veneno/Siniestro, NO Bicho, así que resiste tus ataques Voladores/Fuego previstos. Golpéalo con Tierra o Lucha. Fuego arrasa a Scizor, Yanmega y Vespiquen.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🏜️</div><div><div class="mon-card__name">Bea (Bertha)</div><div class="mon-card__loc">Alto Mando 2 · <span class="type t-tierra">Tierra</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Rhyperior Lv55 (as), Gliscor Lv53, Hippowdon Lv52, Golem Lv52, Whiscash Lv50.</li><li><b>Consejo:</b> Todo cae ante Agua y Planta. Torterra/Roserade con Energibola o un buen Hidrobomba limpian el equipo. Gliscor es Tierra/Volador, así que Hielo lo fulmina.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🔥</div><div><div class="mon-card__name">Fento (Flint)</div><div class="mon-card__loc">Alto Mando 3 · <span class="type t-fuego">Fuego</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Magmortar Lv57 (as), Infernape Lv55, Flareon Lv55, Rapidash Lv53, Houndoom Lv52.</li><li><b>Consejo:</b> En Platino su equipo es Fuego puro. Agua y Roca lo destrozan. Un Floatzel/Empoleon con ataques Agua o un Golem con Avalancha ganan solos. Su Houndoom es Fuego/Siniestro.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🔮</div><div><div class="mon-card__name">Delos (Lucian)</div><div class="mon-card__loc">Alto Mando 4 · <span class="type t-psiquico">Psíquico</span></div></div></div>
+          <div class="mon-card__body"><ul><li>Equipo: Gallade Lv59 (as), Alakazam Lv56, Bronzong Lv54, Espeon Lv55, Mr. Mime Lv53.</li><li><b>Consejo:</b> Siniestro y Bicho son la clave. Un Skuntank/Weavile con Triturar o Mordisco arrasa. Gallade es Psíquico/Lucha (débil a Volador, Fantasma y Hada); Bronzong es tanque, usa Fuego/Tierra.</li></ul></div>
+        </div>
+      </div>
+
+      <div class="mon-card" style="margin-top:18px; border-color:var(--gold-500)">
+        <div class="mon-card__head" style="background:linear-gradient(135deg,#1c5a45,#124134)"><div class="mon-card__sprite">👑</div><div><div class="mon-card__name">Campeona Cintia (Cynthia)</div><div class="mon-card__loc">Campeona de Sinnoh · Equipo mixto</div></div></div>
+        <div class="mon-card__body"><ul>
+          <li>Equipo: Spiritomb Lv58, Roserade Lv58, Togekiss Lv60, Lucario Lv60, Milotic Lv58, Garchomp Lv62 (as).</li>
+          <li><b>Estrategia:</b> El combate más duro de la generación. Su Garchomp (Tierra/Dragón) con Garra Dragón y Terremoto barre equipos: llévalo a raya con Hielo (Ventisca/Rayo Hielo garantizan OHKO). Spiritomb no tiene debilidades de tipo salvo Hada (inexistente en Gen 4), tumbalo a base de potencia. Reserva un Pokémon de Hielo/Roca para Togekiss y Acero/Lucha para Lucario.</li>
+        </ul></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:18px">
+        <li><label class="check-item" data-key="g4-e4-1" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Alecrán (Bicho)</span></label></li>
+        <li><label class="check-item" data-key="g4-e4-2" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Bea (Tierra)</span></label></li>
+        <li><label class="check-item" data-key="g4-e4-3" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Fento (Fuego)</span></label></li>
+        <li><label class="check-item" data-key="g4-e4-4" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Delos (Psíquico)</span></label></li>
+        <li><label class="check-item" data-key="g4-champ" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Vencer a la Campeona Cintia y entrar en el Salón de la Fama</span></label></li>
+      </ul>
+
+      <div class="callout callout--tip"><span class="emo">🎉</span><p>Entrar en el <b>Salón de la Fama</b> desbloquea gran parte del contenido secreto: el Pokédex Nacional (si viste los 210), Dialga/Palkia en la Columna Lanza, la captura del trío del lago, Rotom, el Parque Compi y mucho más.</p></div>
+    </section>
+
+    <!-- ============ LEGENDARIOS ============ -->
+    <section id="legendarios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Los grandes</span>
+        <h2><span class="emo">🌟</span> Todos los legendarios</h2>
+        <p class="section__intro">Platino tiene el mayor plantel de legendarios de la 4ª generación. Aquí están todos, dónde y cómo conseguirlos. Los de <b>evento</b> (Darkrai, Shaymin, Arceus, Manaphy) requieren objetos especiales — mira la sección <a href="#emulador">Emulador</a>.</p>
+      </div>
+
+      <div class="callout callout--tip"><span class="emo">🎯</span><p><b>Consejo universal:</b> guarda antes de cada legendario. Baja sus PS con daño no letal (<b>Bucle Falso</b> si es posible), infli­ge <b>parálisis o sueño</b>, y lanza <b>Ball Veloz</b> (primer turno), <b>Ultra Ball</b> o <b>Ball Turno</b>. Reserva la <b>Master Ball</b> para el errante más difícil (Cresselia o Mesprit).</p></div>
+
+      <h3><span class="emo">🕐</span> El trío de la creación</h3>
+      <div class="grid grid--3">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">💎</div><div><div class="mon-card__name">Giratina</div><div class="mon-card__loc">Mundo Distorsión · Lv47</div></div></div><div class="mon-card__body">Durante la historia principal, tras el clímax en la Columna Lanza persigues a Cyrus al Mundo Distorsión. Antes de la sala final aparece Giratina (Forma Origen en Platino): guarda partida y captúralo. Si huyes, reaparece en el propio Mundo Distorsión vía Ciudad Sonograma.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">⏳</div><div><div class="mon-card__name">Dialga</div><div class="mon-card__loc">Columna Lanza · Lv47</div></div></div><div class="mon-card__body">Postgame. Tras obtener la Pokédex Nacional, vuelve a la cima del Monte Corona (Columna Lanza) y aparecerá Dialga para capturarlo. Es exclusivo argumental de Platino tener acceso a ambos.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌌</div><div><div class="mon-card__name">Palkia</div><div class="mon-card__loc">Columna Lanza · Lv47</div></div></div><div class="mon-card__body">Postgame, junto a Dialga: al volver a la Columna Lanza con la Pokédex Nacional también podrás enfrentarte y capturar a Palkia.</div></div>
+      </div>
+
+      <h3><span class="emo">🔷</span> El trío del lago</h3>
+      <div class="grid grid--3">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🧠</div><div><div class="mon-card__name">Uxie</div><div class="mon-card__loc">Lago Agudeza · Lv50</div></div></div><div class="mon-card__body">Tras el asalto del Equipo Galaxia a los lagos, ve al Lago Agudeza (norte, Ruta 217) y captúralo en la cueva. No huye, así que puedes debilitarlo con calma.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">💗</div><div><div class="mon-card__name">Mesprit</div><div class="mon-card__loc">Lago Veraz (deambula) · Lv50</div></div></div><div class="mon-card__body">Al interactuar con él en el Lago Veraz, huye y empieza a deambular por Sinnoh. Usa Medios (Rastreador del Pokéreloj), Bucle Falso/Cepo y Bola Veloz para atraparlo.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">💠</div><div><div class="mon-card__name">Azelf</div><div class="mon-card__loc">Lago Valor · Lv50</div></div></div><div class="mon-card__body">En la cueva del Lago Valor tras los eventos Galaxia. Igual que Uxie, se queda quieto para el combate; llévalo a poca vida y captúralo.</div></div>
+      </div>
+
+      <h3><span class="emo">🔥</span> Otros legendarios de Sinnoh</h3>
+      <div class="grid grid--3">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌋</div><div><div class="mon-card__name">Heatran</div><div class="mon-card__loc">Monte Recio · Lv50</div></div></div><div class="mon-card__body">Postgame en la Isla Batalla. Cruza el Monte Recio ayudando a Buck; cuando él coge el Magma Stone, Heatran aparece donde estaba la piedra. Guarda antes de tocarlo.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🗿</div><div><div class="mon-card__name">Regigigas</div><div class="mon-card__loc">Templo Nevado · Lv1</div></div></div><div class="mon-card__body">Necesitas a Regirock, Regice y Registeel en el equipo (transferidos de la Gen 3). Con los tres, baja al fondo del Templo Nevado y despertará Regigigas a Lv1.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌙</div><div><div class="mon-card__name">Cresselia</div><div class="mon-card__loc">Deambula (Isla Luna Llena) · Lv50</div></div></div><div class="mon-card__body">Habla con la niña enferma en Ciudad Canal y luego con el marinero para ir a la Isla Luna Llena. Allí Cresselia deja la Pluma Lunar y empieza a deambular por Sinnoh. Cázala con Bola Veloz + Bucle Falso.</div></div>
+      </div>
+
+      <h3><span class="emo">🎟️</span> Legendarios de evento</h3>
+      <div class="grid grid--2">
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">😴</div><div><div class="mon-card__name">Darkrai</div><div class="mon-card__loc">Isla Novilunio · Lv50</div></div></div><div class="mon-card__body">Evento: necesitas la Carta Especial (Member Card). Con ella, el marinero de Ciudad Canal te lleva a la Isla Novilunio, donde Darkrai duerme junto al árbol. En emulador se obtiene con código Action Replay o inyectando el objeto con PKHeX.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🌼</div><div><div class="mon-card__name">Shaymin</div><div class="mon-card__loc">Jardín Floral · Lv30</div></div></div><div class="mon-card__body">Evento: con la Carta Botánica (Oak's Letter), el Prof. Oak te lleva a la Ruta 224 y desbloquea el Jardín Floral tras la caseta. En emulador, usa código de evento o inyecta la Carta Botánica.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">✨</div><div><div class="mon-card__name">Arceus</div><div class="mon-card__loc">Sala Origen · Lv80</div></div></div><div class="mon-card__body">Evento: con la Flauta Azul (Azure Flute), sube a la Columna Lanza y tócala para abrir la escalera a la Sala Origen. En emulador se consigue con Action Replay o inyectando el objeto; sin él, es inaccesible legítimamente.</div></div>
+        <div class="mon-card"><div class="mon-card__head"><div class="mon-card__sprite">🐣</div><div><div class="mon-card__name">Manaphy</div><div class="mon-card__loc">Huevo (evento Pokémon Ranger) · Lv1</div></div></div><div class="mon-card__body">Se obtenía enviando el Huevo de Manaphy desde Pokémon Ranger. En emulador, inyecta el Huevo/Manaphy con PKHeX. Al criarlo con Ditto produce a Phione (nº 489).</div></div>
+      </div>
+
+      <div class="mon-card" style="margin-top:16px"><div class="mon-card__head"><div class="mon-card__sprite">🪨</div><div><div class="mon-card__name">Regirock (y el trío Regi)</div><div class="mon-card__loc">Transferencia (Gen 3)</div></div></div><div class="mon-card__body">No aparece en estado salvaje en Sinnoh: hay que migrarlo desde Rubí/Zafiro/Esmeralda/RojoFuego/VerdeHoja por el Parque Compi. Imprescindible junto a Regice y Registeel para despertar a Regigigas.</div></div>
+
+      <h3><span class="emo">✅</span> Legendarios capturados</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="g4-leg-giratina" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Giratina <small>Mundo Distorsión</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-dialga" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Dialga <small>Columna Lanza</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-palkia" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Palkia <small>Columna Lanza</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-uxie" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Uxie <small>Lago Agudeza</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-mesprit" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Mesprit <small>Lago Veraz (errante)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-azelf" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Azelf <small>Lago Valor</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-heatran" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Heatran <small>Monte Recio</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-regigigas" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Regigigas <small>Templo Nevado</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-cresselia" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Cresselia <small>Errante (Isla Luna Llena)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-darkrai" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Darkrai <small>Isla Novilunio (Carta Especial)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-shaymin" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Shaymin <small>Jardín Floral (Carta Botánica)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-arceus" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Arceus <small>Sala Origen (Flauta Azul)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-manaphy" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Manaphy <small>Huevo (evento Pokémon Ranger)</small></span></label></li>
+        <li><label class="check-item" data-key="g4-leg-regirock" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Regirock <small>Transferencia (Gen 3)</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ SECRETOS ============ -->
+    <section id="secretos" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Secretos</span>
+        <h2><span class="emo">🗝️</span> Secretos y trucos de Sinnoh</h2>
+        <p class="section__intro">Lo que la mayoría de jugadores nunca descubre: capturas rarísimas, rituales, regalos y coleccionables ocultos. Cada uno explicado sin margen de error.</p>
+      </div>
+
+      <div class="accordion open">
+        <div class="accordion__head"><span class="emo">👻</span> Spiritomb requiere 32 conversaciones subterráneas <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>En la Torre Vetusta/Piedra Rara de la Ruta 209 (Hallowed Tower) coloca la Piedra Rara, pero solo aparecerá Spiritomb si antes has hablado con 32 personas distintas en el Subsuelo (mediante saludos por Wi-Fi/local). En emulador, la forma práctica es con dos instancias de melonDS conectadas.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🐟</span> Feebas solo en 4 teselas aleatorias <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Feebas (que evoluciona a Milotic) vive en la superficie de agua del Monte Corona (planta con acceso desde Ruta 210), pero solo en 4 teselas al azar que cambian a diario. Pesca casilla por casilla. Milotic evoluciona por Belleza máxima (Pokocho con Baya Zreza).</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🔌</span> Rotom en la Mansión Vieja de noche <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>En el Bosque Vetusto, la Mansión Vieja tiene una tele en una sala del fondo. Interactúa con ella de noche (tras la Pokédex Nacional) para enfrentar y capturar a Rotom (Lv15). Sus formas alternativas se desbloquean con la Llave Mágica en la Central Eólica.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🍯</span> Munchlax es rarísimo: solo 4 árboles con miel <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Munchlax solo aparece untando Miel en 4 árboles concretos por partida (elegidos según el ID de entrenador). En el resto salen Combee, Cherubi, Aipom, Wurmple, etc. Comprueba cada árbol tras 6 horas de espera.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🥚</span> Huevo de Togepi de Cintia <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Tras despejar el edificio del Equipo Galaxia en Ciudad Vetusta, Cintia te regala un Huevo que eclosiona en Togepi con Metronomo. Un Hada temprana (en Platino aún tipo Normal) útil por rareza y por la Pokédex.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🔯</span> Placas de Arceus y esferas del Subsuelo <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Las 16 Placas (que cambian el tipo de Arceus y potencian ataques) se encuentran en cuevas, la Torre Perdida y otros rincones. En el Subsuelo se cavan fósiles, esferas de tamaño creciente (déjalas enterradas para que crezcan) y objetos para bases secretas.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🥋</span> Huevo de Riolu en la Isla Hierro <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Riley te acompaña por la Isla Hierro y al final te entrega un Huevo de Riolu. Lucario (evoluciona con felicidad alta de día) es uno de los mejores Pokémon del juego: consíguelo cuanto antes.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🏆</span> Jardín Trofeo: Pokémon raros a diario <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>En la Mansión Pokémon (Ruta 212) habla con el Sr. Backlot cada día: menciona un Pokémon (Eevee, Bonsly, Happiny, Castform...) y ese día podrá aparecer en el Jardín Trofeo del jardín trasero.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🦴</span> Duelo de fósiles: eliges uno <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>En la Mina de Pirita solo obtienes UN tipo de fósil a la vez según la versión, pero en el Subsuelo puedes cavar cualquiera de los seis. El Cráneo (Cranidos) y la Coraza (Shieldon) se reviven en el Museo de Pirita.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__head"><span class="emo">🦊</span> Regalo de Eevee de Bebe <span class="chev">›</span></div>
+        <div class="accordion__body"><div class="accordion__inner">
+          <p>Tras la Pokédex Nacional, Bebe (la del PC) en Ciudad Corazón te regala un Eevee. Con las nuevas piedras/lugares de Sinnoh puedes conseguir Leafeon (Roca Musgo, Bosque Vetusto) y Glaceon (Roca Helada, Ruta 217).</p>
+        </div></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:8px">
+        <li><label class="check-item" data-key="g4-sec-spiritomb" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Spiritomb (32 charlas en el Subsuelo)</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-feebas" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Feebas → Milotic (Belleza máx.)</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-rotom" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Rotom (tele de la Mansión Vieja)</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-munchlax" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Munchlax (árboles con miel)</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-togepi" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Huevo de Togepi de Cintia</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-placas" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Reunir las 16 Placas de Arceus</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-riolu" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Huevo de Riolu (Isla Hierro) → Lucario</span></label></li>
+        <li><label class="check-item" data-key="g4-sec-eevee" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Eevee de Bebe (+ Leafeon y Glaceon)</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ POKEDEX ============ -->
+    <section id="pokedex" class="section">
+      <div class="section__head">
+        <span class="section__kicker">La colección</span>
+        <h2><span class="emo">📕</span> Completar la Pokédex</h2>
+        <p class="section__intro">El corazón del 100%. Primero la <b>Pokédex de Sinnoh (210)</b>, luego la <b>Nacional (493)</b>. Sin intercambios y migración es imposible: hay exclusivos de versión, evoluciones por intercambio y eventos.</p>
+      </div>
+
+      <div class="callout callout--info">
+        <span class="emo">📕</span>
+        <div>
+          <p>La Pokédex de Sinnoh tiene <b>210 especies</b>; verlas todas (no capturarlas) desbloquea la <b>Pokédex Nacional</b>. Trucos clave:</p>
+          <ul>
+            <li><b>Exclusivos de versión</b>: en <b>Diamante</b> aparecen Stunky/Skuntank, Murkrow/Honchkrow, Larvitar, Poochyena, Aron, Kecleon, Scyther y Seel; en <b>Perla</b> Glameow/Purugly, Misdreavus/Mismagius, Bagon, Spheal, Slakoth, Stantler y Ponyta. En <b>Platino</b> la Dex es más generosa y añade muchos que en D/P requerían intercambio.</li>
+            <li><b>Evoluciones por intercambio</b>: Machoke, Haunter, Graveler, Kadabra, Electabuzz (con Electrizador), Magmar (con Magmarizador), Rhydon (Protector), Feebas (Escama Bella)... En emulador usa <b>melonDS con Wi-Fi local entre dos instancias</b> para hacerlos y que evolucionen de verdad.</li>
+            <li><b>Errantes y de evento</b>: Mesprit y Cresselia deambulan; Darkrai, Shaymin, Arceus, Manaphy son de evento (ver notas de emulador).</li>
+            <li><b>Regis</b>: Regirock/Regice/Registeel no salen en Sinnoh; solo por migración de Gen 3 (Parque Compi), y son necesarios para Regigigas.</li>
+            <li><b>Diarios/semanales</b>: Drifloon (viernes en la Central Eólica), Jardín Trofeo (Sr. Backlot), teselas de Feebas (cambian a diario) y árboles de miel (Munchlax).</li>
+            <li><b>Completar la Nacional</b> (493) exige intercambios entre versiones y migración; planifícalo con dos partidas o con inyección puntual en emulador.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--tip"><span class="emo">🔁</span><p><b>Truco de intercambios en emulador:</b> abre <b>dos instancias de melonDS</b> con Wi-Fi local activado y usa el Club de Intercambio (2ª planta del Centro Pokémon) para las evoluciones por intercambio. Alternativa de colección: inyectar con <b>PKHeX</b>.</p></div>
+
+      <ul class="checklist">
+        <li><label class="check-item" data-key="g4-dex-sinnoh-seen" data-cat="pokedex"><input type="checkbox"><span class="box">✓</span><span class="label">Ver los 210 Pokémon de Sinnoh</span></label></li>
+        <li><label class="check-item" data-key="g4-dex-national" data-cat="pokedex"><input type="checkbox"><span class="box">✓</span><span class="label">Desbloquear la Pokédex Nacional</span></label></li>
+        <li><label class="check-item" data-key="g4-dex-sinnoh-caught" data-cat="pokedex"><input type="checkbox"><span class="box">✓</span><span class="label">Capturar todos los de Sinnoh</span></label></li>
+        <li><label class="check-item" data-key="g4-dex-493" data-cat="pokedex"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Completar los 493 del Nacional</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ CHECKLIST MAESTRA ============ -->
+    <section id="checklist" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Recta final</span>
+        <h2><span class="emo">✅</span> Checklist maestra del 100%</h2>
+        <p class="section__intro">Los grandes hitos. Si todo esto está marcado (y tu Pokédex Nacional está completa), habrás completado la 4ª generación al 100%.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div>
+          <h4>🏆 Historia y combate</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="g4-ck-liga" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">8 medallas + Liga superada</span></label></li>
+            <li><label class="check-item" data-key="g4-ck-frontera" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Impresos de Batalla del Frente de Batalla</span></label></li>
+            <li><label class="check-item" data-key="g4-ck-milotic" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Milotic obtenido (Feebas, Belleza máx.)</span></label></li>
+          </ul>
+        </div>
+        <div>
+          <h4>🌟 Colección</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="g4-ck-dex" data-cat="pokedex"><input type="checkbox"><span class="box">✓</span><span class="label">Pokédex Nacional completa (493)</span></label></li>
+            <li><label class="check-item" data-key="g4-ck-legend" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Todos los legendarios capturados</span></label></li>
+            <li><label class="check-item" data-key="g4-ck-events" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Los 4 legendarios de evento (Darkrai, Shaymin, Arceus, Manaphy)</span></label></li>
+            <li><label class="check-item" data-key="g4-ck-arceus-plates" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Las 16 Placas de Arceus</span></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--tip" style="margin-top:20px"><span class="emo">🎊</span><p><b>¡Enhorabuena!</b> Si has llegado hasta aquí con todo marcado, tienes uno de los saves más completos posibles de Pokémon Platino. Haz una copia de seguridad de tu <span class="code">.sav</span> y presume de colección.</p></div>
+    </section>
+
+    <footer class="footer">
+      <p><b>Guía 100% Pokémon 4ª Generación (Sinnoh · Platino)</b> — guía comunitaria no oficial. Pokémon es propiedad de Nintendo / Game Freak / The Pokémon Company. Esta página es un recurso educativo y de fans.</p>
+      <p>Tu progreso se guarda localmente en tu navegador. <a href="../index.html">← Otras guías</a> · <a href="jugando.html">🎮 Guía paso a paso</a></p>
+    </footer>
+
+  </main>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

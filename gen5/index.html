@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía 100% Pokémon Negro 2 / Blanco 2 · Teselia (Unova)</title>
+  <meta name="description" content="Guía completa e interactiva para completar Pokémon Negro 2 / Blanco 2 (5ª generación, Teselia/Unova) en emulador: los 8 gimnasios, el Alto Mando y la Campeona Iris, todos los legendarios, la fusión de Kyurem, el postgame y la Pokédex.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%232f6fb0' stroke='%23102a45' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%23102a45' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%23102a45' stroke-width='6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ===================== TOPBAR ===================== -->
+<header class="topbar">
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+  <div class="topbar__brand">
+    <svg class="ball" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#2f6fb0" stroke="#102a45" stroke-width="6"/><path d="M4 50h92" stroke="#102a45" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="#fff" stroke="#102a45" stroke-width="6"/></svg>
+    <span class="txt">Guía 100% · Gen 5 (Teselia)</span>
+  </div>
+  <div class="topbar__spacer"></div>
+  <div class="mini-progress" title="Tu progreso global">
+    <span class="lbl">Progreso</span>
+    <div class="mini-progress__bar"><div class="mini-progress__fill" id="miniFill"></div></div>
+    <span id="miniPct">0%</span>
+  </div>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Tema claro/oscuro">🌙</button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <input type="search" class="sidebar__search" id="navSearch" placeholder="🔎 Buscar sección...">
+    <nav id="nav">
+      <div class="nav-group">
+        <div class="nav-group__title">Empezar</div>
+        <a class="nav-link" href="../index.html"><span class="emo">↩️</span> Otras guías</a>
+        <a class="nav-link" href="#inicio"><span class="emo">🏠</span> Inicio</a>
+        <a class="nav-link" href="jugando.html"><span class="emo">🎮</span> Guía paso a paso</a>
+        <a class="nav-link" href="#progreso"><span class="emo">📊</span> Tu progreso 100%</a>
+        <a class="nav-link" href="#emulador"><span class="emo">🕹️</span> Emulador y trucos</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Historia</div>
+        <a class="nav-link" href="#gimnasios"><span class="emo">🏅</span> Gimnasios</a>
+        <a class="nav-link" href="#liga"><span class="emo">👑</span> Alto Mando y Campeona</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Legendarios y secretos</div>
+        <a class="nav-link" href="#legendarios"><span class="emo">🌟</span> Legendarios</a>
+        <a class="nav-link" href="#secretos"><span class="emo">🗝️</span> Secretos y curiosidades</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group__title">Colección</div>
+        <a class="nav-link" href="#pokedex"><span class="emo">📕</span> Pokédex de Teselia</a>
+        <a class="nav-link" href="#checklist"><span class="emo">✅</span> Checklist maestra</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ===================== CONTENIDO ===================== -->
+  <main class="content">
+
+    <!-- ============ HERO / INICIO ============ -->
+    <section id="inicio" class="section" style="margin-bottom:40px">
+      <div class="hero">
+        <span class="hero__eyebrow">Guía definitiva · Emulador DS</span>
+        <h1>Completa Pokémon Negro 2 / Blanco 2 al 100%</h1>
+        <p>Guía 100% de la 5ª generación tomando Pokémon Negro 2 / Blanco 2 como referencia (la versión definitiva de Teselia/Unova). Cubre la ruta principal en orden, los 8 gimnasios, el Alto Mando y la Campeona Iris, todos los legendarios (incluida la fusión de Kyurem) y el postgame completo. Enfoque práctico para emulador: solo lo importante y lo NO obvio (missables, objetos clave, capturas que merecen la pena y estrategia de cada combate).</p>
+        <div class="hero__cta">
+          <a href="jugando.html" class="btn btn--gold">🎮 Guía paso a paso (mientras juegas)</a>
+          <a href="#progreso" class="btn btn--ghost">📊 Ver mi progreso</a>
+          <a href="#emulador" class="btn btn--ghost">🕹️ Emulador</a>
+          <a href="../index.html" class="btn btn--ghost">← Otras guías</a>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card"><div class="card__icon">🏅</div><h4>8 Medallas + Liga</h4><p>Cada gimnasio de Teselia con su tipo, su Pokémon estrella, la MT que entrega y cómo vencer al Alto Mando y a la Campeona Iris.</p></div>
+        <div class="card"><div class="card__icon">🌟</div><h4>Todos los legendarios</h4><p>Kyurem y su fusión, Zekrom/Reshiram, el trío de espadachines, el trío del clima y los míticos Keldeo, Meloetta y Genesect.</p></div>
+        <div class="card"><div class="card__icon">🧬</div><h4>La fusión de Kyurem</h4><p>Con la Punta ADN une a Kyurem con Zekrom o Reshiram para obtener Kyurem Negro/Blanco, paso a paso.</p></div>
+        <div class="card"><div class="card__icon">🏆</div><h4>Postgame completo</h4><p>PWT, Metro de Combate, Torre Negra / Arboleda Blanca, Cynthia en Undella y las Cuevas Ocultas rotativas.</p></div>
+        <div class="card"><div class="card__icon">📕</div><h4>Pokédex de Teselia</h4><p>Las 300 de la región y cómo desbloquear y completar la Nacional, con intercambios evolutivos y transferencias.</p></div>
+        <div class="card"><div class="card__icon">🕹️</div><h4>Enfoque emulador</h4><p>DeSmuME, melonDS y DraStic, enlace local para intercambios y cómo conseguir los eventos con PKHeX o cheats.</p></div>
+
+      </div>
+
+      <div class="callout callout--info" style="margin-top:24px">
+        <span class="emo">💡</span>
+        <p><b>¿Cómo funciona esta guía?</b> Marca las casillas ✅ a medida que avanzas: tu progreso se guarda automáticamente en tu navegador (no se pierde al cerrar). El panel <a href="#progreso">Tu progreso 100%</a> resume cuánto te falta en cada categoría.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROGRESO ============ -->
+    <section id="progreso" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Panel de control</span>
+        <h2><span class="emo">📊</span> Tu progreso al 100%</h2>
+        <p class="section__intro">Este panel se actualiza solo con las casillas que marcas en toda la guía. El objetivo del 100% combina las 8 medallas y la Liga, todos los legendarios y los grandes secretos y retos del postgame de Teselia.</p>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-ring-wrap">
+          <div class="ring" id="ring">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#2f6fb0"/>
+                  <stop offset="100%" stop-color="#f4c430"/>
+                </linearGradient>
+              </defs>
+              <circle class="ring__track" cx="65" cy="65" r="56" fill="none" stroke-width="14"/>
+              <circle class="ring__bar" id="ringBar" cx="65" cy="65" r="56" fill="none" stroke-width="14"
+                      stroke-dasharray="351.86" stroke-dashoffset="351.86"/>
+            </svg>
+            <div class="ring__label">
+              <span class="ring__pct" id="ringPct">0%</span>
+              <span class="ring__sub" id="ringCount">0 / 0</span>
+            </div>
+          </div>
+          <div style="flex:1; min-width:240px">
+            <div class="stat-bar" data-cat="medallas"><div class="stat-bar__top"><b>🏅 Medallas y Liga</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="legendarios"><div class="stat-bar__top"><b>🌟 Legendarios</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+            <div class="stat-bar" data-cat="secretos"><div class="stat-bar__top"><b>🗝️ Secretos y retos</b><span data-cat-count>0/0</span></div><div class="stat-bar__track"><div class="stat-bar__fill" data-cat-fill></div></div></div>
+          </div>
+        </div>
+        <div style="margin-top:18px; display:flex; justify-content:flex-end">
+          <button class="reset-btn" id="resetProgress">↺ Reiniciar progreso</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMULADOR ============ -->
+    <section id="emulador" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Preparación</span>
+        <h2><span class="emo">🕹️</span> Emulador y trucos base</h2>
+        <p class="section__intro">Negro 2/Blanco 2 son juegos de Nintendo DS. Para el 100% necesitas un emulador con enlace local (intercambios evolutivos) y forma de inyectar los eventos. Estas son las mejores opciones.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card"><div class="card__icon">🟢</div><h4>DeSmuME</h4><p>El emulador de DS más extendido en PC. Muy compatible, ideal para introducir cheats Action Replay y para depurar. Soporta save states y grabación.</p></div>
+        <div class="card card--accent"><div class="card__icon">🔵</div><h4>melonDS</h4><p>El más preciso hoy en día. Su gran ventaja: enlace local entre dos instancias, imprescindible para los intercambios evolutivos (Gigalith, Conkeldurr, Escavalier/Accelgor).</p></div>
+        <div class="card"><div class="card__icon">🟣</div><h4>DraStic</h4><p>La mejor opción en Android: rápido, estable y con controles configurables. Perfecto para jugar la campaña sobre la marcha.</p></div>
+        <div class="card"><div class="card__icon">🟠</div><h4>No$GBA / NO$Zoomer</h4><p>Ligero y veterano. Útil para cargar cheats sencillos y partidas antiguas, aunque menos preciso que melonDS.</p></div>
+      </div>
+
+      <div class="callout callout--emu" style="margin-top:18px"><span class="emo">🔗</span><p><b>Lo más importante:</b> muchas evoluciones son por intercambio (Gigalith, Conkeldurr, Escavalier, Accelgor). Con <b>melonDS</b> puedes enlazar dos instancias en local y hacértelos tú solo.</p></div>
+
+      <div class="callout callout--info" style="margin-top:18px"><span class="emo">📝</span><p><b>Enlace local (lo más importante):</b> muchas evoluciones son por intercambio. Usa <b>melonDS</b>, que permite conectar dos instancias por red local (o Wi-Fi emulada): abre dos copias del juego con dos guardados y realiza el intercambio para obtener <b>Gigalith, Conkeldurr, Escavalier y Accelgor</b>. DeSmuME es más limitado para esto.</p>
+<ul>
+<li><b>Eventos (Keldeo, Meloetta, Genesect, Tornadus, Thundurus, Espejo Veraz):</b> originalmente por distribución o Dream Radar. En emulador: 1) inyecta el archivo de <b>regalo misterioso (.pgf)</b> desde el menú del juego; 2) edita el guardado (.sav/.dsv) con <b>PKHeX</b>; o 3) usa <b>cheats Action Replay</b> en DeSmuME/No$GBA.</li>
+<li><b>Reloj y estaciones:</b> el juego usa la hora real del sistema. Ajusta la fecha/hora del PC para forzar <b>estaciones</b> (afectan a rutas, apariciones y al Monte Espira) y para rotar las <b>Cuevas Ocultas</b>.</li>
+<li><b>Enlace de Memoria con Negro/Blanco:</b> necesitas una ROM y guardado de la primera Teselia; desbloquea escenas y objetos extra.</li>
+<li><b>Save states:</b> úsalos para cazar legendarios (naturaleza/IV) y shinies, pero recuerda que retos como el Metro de Combate o la Torre Negra están pensados sin guardado intermedio.</li>
+<li><b>Rendimiento:</b> si va lento en batallas 3D (Fragata Plasma, gimnasios), baja la resolución interna o activa el frameskip; melonDS con JIT es lo más fluido.</li>
+</ul></div>
+    </section>
+
+    <!-- ============ GIMNASIOS ============ -->
+    <section id="gimnasios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">🏅</span> Los 8 Gimnasios</h2>
+        <p class="section__intro">Cada líder entrega una medalla y una MT (¡reutilizable en esta gen!). Aquí tienes su ciudad, tipo, Pokémon estrella, la MT y un consejo para vencerlo. Marca cada medalla al conseguirla.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Ciudad</th><th>Líder</th><th>Tipo</th><th>Estrella</th><th>Medalla / MT</th><th>Consejo</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Aspertia City (Ciudad Losar)</td><td>Cheren</td><td><span class="type t-normal">Normal</span></td><td>Lillipup (Nv.13)</td><td>Medalla Básica · <span class="code">MT83 Ánimo (Work Up)</span></td><td>Combate de tutorial: Patrat Nv.11 y Lillipup Nv.13. Cheren usa Mordisco Furia y Rastreo. Un Pokémon de tipo Lucha (o simplemente golpes fuertes) lo barre; cuidado con Rastreo bajando tu defensa. Cheren te enseña a capturar antes del duelo.</td></tr>
+            <tr><td>2</td><td>Virbank City (Ciudad Mayólica)</td><td>Roxie</td><td><span class="type t-veneno">Veneno</span></td><td>Whirlipede (Nv.20)</td><td>Medalla Tóxica · <span class="code">MT09 Ecoveneno (Venoshock)</span></td><td>Koffing Nv.18 y Whirlipede Nv.20. Whirlipede tiene Rodar (daño creciente) y Chirrido para bajar tu Defensa. Los tipos Psíquico y Tierra lo destrozan. Ecoveneno duplica su daño si el rival está envenenado: combínalo con Tóxico.</td></tr>
+            <tr><td>3</td><td>Castelia City (Ciudad Porcelana)</td><td>Burgh</td><td><span class="type t-bicho">Bicho</span></td><td>Leavanny (Nv.23)</td><td>Medalla Insecto · <span class="code">MT76 Estoicidad (Struggle Bug)</span></td><td>Swadloon Nv.21, Dwebble Nv.21 y Leavanny Nv.23. Leavanny pega duro con Tijera X y puede paralizar/dormir. Fuego lo aniquila; ojo con Dwebble (Bicho/Roca), que aguanta Volador. Antes del gimnasio te regalan un mono elemental (Pansage/Pansear/Panpour) según tu inicial.</td></tr>
+            <tr><td>4</td><td>Nimbasa City (Ciudad Fayenza)</td><td>Elesa</td><td><span class="type t-electrico">Eléctrico</span></td><td>Zebstrika (Nv.27)</td><td>Medalla Voltaje · <span class="code">MT72 Voltiocambio (Volt Switch)</span></td><td>Emolga Nv.25, Flaaffy Nv.25 y Zebstrika Nv.27. Los dos Emolga (Eléctrico/Volador) son inmunes a Tierra, así que lleva Roca/Hielo. Zebstrika tiene mucha velocidad y Onda Voltio. Un tipo Tierra puro resuelve el resto del equipo.</td></tr>
+            <tr><td>5</td><td>Driftveil City (Ciudad Esmalte)</td><td>Clay</td><td><span class="type t-tierra">Tierra</span></td><td>Excadrill (Nv.31)</td><td>Medalla Temblor · <span class="code">MT78 Terratemblor (Bulldoze)</span></td><td>Krokorok Nv.29, Sandslash Nv.29 y Excadrill Nv.31. Excadrill (Tierra/Acero) es rapidísimo y usa Golpe Roca y Garra Metal; los tipos Agua, Planta, Lucha y Tierra lo frenan. Krokorok (Tierra/Siniestro) cae ante Lucha. Evita Volador puro: Excadrill lleva coberturas.</td></tr>
+            <tr><td>6</td><td>Mistralton City (Ciudad Loza)</td><td>Skyla</td><td><span class="type t-volador">Volador</span></td><td>Swanna (Nv.35)</td><td>Medalla Jet · <span class="code">MT62 Acróbata (Acrobatics)</span></td><td>Swoobat Nv.33, Skarmory Nv.33 y Swanna Nv.35. Swanna (Agua/Volador) usa Vendaval, que nunca falla; lleva un Eléctrico fuerte (le hace x4). Skarmory (Acero/Volador) es muy defensivo: Fuego o Eléctrico. Cuidado con Acróbata, que se potencia si el rival no lleva objeto.</td></tr>
+            <tr><td>7</td><td>Opelucid City (Ciudad Caolín)</td><td>Drayden</td><td><span class="type t-dragon">Dragón</span></td><td>Haxorus (Nv.48)</td><td>Medalla Leyenda · <span class="code">MT82 Cola Dragón (Dragon Tail)</span></td><td>Druddigon Nv.46, Flygon Nv.46 y Haxorus Nv.48. Salto de nivel enorme respecto al 6º gimnasio: llega bien preparado. Hielo y Dragón/Hada golpean a todos. Haxorus pega brutal con Guillotina y Enfado; un tipo Hielo rápido o un Dragón con Vendaval Hielo/Represión Metal es clave. Cola Dragón fuerza cambios: cuidado con tu orden de equipo.</td></tr>
+            <tr><td>8</td><td>Humilau City (Ciudad Ondina)</td><td>Marlon</td><td><span class="type t-agua">Agua</span></td><td>Jellicent (Nv.51)</td><td>Medalla Onda · <span class="code">MT55 Escaldar (Scald)</span></td><td>Carracosta Nv.49, Wailord Nv.49 y Jellicent Nv.51. Jellicent (Agua/Fantasma) es inmune a Normal/Lucha y molesto con Salmuera y Absorbe Fuerza; usa Siniestro, Fantasma o Eléctrico. Carracosta (Agua/Roca) cae ante Planta/Lucha (x4). Escaldar puede quemar: lleva algo que no le tema al fuego.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--warn"><span class="emo">⚠️</span><p><b>Gran salto de nivel</b> entre el 6.º gimnasio (Skyla, Nv.35) y el 7.º (Drayden, Nv.48): usa el Metro de Combate y el PWT ya activos para nivelar antes de plantar cara a Drayden.</p></div>
+
+      <h3><span class="emo">✅</span> Medallas conseguidas</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="gen5-gym1" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Básica <small>Aspertia City (Ciudad Losar) — Normal</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym2" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Tóxica <small>Virbank City (Ciudad Mayólica) — Veneno</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym3" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Insecto <small>Castelia City (Ciudad Porcelana) — Bicho</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym4" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Voltaje <small>Nimbasa City (Ciudad Fayenza) — Eléctrico</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym5" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Temblor <small>Driftveil City (Ciudad Esmalte) — Tierra</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym6" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Jet <small>Mistralton City (Ciudad Loza) — Volador</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym7" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Leyenda <small>Opelucid City (Ciudad Caolín) — Dragón</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-gym8" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Medalla Onda <small>Humilau City (Ciudad Ondina) — Agua</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ LIGA ============ -->
+    <section id="liga" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Historia principal</span>
+        <h2><span class="emo">👑</span> Alto Mando y Campeona</h2>
+        <p class="section__intro">Tras las 8 medallas, cruza la Calle Victoria hacia la Liga Pokémon. Los cuatro miembros del Alto Mando se pueden retar en cualquier orden; luego, la Campeona Iris. Lleva curas de sobra y coberturas variadas.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">👻</div><div><div class="mon-card__name">Shauntal</div><div class="mon-card__loc">Alto Mando · <span class="type t-fantasma">Fantasma</span></div></div></div>
+          <div class="mon-card__body"><ul><li><b>As:</b> Chandelure (Nv.58)</li><li>Cofagrigus, Drifblim, Golurk y Chandelure, todos Nv.56-58. Chandelure (Fantasma/Fuego) tiene Ataque Especial demoledor con Infortunio y Lanzallamas; noquéalo antes de que actúe con Siniestro/Roca/Agua. Golurk (Tierra/Fantasma) cae x4 no, pero teme Agua/Planta/Hielo. Usa un Siniestro potente contra todo el equipo.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🌑</div><div><div class="mon-card__name">Grimsley</div><div class="mon-card__loc">Alto Mando · <span class="type t-siniestro">Siniestro</span></div></div></div>
+          <div class="mon-card__body"><ul><li><b>As:</b> Bisharp (Nv.58)</li><li>Liepard, Scrafty, Krookodile y Bisharp, Nv.56-58. Lucha arrasa a todos menos a Scrafty (Siniestro/Lucha, resiste). Bisharp (Siniestro/Acero) teme Fuego, Tierra y Lucha (x4). Krookodile es rápido y con Terremoto: no dejes tipos Fuego/Eléctrico débiles delante.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🔮</div><div><div class="mon-card__name">Caitlin</div><div class="mon-card__loc">Alto Mando · <span class="type t-psiquico">Psíquico</span></div></div></div>
+          <div class="mon-card__body"><ul><li><b>As:</b> Gothitelle (Nv.58)</li><li>Musharna, Sigilyph, Reuniclus y Gothitelle, Nv.56-58. Siniestro y Bicho son tu billete: un buen tipo Siniestro con Triturar los revienta. Sigilyph (Psíquico/Volador) usa Psíquico y Aire Afilado; cuidado con Pantalla de Luz y Anticura de Gothitelle, que alarga el combate.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite">🥊</div><div><div class="mon-card__name">Marshal</div><div class="mon-card__loc">Alto Mando · <span class="type t-lucha">Lucha</span></div></div></div>
+          <div class="mon-card__body"><ul><li><b>As:</b> Conkeldurr (Nv.58)</li><li>Throh, Sawk, Mienshao y Conkeldurr, Nv.56-58. Volador y Psíquico los superan. Conkeldurr golpea durísimo con Mazazo y Puño Dinámico (confusión); Mienshao es rapidísimo con Amago y Vastaguardia. Un Psíquico o Volador con buena velocidad limpia el trono.</li></ul></div>
+        </div>
+      </div>
+
+      <div class="mon-card" style="margin-top:18px; border-color:var(--gold-500)">
+        <div class="mon-card__head" style="background:linear-gradient(135deg,#1c4a6a,#12324a)"><div class="mon-card__sprite">👑</div><div><div class="mon-card__name">Campeona Iris</div><div class="mon-card__loc">Campeona de Teselia · <span class="type t-dragon">Dragón</span></div></div></div>
+        <div class="mon-card__body"><ul>
+          <li><b>Equipo:</b> Hydreigon Nv.57, Druddigon Nv.57, Aggron Nv.57, Archeops Nv.57, Lapras Nv.57 y Haxorus Nv.59.</li>
+          <li><b>Estrategia:</b> Campeona de tipo Dragón con equipo mixto para taparte los counters. El Hielo es tu mejor arma contra Hydreigon (x4), Druddigon, Archeops y Haxorus, pero Aggron (Acero/Roca) y Lapras (Agua/Hielo) lo resisten: reserva Lucha/Tierra para Aggron y Planta/Lucha para Lapras. Haxorus es el as final (Nv.59) con Enfado y Guillotina; deja para el final un Dragón/Hada o un Hielo rápido con vida completa. Lleva antiparálisis y revivir de sobra.</li>
+        </ul></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:18px">
+        <li><label class="check-item" data-key="gen5-e4-shauntal" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Shauntal (Fantasma)</span></label></li>
+        <li><label class="check-item" data-key="gen5-e4-grimsley" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Grimsley (Siniestro)</span></label></li>
+        <li><label class="check-item" data-key="gen5-e4-caitlin" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Caitlin (Psíquico)</span></label></li>
+        <li><label class="check-item" data-key="gen5-e4-marshal" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Marshal (Lucha)</span></label></li>
+        <li><label class="check-item" data-key="gen5-champ" data-cat="medallas"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Vencer a la Campeona Iris y entrar en el Salón de la Fama</span></label></li>
+      </ul>
+
+      <div class="callout callout--tip"><span class="emo">🎉</span><p>Entrar en el <b>Salón de la Fama</b> desbloquea el grueso del postgame: la <b>Pokédex Nacional</b>, la <b>Torre Dragóspira</b> (Zekrom/Reshiram), los legendarios errantes, el PWT completo, la Torre Negra / Arboleda Blanca y mucho más.</p></div>
+    </section>
+
+    <!-- ============ LEGENDARIOS ============ -->
+    <section id="legendarios" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Los grandes</span>
+        <h2><span class="emo">🌟</span> Todos los legendarios</h2>
+        <p class="section__intro">Teselia reúne un enorme plantel de legendarios y míticos. Aquí están todos, dónde y cómo conseguirlos. Los de <b>evento</b> (Keldeo, Meloetta, Genesect, Tornadus, Thundurus) requieren distribución o herramientas de emulador — mira la sección <a href="#emulador">Emulador</a>.</p>
+      </div>
+
+      <div class="callout callout--tip"><span class="emo">🎯</span><p><b>Consejo universal:</b> guarda antes de cada legendario. Baja sus PS con daño no letal (Falsotortazo), <b>paralízalo o congélalo/duérmelo</b>, y lanza <b>Ultra Ball</b> o <b>Ball Turno</b> (mejor cuantos más turnos pasan). Contra los de Nv.70 (Kyurem, Zekrom, Reshiram) ten paciencia y muchas Balls.</p></div>
+
+      <div class="grid grid--2">
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/646.png" alt="Kyurem" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Kyurem</div><div class="mon-card__loc">Abismo Sombrío (Giant Chasm) · Nv.70</div></div></div>
+          <div class="mon-card__body"><ul><li>Jefe de la historia final: Team Plasma lo fusiona con su dragón. Tras la trama vuelve al cráter interior del Abismo, donde reaparece a Nv.70 para capturarlo. Guarda Balls buenas (Ultra/Turno) y algo que lo paralice o congele.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/644.png" alt="Zekrom" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Zekrom</div><div class="mon-card__loc">Torre Dragóspira (Dragonspiral Tower) · Nv.70</div></div></div>
+          <div class="mon-card__body"><ul><li>EXCLUSIVO de Negro 2. En el postgame consigues la Piedra Oscura; llévala a lo alto de la Torre Dragóspira e interactúa para liberar a Zekrom (Nv.70). Si huyes o lo debilitas, reaparece tras volver a entrar en el Salón de la Fama.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/643.png" alt="Reshiram" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Reshiram</div><div class="mon-card__loc">Torre Dragóspira (Dragonspiral Tower) · Nv.70</div></div></div>
+          <div class="mon-card__body"><ul><li>EXCLUSIVO de Blanco 2. Equivalente a Zekrom pero con la Piedra Clara. Se libera en la cima de la Torre Dragóspira a Nv.70. Con la Punta ADN puedes fusionarlo con Kyurem para obtener Kyurem Blanco.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/638.png" alt="Cobalion" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Cobalion</div><div class="mon-card__loc">Cueva Loza (Mistralton Cave) · Nv.45</div></div></div>
+          <div class="mon-card__body"><ul><li>El primero de los tres espadachines. Está al fondo de la Cueva Loza (necesitas Fuerza). Debilítalo o captúralo para activar la aparición de Virizion y Terrakion en el mapa.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/640.png" alt="Virizion" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Virizion</div><div class="mon-card__loc">Bosque Azulejo (Pinwheel Forest) · Nv.45</div></div></div>
+          <div class="mon-card__body"><ul><li>Aparece en el interior del Bosque Azulejo una vez que has tratado con Cobalion. Nv.45. Vuela/teletranspórtate hasta la zona profunda del bosque para encontrarlo.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/639.png" alt="Terrakion" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Terrakion</div><div class="mon-card__loc">Calle Victoria (Victory Road) · Nv.45</div></div></div>
+          <div class="mon-card__body"><ul><li>El tercer espadachín, en una cámara de la Calle Victoria (accesible tras Cobalion). Nv.45. Con los tres en el equipo desbloqueas el potencial evento de Keldeo.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/647.png" alt="Keldeo" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Keldeo</div><div class="mon-card__loc">Evento (distribución) · Nv.15</div></div></div>
+          <div class="mon-card__body"><ul><li>Solo por evento oficial (Mystery Gift). Con Cobalion, Virizion y Terrakion en el equipo aprende Tajo Sagrado y cambia a su Forma Brío. En emulador se obtiene inyectando el regalo misterioso (.pgf), editando la partida con PKHeX o con cheat.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/645.png" alt="Landorus" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Landorus</div><div class="mon-card__loc">Santuario Pradera (Abundant Shrine) · Nv.65</div></div></div>
+          <div class="mon-card__body"><ul><li>Necesitas tener a Tornadus Y Thundurus (con tu ID de entrenador) en el equipo al entrar en el Santuario Pradera; entonces aparece Landorus a Nv.65. Llevar luego a Landorus al santuario hace que un anciano te dé el Espejo Veraz.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/641.png" alt="Tornadus" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Tornadus</div><div class="mon-card__loc">Transferencia / Dream Radar · —</div></div></div>
+          <div class="mon-card__body"><ul><li>No se captura de forma nativa en Negro 2/Blanco 2: se traía de Negro/Blanco o del Pokémon Dream Radar (3DS). En emulador se consigue con PKHeX, un intercambio por enlace local o cheat. El Espejo Veraz alterna su Forma Tótem/Avatar.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/642.png" alt="Thundurus" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Thundurus</div><div class="mon-card__loc">Transferencia / Dream Radar · —</div></div></div>
+          <div class="mon-card__body"><ul><li>Igual que Tornadus: transferencia o Dream Radar. Imprescindible junto a Tornadus para desbloquear a Landorus. En emulador, edición de guardado o intercambio local.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/648.png" alt="Meloetta" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Meloetta</div><div class="mon-card__loc">Evento (distribución) · Nv.15</div></div></div>
+          <div class="mon-card__body"><ul><li>Legendario mítico solo por evento oficial. Aprende Canto Relicto (evento en el Café de Ciudad Fayenza) para pasar a su Forma Danza. En emulador, regalo misterioso inyectado o PKHeX.</li></ul></div>
+        </div>
+        <div class="mon-card">
+          <div class="mon-card__head"><div class="mon-card__sprite"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/649.png" alt="Genesect" loading="lazy" style="width:100%;height:100%;object-fit:contain"></div><div><div class="mon-card__name">Genesect</div><div class="mon-card__loc">Evento (distribución) · Nv.15</div></div></div>
+          <div class="mon-card__body"><ul><li>Mítico paleontológico de Team Plasma, solo por evento. Viene con el ROM-Fusión y puede llevar los Módulos (Agua/Fuego/Rayo/Hielo) que cambian el tipo de Tecno Explosión. En emulador, .pgf o PKHeX.</li></ul></div>
+        </div>
+      </div>
+
+      <h3><span class="emo">✅</span> Legendarios capturados</h3>
+      <ul class="checklist">
+        <li><label class="check-item" data-key="gen5-leg-646" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Kyurem <small>Abismo Sombrío (Giant Chasm)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-644" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Zekrom <small>Torre Dragóspira (Dragonspiral Tower)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-643" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Reshiram <small>Torre Dragóspira (Dragonspiral Tower)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-638" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Cobalion <small>Cueva Loza (Mistralton Cave)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-640" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Virizion <small>Bosque Azulejo (Pinwheel Forest)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-639" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Terrakion <small>Calle Victoria (Victory Road)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-647" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Keldeo <small>Evento (distribución)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-645" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Landorus <small>Santuario Pradera (Abundant Shrine)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-641" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Tornadus <small>Transferencia / Dream Radar</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-642" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Thundurus <small>Transferencia / Dream Radar</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-648" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Meloetta <small>Evento (distribución)</small></span></label></li>
+        <li><label class="check-item" data-key="gen5-leg-649" data-cat="legendarios"><input type="checkbox"><span class="box">✓</span><span class="label">Genesect <small>Evento (distribución)</small></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ SECRETOS ============ -->
+    <section id="secretos" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Exploración</span>
+        <h2><span class="emo">🗝️</span> Secretos y curiosidades</h2>
+        <p class="section__intro">Lo que hace única a la 5ª generación: contenido opcional, minijuegos, sidequests y trucos que muchos jugadores nunca descubren.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card"><h4>Las MT son reutilizables</h4><p>Gran novedad de la 5ª gen: cada Máquina Técnica se puede usar infinitas veces. Reparte MT clave (Escaldar, Voltiocambio, Cola Dragón) sin miedo a gastarlas.</p></div>
+        <div class="card"><h4>Riolu en la Cueva Oculta del Rancho Floccesy</h4><p>Una de las Cuevas Ocultas (Hidden Grottoes) del Rancho Floccesy puede contener a Riolu, muy temprano y con posibilidad de Habilidad Oculta. Aparición aleatoria: entra y sal para reintentar.</p></div>
+        <div class="card"><h4>Cuevas Ocultas rotativas</h4><p>Repartidas por toda Teselia, las Cuevas Ocultas esconden objetos y Pokémon con Habilidad Oculta (Eevee, Rufflet, etc.). Su contenido rota con el tiempo real; sincroniza el reloj del emulador para farmearlas.</p></div>
+        <div class="card"><h4>Enlace de Memoria con Negro/Blanco</h4><p>Si tienes una partida de Negro o Blanco, el Enlace de Memoria desbloquea escenas extra de los antiguos líderes y algunos objetos. En emulador necesitas ambas ROMs y guardado de la primera generación de Teselia.</p></div>
+        <div class="card"><h4>Pokéstar Studios (Ciudad Mayólica)</h4><p>Minijuego exclusivo de rodar películas con tu equipo. Rejugable y con recompensas; totalmente opcional pero único de esta gen.</p></div>
+        <div class="card"><h4>Join Avenue</h4><p>En Ciudad Fayenza montas tu propia avenida de tiendas gestionada por visitantes. Da objetos raros, subida de nivel, huevos y MT baratas si la haces crecer.</p></div>
+        <div class="card"><h4>La Casa Misteriosa (cerca de Pueblo Ost833/Reversal)</h4><p>Casa embrujada tipo puzle de fantasmas junto a la ruta de Monte Reverso. Sidequest atmosférica que recompensa con un objeto útil al resolver el rompecabezas de las muñecas.</p></div>
+        <div class="card"><h4>Torre Celeste: campana y capturas</h4><p>En la cima de la Torre Celeste hay una campana ligada a la historia; por el camino capturas Litwick, Elgyem y Golett, difíciles de ver en otros sitios.</p></div>
+        <div class="card"><h4>Espejo Veraz para las Formas Tótem</h4><p>Tras conseguir a Landorus y llevarlo al Santuario Pradera obtienes el Espejo Veraz, que alterna Tornadus/Thundurus/Landorus entre Forma Avatar y Forma Tótem (esta última mucho más fuerte).</p></div>
+        <div class="card"><h4>Punta ADN: fusión de Kyurem</h4><p>Con la Punta ADN (Abismo Sombrío, tras capturar a Kyurem) fusionas a Kyurem con Zekrom (Kyurem Negro) o Reshiram (Kyurem Blanco). Se puede separar cuando quieras sin perder al dragón.</p></div>
+        <div class="card"><h4>Tutores de movimientos por Teselas</h4><p>Hay tutores en Ciudad Esmalte, Pueblo Ost833/Lentimas y Ciudad Ondina que enseñan movimientos exclusivos a cambio de Teselas de colores (Shards). Guarda todas las teselas que encuentres.</p></div>
+      </div>
+
+      <ul class="checklist" style="margin-top:8px">
+        <li><label class="check-item" data-key="gen5-sec-pwt" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Ganar un torneo del PWT (Torneo Mundial de Combates)</span></label></li>
+        <li><label class="check-item" data-key="gen5-sec-subway" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Buena racha en el Metro de Combate</span></label></li>
+        <li><label class="check-item" data-key="gen5-sec-tower" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Superar la Torre Negra / Arboleda Blanca</span></label></li>
+        <li><label class="check-item" data-key="gen5-sec-cynthia" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Vencer a Cynthia en su villa de Undella</span></label></li>
+        <li><label class="check-item" data-key="gen5-sec-fusion" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Fusionar Kyurem con la Punta ADN (Kyurem Negro/Blanco)</span></label></li>
+        <li><label class="check-item" data-key="gen5-sec-riolu" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Conseguir Riolu en la Cueva Oculta del Rancho Floccesy</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ POKEDEX ============ -->
+    <section id="pokedex" class="section">
+      <div class="section__head">
+        <span class="section__kicker">La colección</span>
+        <h2><span class="emo">📕</span> Completar la Pokédex</h2>
+        <p class="section__intro">El corazón del 100%: primero la Pokédex de Teselia, luego la Nacional. Sin intercambios es imposible por los exclusivos de versión y las evoluciones por intercambio.</p>
+      </div>
+
+      <div class="callout callout--info"><p>La <b>Pokédex de Teselia</b> de Negro 2/Blanco 2 tiene 300 especies e incluye Pokémon de generaciones anteriores (a diferencia del Negro/Blanco original). Tras vencer la Liga, la profesora Aurea Juniper te amplía a la <b>Pokédex Nacional</b>.</p>
+<ul>
+<li><b>Exclusivos de versión (mascotas):</b> Negro 2 obtiene <b>Zekrom</b>; Blanco 2 obtiene <b>Reshiram</b>. Necesitas intercambio con la otra versión para registrar ambos.</li>
+<li><b>Diferencias de zona:</b> ciertas rutas y cuevas cambian qué Pokémon aparecen según la versión y la <b>estación</b> (primavera/verano/otoño/invierno). Cambia el reloj del emulador para acceder a Pokémon y zonas exclusivas de cada estación (p. ej. Monte Espira en invierno).</li>
+<li><b>Intercambios evolutivos:</b> Boldore→<b>Gigalith</b>, Gurdurr→<b>Conkeldurr</b>, Karrablast↔Shelmet→<b>Escavalier/Accelgor</b>, Feebas→Milotic (intercambio con objeto). Sin dos partidas enlazadas no evolucionan: usa el <b>enlace local de melonDS</b>.</li>
+<li><b>Transferencia:</b> muchas especies solo se obtienen migrando de la 4ª gen (Poké Transfer) o del <b>Dream Radar</b> (Tornadus/Thundurus, formas alternativas, Pokémon con Habilidad Oculta).</li>
+<li><b>Míticos por evento</b> (Keldeo, Meloetta, Genesect): no cuentan para el Diploma nativo, pero sí para un 100% real de la Nacional.</li>
+</ul>
+<p>Truco: con <b>PKHeX</b> puedes revisar tu guardado, ver qué te falta y (si buscas el 100% completo) rellenar los huecos imposibles sin intercambio online.</p></div>
+
+      <ul class="checklist" style="margin-top:8px">
+        <li><label class="check-item" data-key="gen5-dex-teselia" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Completar la Pokédex de Teselia (300)</span></label></li>
+        <li><label class="check-item" data-key="gen5-dex-national" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Desbloquear la Pokédex Nacional</span></label></li>
+        <li><label class="check-item" data-key="gen5-dex-full" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">🏆 Completar la Pokédex Nacional</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ CHECKLIST MAESTRA ============ -->
+    <section id="checklist" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Recta final</span>
+        <h2><span class="emo">✅</span> Checklist maestra del 100%</h2>
+        <p class="section__intro">Los grandes hitos. Si todo esto está marcado (y tu Pokédex Nacional está completa), habrás completado Pokémon Negro 2 / Blanco 2 al 100%.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div>
+          <h4>🏆 Historia y combate</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="gen5-ck-liga" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">8 medallas + Liga superada</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-pwt" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">PWT y Metro de Combate dominados</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-tower" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Torre Negra / Arboleda Blanca superada</span></label></li>
+          </ul>
+        </div>
+        <div>
+          <h4>🌟 Colección</h4>
+          <ul class="checklist">
+            <li><label class="check-item" data-key="gen5-ck-dex" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Pokédex Nacional completa</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-legend" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Todos los legendarios capturados</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-fusion" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Fusión de Kyurem conseguida</span></label></li>
+            <li><label class="check-item" data-key="gen5-ck-events" data-cat="secretos"><input type="checkbox"><span class="box">✓</span><span class="label">Míticos de evento (Keldeo, Meloetta, Genesect)</span></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--tip" style="margin-top:20px"><span class="emo">🎊</span><p><b>¡Enhorabuena!</b> Si has llegado hasta aquí con todo marcado, tienes uno de los saves más completos posibles de Pokémon Negro 2 / Blanco 2. Haz una copia de seguridad de tu <span class="code">.sav</span> y presume de colección.</p></div>
+    </section>
+
+    <footer class="footer">
+      <p><b>Guía 100% Pokémon Negro 2 / Blanco 2</b> — guía comunitaria no oficial. Pokémon es propiedad de Nintendo / Game Freak / The Pokémon Company. Esta página es un recurso educativo y de fans.</p>
+      <p>Tu progreso se guarda localmente en tu navegador. Sprites de gen. 5 vía PokéAPI. <a href="../index.html">← Otras guías</a></p>
+    </footer>
+
+  </main>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

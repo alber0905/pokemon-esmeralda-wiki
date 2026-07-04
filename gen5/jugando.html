@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compañera de juego · Pokémon Negro 2 / Blanco 2 paso a paso</title>
+  <meta name="description" content="Guía-compañera interactiva para llevar mientras juegas Pokémon Negro 2 / Blanco 2 (Teselia/Unova): la ruta en orden con solo lo importante y lo no obvio — objetos clave, capturas que merecen la pena y secretos fáciles de perderse.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/companion.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%232f6fb0' stroke='%23102a45' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%23102a45' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%23102a45' stroke-width='6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__brand">
+    <svg class="ball" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#2f6fb0" stroke="#102a45" stroke-width="6"/><path d="M4 50h92" stroke="#102a45" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="#fff" stroke="#102a45" stroke-width="6"/></svg>
+    <span class="txt">Compañera de juego · Gen 5</span>
+  </div>
+  <div class="topbar__spacer"></div>
+  <a class="btn btn--ghost" href="../index.html" style="padding:8px 14px; font-size:13px">← Otras guías</a>
+  <a class="btn btn--ghost" href="index.html" style="padding:8px 14px; font-size:13px">📖 Guía completa</a>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Tema claro/oscuro">🌙</button>
+</header>
+
+<main class="content" style="max-width:900px">
+
+  <div class="wt-hero">
+    <span class="hero__eyebrow">Para llevar mientras juegas</span>
+    <h1>Tu ruta por Teselia, paso a paso</h1>
+    <p>Solo lo que importa y lo que <b>no es obvio</b>: el objeto clave que casi todos se pierden, la captura que merece el desvío, el secreto de cada zona y cómo enfocar cada combate. Marca <b>“📍 Estoy aquí”</b> según avanzas y la guía te sigue.</p>
+  </div>
+
+  <div class="wt-legend">
+    <span><i style="background:#ffab4d"></i> ⚠️ No perder</span>
+    <span><i style="background:#c58cff"></i> 🗝️ Secreto</span>
+    <span><i style="background:#ff7a7a"></i> 🥊 Combate</span>
+    <span><i style="background:var(--emerald-400)"></i> 🎯 Captura</span>
+    <span><i style="background:var(--gold-500)"></i> 🎁 Objeto</span>
+    <span><i style="background:var(--teal-400)"></i> 💡 Consejo</span>
+  </div>
+
+  <div class="wt-controls">
+    <div class="wt-here">
+      <span class="wt-here__badge">📍 Estás aquí</span>
+      <span class="wt-here__name" id="wtHereName">—</span>
+      <span class="wt-here__prog">
+        <span id="wtHerePct">0%</span>
+        <span class="wt-here__bar"><span class="wt-here__fill" id="wtHereFill"></span></span>
+      </span>
+    </div>
+    <div class="wt-filters">
+      <span class="wt-chip active" data-filter="all">Todo</span>
+      <span class="wt-chip" data-filter="missable">⚠️ No perder</span>
+      <span class="wt-chip" data-filter="secret">🗝️ Secretos</span>
+      <span class="wt-chip" data-filter="boss">🥊 Combates</span>
+      <span class="wt-chip" data-filter="catch">🎯 Capturas</span>
+      <span class="wt-chip" data-filter="item">🎁 Objetos</span>
+      <span class="wt-chip" data-filter="tip">💡 Consejos</span>
+    </div>
+  </div>
+
+  <div class="callout callout--info" style="margin-bottom:22px">
+    <span class="emo">💡</span>
+    <p><b>Cómo usarla:</b> despliega la zona en la que estés, lee sus fichas y pulsa <b>📍 Estoy aquí</b>. Se guarda en tu navegador, así que al volver retoma donde lo dejaste. ¿Buscas algo concreto? Filtra por <b>⚠️ No perder</b> o <b>🗝️ Secretos</b> para ver de un vistazo lo importante de toda la aventura.</p>
+  </div>
+
+  <div class="wt-timeline" id="wtTimeline"></div>
+
+  <footer class="footer">
+    <p><b>Compañera de juego · Pokémon Negro 2 / Blanco 2.</b> Sprites de gen. 5 vía PokéAPI. Recurso de fans no oficial; Pokémon © Nintendo / Game Freak / The Pokémon Company.</p>
+    <p><a href="index.html">← Volver a la guía 100% completa</a> · <a href="../index.html">Otras guías</a></p>
+  </footer>
+
+</main>
+
+<script>
+  // Tema claro/oscuro (compartido entre guías por localStorage)
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("themeBtn"), K = "esmeralda_tema";
+    function apply(t){ root.setAttribute("data-theme", t); btn.textContent = t === "light" ? "☀️" : "🌙"; }
+    apply(localStorage.getItem(K) || "dark");
+    btn.addEventListener("click", function(){ var n = root.getAttribute("data-theme")==="light"?"dark":"light"; localStorage.setItem(K,n); apply(n); });
+  })();
+</script>
+<script src="assets/js/companion.js"></script>
+</body>
+</html>
