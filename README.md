@@ -2,7 +2,12 @@
 
 Guía web **completa, visual e interactiva** para completar Pokémon Esmeralda al 100% en emulador.
 
-👉 **Abre `index.html`** en cualquier navegador.
+👉 **Abre `index.html`** (guía de referencia) o **`jugando.html`** (compañera paso a paso para llevar mientras juegas).
+
+## Dos modos
+
+- **`index.html`** — Guía de referencia 100%: gimnasios, legendarios, puzzles, Frontera, Pokédex, con seguimiento de progreso.
+- **`jugando.html`** — Compañera de juego: la ruta por Hoenn paso a paso con **solo lo importante y lo no obvio** (objetos clave, capturas que merecen la pena, secretos fáciles de perderse), sprites reales de gen. 3, marcador de “Estoy aquí” y filtros (No perder / Secretos…).
 
 ## Qué incluye
 
