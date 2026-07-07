@@ -11,6 +11,7 @@
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/" + id + ".png";
   };
   var NAME = {
+    101:"Electrode",132:"Ditto",152:"Chikorita",155:"Cyndaquil",158:"Totodile",282:"Gardevoir",
     252:"Treecko",255:"Torchic",258:"Mudkip",261:"Poochyena",263:"Zigzagoon",265:"Wurmple",
     276:"Taillow",278:"Wingull",280:"Ralts",285:"Shroomish",287:"Slakoth",289:"Slaking",
     290:"Nincada",291:"Ninjask",292:"Shedinja",293:"Whismur",296:"Makuhita",299:"Nosepass",
@@ -40,7 +41,7 @@
   // atajos de enlaces a la guía de referencia
   var L = {
     gym:      { t:"Todos los gimnasios", href:"index.html#gimnasios" },
-    liga:     { t:"Alto Mando y Campeona", href:"index.html#liga" },
+    liga:     { t:"Alto Mando y Campeón", href:"index.html#liga" },
     leg:      { t:"Legendarios", href:"index.html#legendarios" },
     puzzles:  { t:"Puzzles y Braille", href:"index.html#puzzles" },
     islas:    { t:"Islas y áreas secretas", href:"index.html#islas" },
@@ -50,7 +51,7 @@
     feebas:   { t:"Feebas → Milotic", href:"index.html#feebas" },
     mtmo:     { t:"MTs y MOs", href:"index.html#mtmo" },
     tutores:  { t:"Tutores de movimientos", href:"index.html#tutores" },
-    concursos:{ t:"Concursos y Pokoblocks", href:"index.html#concursos" },
+    concursos:{ t:"Concursos y Pokécubos", href:"index.html#concursos" },
     bases:    { t:"Bases y bayas", href:"index.html#bases" },
     objetos:  { t:"Objetos raros", href:"index.html#objetos" },
     cria:     { t:"Cría, EVs e IVs", href:"index.html#cria" },
@@ -84,16 +85,16 @@
       hl:[
       { cat:"secret", t:"Wurmple: la evolución es ALEATORIA", d:"No depende del nivel sino del <b>valor de personalidad</b> oculto: sale Silcoon→Beautifly o Cascoon→Dustox al azar. Si quieres uno concreto, captura varios Wurmple.", mons:[265] },
       { cat:"catch", t:"Shroomish y Slakoth (imprescindibles)", d:"<b>Shroomish</b>→Breloom (Planta/Lucha) con Bomba Germen/Puño Certero es un monstruo. <b>Slakoth</b>→Vigoroth→Slaking pega brutal (pero Slaking tiene Ausente: actúa turno sí, turno no).", mons:[285,287] },
-      { cat:"item", t:"🫐 Planta bayas cuanto antes", d:"En la parcela de la florista (Ruta 104). Tardan horas reales en crecer, así que empieza ya: las necesitarás para <b>Pokoblocks</b>, concursos y <b>Milotic</b>.", link:L.bases },
+      { cat:"item", t:"🫐 Planta bayas cuanto antes", d:"En la parcela de la florista (Ruta 104). Tardan horas reales en crecer, así que empieza ya: las necesitarás para <b>Pokécubos</b>, concursos y <b>Milotic</b>.", link:L.bases },
       { cat:"boss", t:"Recluta en el bosque", d:"Ayudas al investigador de Devon contra un recluta de Aqua/Magma. Recoge los objetos ocultos del bosque (revísalo con calma)." },
       { cat:"catch", t:"Taillow y Wingull", d:"<b>Taillow</b>→Swellow (Normal/Volador rápido) y Wingull→Pelipper. Buenos voladores tempranos.", mons:[276,278] }
     ]},
     { area:"Ciudad Férrica", name:"Gimnasio 1 · Petra (Roca)", emo:"🥇", gym:"Piedra", mons:[299],
       goal:"Vence a Petra, entrega los Bienes de Devon y hazte con dos objetos clave.",
       hl:[
-      { cat:"boss", t:"Petra — tipo Roca (Nosepass Nv. 15)", d:"Agua+Planta la barren (Mudkip, Lotad, Shroomish). Cuidado si llevas Torchic. Premio: Medalla Piedra y <b>MT39 Bola Roca</b>.", mons:[299], link:L.gym },
-      { cat:"item", t:"⭐ Repartir Experiencia (Exp. Share)", d:"Tras el gimnasio persigues al ladrón de los <b>Bienes de Devon</b> (Ruta 116/Túnel). Al devolverlos, el <b>Sr. Stone</b> en Devon Corp te da el Exp. Share. Póntelo a un Pokémon flojo y súbelo sin esfuerzo. ¡Objeto que MUCHA gente se pierde!" },
-      { cat:"item", t:"MO01 Corte + PokéNav", d:"La <b>MO01 Corte</b> te la da un hombre en la casa junto a la entrada norte. Devon te da el <b>PokéNav</b> (llamadas y revanchas con entrenadores).", link:L.mtmo }
+      { cat:"boss", t:"Petra — tipo Roca (Nosepass Nv. 15)", d:"Agua+Planta la barren (Mudkip, Lotad, Shroomish). Cuidado si llevas Torchic. Premio: Medalla Piedra y <b>MT39 Tumba Rocas</b>.", mons:[299], link:L.gym },
+      { cat:"item", t:"⭐ Repartir Experiencia (Exp. Share)", d:"Tras el gimnasio persigues al ladrón de los <b>Bienes de Devon</b> (Ruta 116/Túnel). Al devolverlos, el Sr. Stone te pide llevar una <b>carta a Steven</b> (Cueva Granito): cuando vuelvas a Devon tras entregarla, te da el <b>Repartir Exp.</b> Póntelo a un Pokémon flojo y súbelo sin esfuerzo. ¡Objeto que MUCHA gente se pierde!" },
+      { cat:"item", t:"MO01 Corte + PokéNav", d:"La <b>MO01 Corte</b> te la da el hombre de la casa junto al Centro Pokémon. Devon te da el <b>PokéNav</b> (llamadas y revanchas con entrenadores).", link:L.mtmo }
     ]},
     { area:"Ruta 116 · Túnel Rusturf", name:"Nincada y el truco Shedinja", emo:"🕳️", mons:[290,291,292],
       goal:"Recupera los Bienes de Devon y captura Nincada para el truco de Shedinja.",
@@ -105,7 +106,7 @@
     { area:"Pueblo Azuliza", name:"Gimnasio 2 · Marcial (Lucha)", emo:"🥊", gym:"Puño", mons:[296],
       goal:"Llega en barco con el Sr. Briney, vence a Marcial y lleva la carta a Steven.",
       hl:[
-      { cat:"boss", t:"Marcial — tipo Lucha (Makuhita Nv. 16)", d:"Volador o <b>Psíquico</b> (¡tu Ralts/Kirlia!) lo destrozan. Ojo con Sacrificio de Makuhita. Premio: Medalla Puño y <b>MT08 Corpulencia</b>.", mons:[296], link:L.gym },
+      { cat:"boss", t:"Marcial — tipo Lucha (Makuhita Nv. 19)", d:"Machop y Meditite Nv. 16 abren; su as es <b>Makuhita Nv. 19</b>. Volador o <b>Psíquico</b> (¡tu Ralts/Kirlia!) lo destrozan. Ojo con Sacrificio. Premio: Medalla Puño y <b>MT08 Corpulencia</b>.", mons:[296], link:L.gym },
       { cat:"item", t:"Caña Vieja", d:"Un pescador del pueblo te la regala. Empieza a pescar Magikarp/Tentacool para completar Pokédex." },
       { cat:"secret", t:"🎣 La frase de moda de Azuliza", d:"El chico 'moderno' del pueblo fija una <b>frase de moda</b>. Esa frase determina en el postgame las 6 casillas donde vive <b>Feebas</b> en la Ruta 119. Tenlo muy presente.", link:L.feebas },
       { cat:"tip", t:"Recado para Steven", d:"Entrega la carta a Steven en la <b>Cueva Granito</b>. De paso coge la <b>MO05 Destello</b> de un excursionista y úsala dentro." }
@@ -120,16 +121,16 @@
     { area:"Ciudad Portual (Slateport)", name:"Mercado, museo y servicios", emo:"⚓", mons:[320,318,319],
       goal:"Frena a Aqua/Magma en el Museo y aprovecha tiendas, tutores y concursos.",
       hl:[
-      { cat:"boss", t:"Team Aqua/Magma en el Museo Oceánico", d:"Combate de trama contra reclutas y un jefe. Antes, entrega los Bienes de Devon al Capitán Stern." },
-      { cat:"item", t:"Caja Monedas + Borra-movimientos + Tutores", d:"Consigue la <b>Caja Monedas</b> (una señora) para el Casino. Aquí puedes <b>borrar MOs</b> y hay <b>tutores</b> de movimientos.", link:L.tutores },
-      { cat:"catch", t:"Wailmer y Carvanha", d:"Pescando/surfeando. <b>Carvanha</b>→Sharpedo (Agua/Siniestro) es un atacante rapidísimo con Velocidad Extrema/Colmillo.", mons:[320,318,319] },
+      { cat:"boss", t:"Team Aqua en el Museo Oceánico", d:"Vences a dos reclutas y conoces a <b>Aquiles (Archie)</b>, el jefe Aqua. Antes, entrega los Bienes de Devon al Capitán Babor (Stern)." },
+      { cat:"item", t:"Caja Monedas + tutor", d:"Consigue la <b>Caja Monedas</b> (una señora, a cambio de una Carta Puerto) para el Casino. Hay un <b>tutor de movimientos</b> y el Juez de nombres. (Las MOs se borran más adelante, en Calagua.)", link:L.tutores },
+      { cat:"catch", t:"Wailmer y Carvanha", d:"Pescando/surfeando. <b>Carvanha</b>→Sharpedo (Agua/Siniestro) es un cañón de cristal rapidísimo con Triturar y Surf.", mons:[320,318,319] },
       { cat:"tip", t:"Mercado, Concursos y Battle Tent", d:"El <b>Mercado</b> vende objetos útiles (y bayas). Hay <b>Casa de Concursos</b> y una <b>Carpa de Combate</b> para practicar." }
     ]},
     { area:"Ruta 110", name:"Casa del Timo y tu bici", emo:"🚲", mons:[309,311,312],
       goal:"Consigue una bici en Malvalona y descubre la Casa del Timo.",
       hl:[
       { cat:"secret", t:"🏠 La Casa del Timo (Trick House)", d:"El Trick Master abre un <b>puzzle NUEVO tras cada medalla</b> con premios (MTs, objetos, muebles de base). Vuelve después de cada gimnasio; es facilísimo de olvidar." },
-      { cat:"item", t:"Bici Mach o Acro (gratis, intercambiable)", d:"Rydel, en Malvalona, te da una. <b>Mach</b> = velocidad (Torre Celeste, cuestas). <b>Acro</b> = saltos (Torre Espejismo, atajos). Cámbiala gratis cuando quieras." },
+      { cat:"item", t:"Bici Carrera o Acrobática (gratis, intercambiable)", d:"Rydel, en Malvalona, te da una. <b>Carrera (Mach)</b> = velocidad: suelos agrietados de la Torre Espejismo, la Torre Celeste y cuestas de arena. <b>Acrobática (Acro)</b> = saltos y raíles (Desfiladero, islotes). Cámbiala gratis cuando quieras." },
       { cat:"catch", t:"Electrike, Plusle/Minun, Gulpin", d:"<b>Electrike</b>→Manectric (Eléctrico veloz). Plusle/Minun para dobles; Gulpin→Swalot.", mons:[309,311,312] }
     ]},
     { area:"Malvalona (Mauville)", name:"Gimnasio 3 · Erico (Eléctrico)", emo:"⚡", gym:"Dínamo", mons:[310],
@@ -140,38 +141,39 @@
       { cat:"secret", t:"Nueva Malvalona (New Mauville)", d:"Erico te manda arreglar la central eléctrica al sur: dentro hay objetos, <b>Voltorb/Magnemite</b> y un premio. Contenido opcional que casi nadie visita." },
       { cat:"item", t:"Casino (fichas → premios)", d:"El <b>Casino</b> canjea fichas por MTs y Pokémon. Con la Caja Monedas ya puedes jugar.", link:L.objetos }
     ]},
-    { area:"Rutas 111–112 · Camino Ardiente", name:"Camino a Lavacalda", emo:"🌋", mons:[322,324,66],
-      goal:"Sube por el Camino Ardiente y frena a los villanos en el Monte Cenizo.",
+    { area:"Rutas 111–112 · Senda Ígnea", name:"Camino a Lavacalda", emo:"🌋", mons:[322,324,66],
+      goal:"Sube por el Senda Ígnea y frena a los villanos en el Monte Cenizo.",
       hl:[
-      { cat:"catch", t:"Camino Ardiente: capturas de Fuego", d:"<b>Numel</b>→Camerupt (Fuego/Tierra), <b>Torkoal</b> (Fuego, defensa altísima, SOLO aquí), <b>Machop</b>→Machamp, Grimer, Koffing y Slugma.", mons:[322,324,66] },
-      { cat:"boss", t:"Aqua/Magma en la cima del Monte Cenizo", d:"Detén su plan con el teleférico → consigues el <b>Meteorito</b> para la trama." },
-      { cat:"item", t:"Objetos del Paso Quemado y teleférico", d:"Recoge MTs y objetos ocultos por la zona (Paso Quemado, Ruta 112) antes de bajar a Lavacalda." }
+      { cat:"catch", t:"Senda Ígnea: capturas de Fuego", d:"<b>Numel</b>→Camerupt (Fuego/Tierra), <b>Torkoal</b> (Fuego, defensa altísima, SOLO aquí), <b>Machop</b>→Machamp, Grimer, Koffing y Slugma.", mons:[322,324,66] },
+      { cat:"boss", t:"El Equipo Magma en la cima del Monte Cenizo", d:"Sube en teleférico y vence a <b>Magno (Maxie)</b> junto a la máquina del meteorito. Recoge el <b>Meteorito</b> al acabar." },
+      { cat:"missable", t:"El Meteorito vale una MT27", d:"Más adelante, <b>devuélvele el Meteorito al Prof. Cozmo</b> en Pueblo Fallarbor: te da la <b>MT27 Retribución</b>, uno de los mejores ataques Normal del juego. Facilísimo de olvidar." },
+      { cat:"item", t:"Objetos del Desfiladero", d:"Baja por el <b>Desfiladero (Jagged Pass)</b> con la Bici Acrobática y recoge MTs y objetos ocultos antes de llegar a Lavacalda. Recuerda esta zona: esconde una <b>guarida secreta</b> para más adelante." }
     ]},
     { area:"Lavacalda (Lavaridge)", name:"Gimnasio 4 · Candela (Fuego)", emo:"♨️", gym:"Calor", mons:[324],
       goal:"Recoge el Huevo de las termas, vence a Candela y cruza el desierto.",
       hl:[
       { cat:"missable", t:"🥚 Huevo de Wynaut (¡NO te lo saltes!)", d:"Habla con la anciana de las <b>aguas termales</b>: te regala un Huevo que nace en <b>Wynaut</b> (→Wobbuffet). Único y facilísimo de perderse.", mons:[360], link:L.cria },
       { cat:"boss", t:"Candela — tipo Fuego (Torkoal Nv. 29)", d:"Agua/Tierra/Roca. Su Torkoal tiene <b>Humo Blanco</b> y usa Sofoco. Premio: Medalla Calor y <b>MT50 Sofoco</b>.", mons:[324], link:L.gym },
-      { cat:"item", t:"Gafas Protectoras (Go-Goggles)", d:"Tras el Monte Cenizo, May/Brendan te las da: sin ellas la <b>tormenta de arena</b> del desierto (Ruta 111) te bloquea el paso. También hay una <b>Herboristería</b> con curas baratas (amargas)." }
+      { cat:"item", t:"Gafas Protectoras (Go-Goggles)", d:"Al salir del gimnasio de Candela, tu rival May/Brendan te las regala: sin ellas la <b>tormenta de arena</b> del desierto (Ruta 111) te bloquea el paso. También hay una <b>Herboristería</b> con curas baratas (amargas)." }
     ]},
     { area:"Ruta 111 · Desierto", name:"Fósiles y joyas del desierto", emo:"🏜️", mons:[328,330,331],
       goal:"Con las Gafas, cruza el desierto: fósil, base secreta y Trapinch.",
       hl:[
       { cat:"catch", t:"⭐ Trapinch → Flygon", d:"<b>Trapinch</b>→Vibrava→<b>Flygon</b> (Tierra/Dragón) es de los mejores de toda la partida. También Cacnea→Cacturne, Sandshrew y Baltoy→Claydol.", mons:[328,330,331], link:L.pokedex },
-      { cat:"item", t:"Torre Espejismo → tu fósil", d:"Sube con la <b>Acro Bike</b> y elige UN fósil: <b>Garra</b> (→Anorith→Armaldo) o <b>Raíz</b> (→Lileep→Cradily). El otro se consigue en el postgame. Revívelo en el <b>Museo de Devon</b> (Portual).", link:L.objetos },
+      { cat:"item", t:"Torre Espejismo → tu fósil", d:"Sube con la <b>Bici Carrera (Mach)</b> por los suelos agrietados (y lleva Golpe Roca) y elige UN fósil: <b>Garra</b> (→Anorith→Armaldo) o <b>Raíz</b> (→Lileep→Cradily). El otro se consigue en el postgame. Revívelo en <b>Devon S.A.</b> (Férrica, 2.ª planta).", link:L.objetos },
       { cat:"secret", t:"MT43 Daño Secreto → tu Base Secreta", d:"Una chica en una casa del desierto te da la <b>MT43</b>: úsala en arbustos/árboles/paredes marcadas para crear y decorar tu <b>Base Secreta</b>.", link:L.bases }
     ]},
     { area:"Petalia (Petalburg)", name:"Gimnasio 5 · Normo (Normal)", emo:"🏅", gym:"Equilibrio", mons:[289],
       goal:"Con 4 medallas, enfréntate a tu padre y consigue Surf.",
       hl:[
-      { cat:"boss", t:"Tu padre Normo — tipo Normal (Slaking Nv. 31)", d:"Necesitas <b>4 medallas</b> para entrar. Equipo: Spinda, Vigoroth, Linoone y <b>Slaking</b>. Slaking descansa turno sí/turno no (<b>Ausente</b>): pega fuerte en su descanso. Lucha lo revienta. Premio: Medalla Equilibrio y <b>MT42 Cara Susto</b>.", mons:[289], link:L.gym },
+      { cat:"boss", t:"Tu padre Normo — tipo Normal (Slaking Nv. 31)", d:"Necesitas <b>4 medallas</b> para entrar. Equipo: Spinda, Vigoroth, Linoone y <b>Slaking</b>. Slaking descansa turno sí/turno no (<b>Ausente</b>): pega fuerte en su descanso. Lucha lo revienta. Premio: Medalla Equilibrio y <b>MT42 Imagen</b>.", mons:[289], link:L.gym },
       { cat:"item", t:"MO03 Surf", d:"Tras el gimnasio, en Petalia te dan la <b>MO03 Surf</b>: se abre medio mapa (rutas de agua). Enséñasela a un Agua o a un esclavo MO.", link:L.mtmo }
     ]},
-    { area:"Rutas 118–119 · Casa del Tiempo", name:"Hacia Arborada", emo:"🌧️", mons:[357,352,351,349],
-      goal:"Recupera la Casa del Tiempo, consigue Vuelo y el Devon Scope.",
+    { area:"Rutas 118–119 · Instituto Meteorológico", name:"Hacia Arborada", emo:"🌧️", mons:[357,352,351,349],
+      goal:"Recupera el Instituto Meteorológico, consigue Vuelo y el Detector Devon.",
       hl:[
-      { cat:"boss", t:"Casa del Tiempo → regalo Castform", d:"Expulsa a Aqua/Magma de la <b>Casa del Tiempo</b> (Ruta 119) y un científico te regala <b>Castform</b> (cambia de tipo según el clima). Único.", mons:[351], link:L.pokedex },
-      { cat:"item", t:"MO02 Vuelo + Devon Scope", d:"Una chica de la Ruta 119 te da <b>Vuelo</b> (viajas entre ciudades). En la Ruta 120 consigues el <b>Devon Scope</b>: revela a los <b>Kecleon invisibles</b> (uno bloquea el puente).", mons:[352], link:L.mtmo },
+      { cat:"boss", t:"Instituto Meteorológico → regalo Castform", d:"Expulsa al Equipo Aqua del <b>Instituto Meteorológico</b> (Ruta 119) y un científico te regala <b>Castform</b> (cambia de tipo según el clima). Único.", mons:[351], link:L.pokedex },
+      { cat:"item", t:"MO02 Vuelo + Detector Devon", d:"Tu rival May/Brendan te reta en la Ruta 119: al vencerle te da la <b>MO02 Vuelo</b> (viaja entre ciudades ya visitadas). En la Ruta 120, Steven te da el <b>Detector Devon</b>: revela a los <b>Kecleon invisibles</b> (uno bloquea el puente).", mons:[352], link:L.mtmo },
       { cat:"secret", t:"🐟 Feebas vive aquí (Ruta 119)", d:"Solo en <b>6 casillas al azar</b> ligadas a la frase de moda de Azuliza, y solo pica con caña. Puedes empezar a buscarlo ya o dejarlo para el 100% postgame.", mons:[349], link:L.feebas },
       { cat:"catch", t:"Tropius, Zangoose/Seviper, Oddish", d:"<b>Tropius</b> (Planta/Volador) solo aquí. En Esmeralda salen tanto Zangoose como Seviper según zona.", mons:[357] },
       { cat:"item", t:"Caña Buena", d:"Un pescador de la Ruta 118 te la da: mejores capturas de agua que la Vieja." }
@@ -180,17 +182,24 @@
       goal:"Aparta al Kecleon del puente y derrota a Alana.",
       hl:[
       { cat:"boss", t:"Alana — tipo Volador (Altaria Nv. 33)", d:"Eléctrico/Hielo/Roca. Su <b>Skarmory</b> (Acero/Volador) es duro; su <b>Altaria</b> es Dragón: el <b>Hielo</b> lo funde. Cuidado con Danza Dragón. Premio: Medalla Pluma y <b>MT40 Golpe Aéreo</b>.", mons:[334,227], link:L.gym },
-      { cat:"catch", t:"Swablu → Altaria", d:"En rutas cercanas. Altaria (Dragón/Volador) es sólido, resiste mucho y luce en concursos de Hermosura.", mons:[333] },
+      { cat:"catch", t:"Swablu → Altaria", d:"En rutas cercanas. Altaria (Dragón/Volador) es sólido, resiste mucho y luce en concursos de Belleza.", mons:[333] },
       { cat:"tip", t:"Recuerda el Devon Scope", d:"Sin él no cruzas a Arborada: un <b>Kecleon invisible</b> tapa el puente de madera. Púlsale con el objeto puesto." }
     ]},
     { area:"Rutas 120–121 · Monte Pírico · Lilycove", name:"Safari y gran ciudad", emo:"🎡", mons:[359,335],
       goal:"Explora el Monte Pírico, la Zona Safari y los Grandes Almacenes.",
       hl:[
       { cat:"catch", t:"🏞️ Zona Safari (Lilycove) — botín enorme", d:"Exclusivos que no salen fuera: <b>Pikachu, Pinsir, Heracross, Rhyhorn, Phanpy, Miltank, Doduo, Natu…</b>. Lleva Balls Safari, comida y paciencia (no puedes usar tus ataques).", link:L.pokedex },
-      { cat:"boss", t:"Monte Pírico → Orbe Rojo/Azul", d:"Frena a Aqua/Magma en la cima; obtienes el <b>Orbe</b> que despierta al legendario. Debajo, tumbas con objetos (Amuleto?)." },
+      { cat:"boss", t:"Monte Pírico → Emblema Magma", d:"En la cima, los equipos han <b>robado los Orbes Rojo y Azul</b>. Los ancianos te entregan el <b>Emblema Magma</b>: abre la guarida secreta del Desfiladero. De camino: <b>Chimecho</b> solo aparece en la hierba del exterior de la cima (rarísimo, único sitio del juego)." },
       { cat:"catch", t:"Absol y compañía", d:"<b>Absol</b> (Siniestro) en la Ruta 120: gran atacante físico. Zangoose/Seviper según versión de zona.", mons:[359,335] },
       { cat:"item", t:"Grandes Almacenes + Caña Súper", d:"Los <b>Almacenes de Lilycove</b> venden vitaminas, MTs, objetos de tipo… La <b>Caña Súper</b> (pescador Ruta 121) es la pesca definitiva. Aquí está la <b>Casa de Concursos</b> principal.", link:L.concursos },
-      { cat:"secret", t:"Maestro de las Bayas (Ruta 123)", d:"Regala bayas raras cada día si le dices el <b>lema</b> correcto. Fuente clave de bayas para Pokoblocks de calidad.", link:L.bases }
+      { cat:"secret", t:"Maestro de las Bayas (Ruta 123)", d:"Él regala <b>2 bayas al día</b>; su mujer da <b>bayas raras</b> si le dices lemas concretos. Fuente clave de bayas para Pokécubos de calidad.", link:L.bases }
+    ]},
+    { area:"Guaridas Magma y Aqua", name:"Las dos guaridas", emo:"🕵️", mons:[383,101],
+      goal:"Con el Emblema Magma, asalta la guarida del Desfiladero; luego persigue a Aqua en Calagua.",
+      hl:[
+      { cat:"boss", t:"Guarida Magma (Desfiladero)", d:"El <b>Emblema Magma</b> abre una entrada oculta en el Desfiladero. Dentro, el Equipo Magma usa el <b>Orbe Azul</b> para despertar a <b>Groudon</b>… que huye. Vence a <b>Magno (Maxie)</b> al fondo. Aprovecha para capturar <b>Torkoal/Slugma</b> si te faltan.", mons:[383] },
+      { cat:"missable", t:"⭐ MASTER BALL en la Guarida Aqua", d:"En la <b>Guarida Aqua</b> (puerto de Calagua, entra surfeando) hay una sala de teletransportes con 4 Poké Balls en el suelo: una es la <b>Master Ball</b> (captura segura: guárdala para un legendario esquivo). Dos de las otras son <b>Electrode</b> salvajes Nv. 30: capturables y exclusivos de aquí junto a Nueva Malvalona.", mons:[101] },
+      { cat:"boss", t:"El submarino robado", d:"Tras la Guarida Magma, en el <b>puerto de Portual</b> el Equipo Aqua roba el submarino del Capitán Babor. Síguelo hasta la Guarida Aqua de Calagua: vences al comandante al fondo, pero el submarino zarpa hacia el fondo marino. Siguiente parada: Algaria." }
     ]},
     { area:"Algaria (Mossdeep)", name:"Gimnasio 7 · Vito y Leti (Psíquico)", emo:"🧠", gym:"Mente", mons:[338,337],
       goal:"Gana el combate doble, consigue Buceo y un Beldum de Steven.",
@@ -200,38 +209,41 @@
       { cat:"catch", t:"⭐ Beldum en casa de Steven", d:"Steven te regala un <b>Beldum</b>→Metang→<b>Metagross</b> (Acero/Psíquico), de lo mejor del competitivo. No salgas de Algaria sin recogerlo.", mons:[374,376], link:L.pokedex },
       { cat:"boss", t:"Centro Espacial", d:"Aqua/Magma intentan robar combustible: combate de trama con Steven de aliado." }
     ]},
-    { area:"Rutas 124–128 · Bajo el mar", name:"Cueva Submarina y Rayquaza", emo:"🌊", mons:[384,371],
-      goal:"Detén la crisis del clima capturando a Rayquaza en la Torre Celeste.",
+    { area:"Rutas 124–128 · Bajo el mar", name:"Caverna Abisal y la crisis del clima", emo:"🌊", mons:[384,371],
+      goal:"Sigue al submarino hasta la Caverna Abisal y despierta a Rayquaza para frenar la catástrofe.",
       hl:[
-      { cat:"boss", t:"Cueva del Origen del Mar (Seafloor Cavern)", d:"Bucea hasta ella: se libera Kyogre/Groudon y el clima enloquece (lluvia/sol extremos)." },
-      { cat:"boss", t:"🐉 Rayquaza — Torre Celeste (Nv. 70)", d:"Ve a Pueblo Oromar y sube la <b>Torre Celeste</b> con la <b>Mach Bike</b> a toda velocidad por los suelos que se rompen. Cálmalo y captúralo aquí mismo.", mons:[384], link:L.leg },
-      { cat:"catch", t:"Buceo: Relicanth y Clamperl", d:"<b>Relicanth</b> es una de las 'llaves' (con Wailord) para desbloquear los <b>Regis</b> en el postgame: cázalo ya. Clamperl→Huntail/Gorebyss por intercambio con objeto.", link:L.puzzles }
+      { cat:"boss", t:"Caverna Abisal (Seafloor Cavern)", d:"<b>Bucea</b> en la Ruta 128 hasta la caverna (necesitas Fuerza y Golpe Roca dentro). Al fondo, vences a <b>Aquiles</b>… pero despierta a <b>Kyogre</b> con el Orbe Rojo y el clima de Hoenn enloquece (lluvia y sol extremos)." },
+      { cat:"boss", t:"🐉 Despierta a Rayquaza — Torre Celeste", d:"Con Arrecípolis en crisis, Plubio (Wallace) te manda a la <b>Torre Celeste</b> (este de Pueblo Oromar): en la cima, Rayquaza despierta y vuela a calmar a Kyogre y Groudon. <b>Aún no puedes capturarlo</b>: volverá a la cima tras la Liga (Nv. 70).", mons:[384], link:L.leg },
+      { cat:"catch", t:"Buceo: Relicanth y Clamperl", d:"<b>Relicanth</b> (fondos con algas de la Ruta 124/126) es una de las 'llaves' (con Wailord) para desbloquear los <b>Regis</b> en el postgame: cázalo ya. Clamperl→Huntail/Gorebyss por intercambio con objeto.", link:L.puzzles }
     ]},
     { area:"Arrecípolis (Sootopolis)", name:"Gimnasio 8 · Galán/Juan (Agua)", emo:"💧", gym:"Lluvia", mons:[230],
       goal:"Resuelve la crisis del legendario y vence al último líder.",
       hl:[
-      { cat:"boss", t:"Juan — tipo Agua (Kingdra Nv. 46)", d:"Planta/Eléctrico para casi todo. Su <b>Kingdra</b> (Agua/Dragón) solo teme a Dragón/Hada: combina Hielo+Planta o pega con un Dragón. Premio: Medalla Lluvia y <b>MT03 Hidropulso</b>.", mons:[230], link:L.gym },
-      { cat:"item", t:"MO08 Cascada", d:"Tras la crisis, Wallace/Máximo te la da: abre el <b>Camino Victoria</b>.", link:L.mtmo }
+      { cat:"boss", t:"Galán (Juan) — tipo Agua (Kingdra Nv. 46)", d:"Planta/Eléctrico para casi todo. Su <b>Kingdra</b> (Agua/Dragón) solo teme a Dragón/Hada: combina Hielo+Planta o pega con un Dragón. Premio: Medalla Lluvia y <b>MT03 Hidropulso</b>.", mons:[230], link:L.gym },
+      { cat:"item", t:"MO08 Cascada", d:"Tras la crisis, <b>Plubio (Wallace)</b> te la da: abre la <b>Calle Victoria</b>.", link:L.mtmo }
     ]},
-    { area:"Camino Victoria · Calagua", name:"Alto Mando y Campeona", emo:"👑", mons:[359,356,365,373,350],
-      goal:"Supera el Camino Victoria y encadena a los 5 rivales de la Liga.",
+    { area:"Calle Victoria · Colosalia", name:"Alto Mando y Campeón", emo:"👑", mons:[359,356,365,373,350],
+      goal:"Supera la Calle Victoria y encadena a los 5 rivales de la Liga.",
       hl:[
-      { cat:"boss", t:"Los 4 + la Campeona, SIN curar entre ellos", d:"<b>Sixto</b> (Siniestro) → <b>Fátima</b> (Fantasma) → <b>Glacia</b> (Hielo) → <b>Dracón</b> (Dragón) → Campeona <b>Alana/Wallace</b> (Agua). Lleva <b>muchos Restaurar Todo</b>, Éter y revivir.", mons:[359,356,365,373,350], link:L.liga },
-      { cat:"tip", t:"Dos ataques resuelven media Liga", d:"Un buen <b>Hielo</b> arrasa a Dracón (dragones) y <b>Eléctrico/Planta</b> hunde el equipo Agua de la Campeona. Milotic es un muro especial: usa físicos o estados." },
-      { cat:"catch", t:"Camino Victoria", d:"Lairon, Hariyama, Mawile, Sableye, Medicham, Golbat… y objetos valiosos (Full Restore, MTs) escondidos." }
+      { cat:"boss", t:"⚔️ Blasco (Wally) te espera dentro", d:"En mitad de la Calle Victoria, tu amigo <b>Blasco</b> te corta el paso con su <b>Gardevoir Nv. 45</b> como estrella. Tras la Liga podrás repetir revanchas con él (cada vez más fuerte) vía PokéNav.", mons:[282] },
+      { cat:"boss", t:"Los 4 + el Campeón, sin Centro Pokémon entre medias", d:"<b>Sixto</b> (Siniestro) → <b>Fátima</b> (Fantasma) → <b>Nívea</b> (Hielo) → <b>Dracón</b> (Dragón) → Campeón <b>Plubio/Wallace</b> (Agua). Lleva <b>muchos Restaurar Todo</b>, Éter y Revivir.", mons:[359,356,365,373,350], link:L.liga },
+      { cat:"tip", t:"Dos ataques resuelven media Liga", d:"Un buen <b>Hielo</b> arrasa a Dracón (dragones) y <b>Eléctrico/Planta</b> hunde el equipo Agua del Campeón. Milotic es un muro especial: usa físicos potentes o estados." },
+      { cat:"catch", t:"Calle Victoria", d:"Lairon, Hariyama, Mawile, Sableye, Medicham, Golbat… y objetos valiosos (Restaurar Todo, MTs) escondidos." }
     ]},
     /* ==================== CAPÍTULO POSTGAME ==================== */
     { area:"🏆 POSTGAME", name:"Prepárate para el 100%", emo:"🏆", mons:[382,383,384],
       goal:"Tras el Salón de la Fama se abre casi todo. Desbloquea el Nacional y equípate para cazar legendarios.",
       hl:[
-      { cat:"tip", t:"Desbloquea el Pokédex Nacional (primero de todo)", d:"Es requisito para varias evoluciones y para registrar bien la colección.<ol><li>Debes haber <b>visto los ~200 Pokémon de Hoenn</b> (los combates de líderes, Alto Mando y entrenadores completan casi todos los avistamientos).</li><li>Ve al laboratorio del <b>Prof. Abedul</b> en Villa Raíz: te amplía la Pokédex al <b>modo Nacional</b>.</li></ol>", link:L.pokedex },
-      { cat:"item", t:"🎒 Kit de cazador de legendarios", d:"Antes de salir, abastécete:<ul><li><b>20+ Ultra Balls</b> y varias <b>Ball Turno</b> (Timer Ball: más eficaz cuantos más turnos pasan).</li><li>Un Pokémon con <b>Falso Tortazo</b> (deja al rival a 1 PS sin debilitarlo) y otro con <b>Hipnosis/Paralizador</b> o Cara Susto para infligir estado.</li><li>Para los <b>errantes</b> (la Lati): un Pokémon con <b>Mal de Ojo</b> o un <b>Wobbuffet</b> (habilidad Sombra Trampa) para que no huyan.</li></ul>", mons:[202] },
+      { cat:"tip", t:"El Pokédex Nacional es automático", d:"Nada más vencer la Liga, al salir de tu casa el <b>Prof. Abedul</b> te lleva al laboratorio y amplía tu Pokédex al <b>modo Nacional</b> (en Esmeralda no hace falta ver los 202 antes). A partir de aquí, todo cuenta para los 386.", link:L.pokedex },
+      { cat:"boss", t:"🥊 El jefe secreto: Máximo (Steven) en la Cascada Meteoro", d:"En una sala nueva al fondo de la <b>Cascada Meteoro</b> te espera el combate más duro del juego: Skarmory 77, Claydol 75, Aggron 76, Cradily 76, Armaldo 76 y <b>Metagross 78</b>. Entrena antes de intentarlo.", mons:[227,376] },
+      { cat:"tip", t:"🔁 Revanchas con líderes (PokéNav)", d:"Registra a los líderes de gimnasio con el <b>Buscapelea</b> del PokéNav: pedirán revancha con equipos cada vez más fuertes (hasta Nv. 60+). La mejor experiencia 'legal' para preparar la Frontera.", link:L.gym },
+      { cat:"item", t:"🎒 Kit de cazador de legendarios", d:"Antes de salir, abastécete:<ul><li><b>20+ Ultra Balls</b> y varias <b>Ball Turno</b> (Timer Ball: más eficaz cuantos más turnos pasan).</li><li>Un Pokémon con <b>Falso Tortazo</b> (deja al rival a 1 PS sin debilitarlo) y otro que duerma o paralice (<b>Hipnosis, Somnífero, Onda Trueno</b>).</li><li>Para los <b>errantes</b> (la Lati): un Pokémon con <b>Mal de Ojo</b> o un <b>Wobbuffet</b> (habilidad Sombra Trampa) para que no huyan.</li></ul>", mons:[202] },
       { cat:"tip", t:"Método de captura universal", d:"<b>Guarda SIEMPRE dentro del juego antes de tocar al legendario.</b> Baja sus PS con Falso Tortazo, <b>duérmelo o paralízalo</b>, y lanza Balls con paciencia. En emulador, un <b>save state</b> justo antes de la tirada te deja reintentar hasta capturarlo o sacar buena naturaleza.", link:L.emu }
     ]},
     { area:"🏆 POSTGAME · Eón", name:"Latios y Latias", emo:"💠", mons:[380,381],
       goal:"Consigue uno errando por Hoenn (según el color que elijas) y el otro en la Isla Sur.",
       hl:[
-      { cat:"boss", t:"La Lati errante (Nv. 40)", d:"<ol><li>Ve a tu casa de Villa Raíz y <b>mira la televisión</b>: sale una noticia y tu madre/Norman te pregunta por un <b>color</b>.</li><li><b>Azul → Latios</b>; <b>Rojo → Latias</b>. Ese Pokémon empieza a <b>deambular</b> por todo Hoenn.</li><li>Rastréalo con el mapa del <b>PokéNav</b>. Al toparte con él, usa <b>Mal de Ojo</b> o Sombra Trampa (Wobbuffet) para que no escape y captúralo con calma (huye cada turno si no lo atrapas).</li></ol>", mons:[380,381], link:L.leg },
+      { cat:"boss", t:"La Lati errante (Nv. 40)", d:"<ol><li>Ve a tu casa de Villa Raíz y <b>mira la televisión</b>: sale una noticia y tu madre te pregunta por un <b>color</b>.</li><li><b>Azul → Latios</b>; <b>Rojo → Latias</b>. Ese Pokémon empieza a <b>deambular</b> por todo Hoenn.</li><li>Rastréalo con el mapa del <b>PokéNav</b>. Al toparte con él, usa <b>Mal de Ojo</b> o Sombra Trampa (Wobbuffet) para que no escape y captúralo con calma (huye cada turno si no lo atrapas).</li></ol>", mons:[380,381], link:L.leg },
       { cat:"item", t:"El otro Lati con el Ticket Eón (Nv. 50)", d:"<ol><li>Consigue el <b>Ticket Eón</b> (era evento; en emulador se añade con código Gameshark).</li><li>Ve al <b>puerto de Ciudad Portual</b> y embarca hacia la <b>Isla Sur</b>.</li><li>Allí te espera, quieto y fácil, el Latios/Latias que NO deambula.</li></ol>", link:L.tickets }
     ]},
     { area:"🏆 POSTGAME · Torre Celeste", name:"Rayquaza", emo:"🐉", mons:[384],
@@ -242,14 +254,14 @@
     { area:"🏆 POSTGAME · Cueva Marina", name:"Kyogre", emo:"🌊", mons:[382],
       goal:"Provoca lluvia anómala para que aparezca la Cueva Submarina y captura a Kyogre.",
       hl:[
-      { cat:"secret", t:"Cómo forzar su aparición", d:"Kyogre vive en la <b>Cueva Submarina (Marine Cave)</b>, que solo aparece con clima anómalo.<ol><li>Recorre rutas del este/sur hasta ver el aviso de <b>tiempo extraño</b> (lluvia intensa). El <b>meteorólogo de la Casa del Tiempo</b> (Ruta 119) te orienta.</li><li>Ve a esa ruta y busca la nueva entrada surfeando/buceando.</li><li>La ubicación <b>rota</b> entre varias rutas; si sales sin capturarlo, el ciclo se reinicia.</li></ol>" },
-      { cat:"boss", t:"Kyogre (Nv. 42)", d:"Recorre el laberinto de agua hasta el fondo. <b>Guarda antes.</b> Falso Tortazo + Sueño y Ball Turno. Con lluvia, su Hidrobomba pega fortísimo: lleva algo resistente al Agua (Planta/Dragón).", mons:[382], link:L.leg }
+      { cat:"secret", t:"Cómo forzar su aparición", d:"Kyogre vive en la <b>Cueva Submarina (Marine Cave)</b>, que solo aparece con clima anómalo.<ol><li>Habla con el <b>científico del Instituto Meteorológico</b> (Ruta 119): te dice en qué ruta hay <b>lluvia intensa</b> anómala.</li><li>Ve a esa ruta y busca la nueva entrada surfeando/buceando.</li><li>La ubicación <b>rota</b> entre varias rutas; si sales sin capturarlo, el ciclo se reinicia.</li></ol>" },
+      { cat:"boss", t:"Kyogre (Nv. 70)", d:"Recorre el laberinto de agua hasta el fondo. <b>Guarda antes.</b> Falso Tortazo + Sueño y Ball Turno. Con lluvia, su Hidrobomba pega fortísimo: lleva algo resistente al Agua (Planta/Dragón) y a buen nivel — es <b>Nv. 70</b>.", mons:[382], link:L.leg }
     ]},
     { area:"🏆 POSTGAME · Cueva Terrestre", name:"Groudon", emo:"🌋", mons:[383],
       goal:"Igual que Kyogre pero con sequía: aparece la Cueva Terrestre.",
       hl:[
-      { cat:"secret", t:"Cómo forzar su aparición", d:"Groudon vive en la <b>Cueva Terrestre (Terra Cave)</b>, ligada a clima de <b>sequía/sol abrasador</b>.<ol><li>Recorre rutas hasta ver el aviso de tiempo extraño (sol intenso); confírmalo con el meteorólogo de la Ruta 119.</li><li>Busca la entrada a la cueva en esa ruta.</li><li>Como con Kyogre, la posición rota y se reinicia si sales sin capturarlo.</li></ol>" },
-      { cat:"boss", t:"Groudon (Nv. 42)", d:"Cruza la cueva de roca hasta el fondo. <b>Guarda antes.</b> Con sol, sus ataques de Fuego/Tierra son demoledores: lleva Agua/Planta resistente y usa estado + Ball Turno.", mons:[383], link:L.leg }
+      { cat:"secret", t:"Cómo forzar su aparición", d:"Groudon vive en la <b>Cueva Terrestre (Terra Cave)</b>, ligada a clima de <b>sequía/sol abrasador</b>.<ol><li>Pregunta al científico del Instituto Meteorológico (Ruta 119) dónde hay <b>sol abrasador</b> anómalo.</li><li>Busca la entrada a la cueva en esa ruta.</li><li>Como con Kyogre, la posición rota y se reinicia si sales sin capturarlo.</li></ol>" },
+      { cat:"boss", t:"Groudon (Nv. 70)", d:"Cruza la cueva de roca hasta el fondo. <b>Guarda antes.</b> Con sol, sus ataques de Fuego/Tierra son demoledores: lleva Agua resistente y usa estado + Ball Turno — también es <b>Nv. 70</b>.", mons:[383], link:L.leg }
     ]},
     { area:"🏆 POSTGAME · Cámara Sellada", name:"Desbloquear a los Regis", emo:"🔓", mons:[321,369],
       goal:"Abre la Cámara Sellada para liberar los tres santuarios Regi.",
@@ -291,12 +303,13 @@
       goal:"Encuentra Feebas en sus 6 casillas y evolúcialo maximizando la Belleza.",
       hl:[
       { cat:"secret", t:"Encontrar a Feebas (lo más esquivo)", d:"<ol><li>Ve a la <b>Ruta 119</b> (zona de agua junto a la Casa del Tiempo).</li><li>Feebas vive solo en <b>6 de las ~400 casillas</b> de agua. Pesca <b>casilla por casilla</b> con cualquier caña (¡vale la Vieja!).</li><li>Las casillas dependen de la <b>frase de moda de Azuliza</b>: si cambias la frase (hablando con el chico moderno de Dewford), <b>cambian las casillas</b>.</li><li>Cuando piques un Feebas, esa es una de las 6: quédate ahí y captura varios.</li></ol>", mons:[349], link:L.feebas },
-      { cat:"secret", t:"Evolucionar a Milotic", d:"Feebas evoluciona al <b>subir de nivel con la Belleza al máximo</b>:<ol><li>Cocina <b>Pokoblocks azules</b> (bayas secas/azules) que suben <b>Belleza</b>.</li><li>Dáselos a Feebas hasta llenar su barra de Belleza (una naturaleza que no reduzca ese sabor ayuda).</li><li>Con la Belleza al máximo, <b>sube 1 nivel</b> (un Caramelo Raro o un combate) → <b>Milotic</b>.</li></ol>", mons:[350], link:L.concursos }
+      { cat:"secret", t:"Evolucionar a Milotic", d:"Feebas evoluciona al <b>subir de nivel con la Belleza al máximo</b>:<ol><li>Cocina <b>Pokécubos azules</b> (bayas secas/azules) que suben <b>Belleza</b>.</li><li>Dáselos a Feebas hasta llenar su barra de Belleza (una naturaleza que no reduzca ese sabor ayuda).</li><li>Con la Belleza al máximo, <b>sube 1 nivel</b> (un Caramelo Raro o un combate) → <b>Milotic</b>.</li></ol>", mons:[350], link:L.concursos }
     ]},
     { area:"🏆 POSTGAME · Colección", name:"Completar la Pokédex Nacional", emo:"📕", mons:[386,151,385],
       goal:"Cierra los 386. Sin intercambios es imposible: planifícalo.",
       hl:[
       { cat:"tip", t:"Qué te faltará y cómo conseguirlo", d:"<ul><li><b>Iniciales</b>: solo tienes 1 de 3 → cría copias e intercámbialas.</li><li><b>Exclusivos de versión</b> y líneas de <b>Kanto/Johto</b> → intercambio con Rubí/Zafiro/Rojo Fuego/Verde Hoja.</li><li><b>Evoluciones por intercambio</b>: Kadabra→Alakazam, Machoke→Machamp, Graveler→Golem, Haunter→Gengar, etc.</li></ul>", link:L.pokedex },
+      { cat:"item", t:"🎁 Inicial de Johto de regalo", d:"Al <b>completar la Pokédex de Hoenn</b> (202 capturados), el Prof. Abedul te regala un inicial de Johto: <b>Chikorita, Cyndaquil o Totodile</b>. Los otros dos: criando e intercambiando con una segunda partida.", mons:[152,155,158], link:L.pokedex },
       { cat:"tip", t:"Intercambiar tú solo en emulador", d:"Abre <b>dos instancias</b> de mGBA (o multiplayer), ambas con el <b>Nacional</b> desbloqueado, y usa el <b>Club de Intercambio</b> (2.ª planta del Centro Pokémon). Alternativa de colección: inyectar con <b>PKHeX</b>.", link:L.emu }
     ]},
     { area:"🏆 POSTGAME · El gran reto", name:"Frontera de Batalla", emo:"⚔️", mons:[376,373,350],
@@ -306,17 +319,19 @@
       { cat:"item", t:"Puntos de Combate (PC/BP)", d:"Ganas PC que canjeas por <b>vitaminas, MTs, objetos de fuerza (para EVs) y tutores</b>. Es la mejor fuente de material competitivo: prepara un buen equipo (Metagross, Salamence, Milotic…) antes de ir en serio.", link:L.cria }
     ]},
     { area:"🏆 POSTGAME · Concursos", name:"Rango Maestro en las 5 categorías", emo:"🎀", mons:[350],
-      goal:"Gana el Rango Maestro de Belleza, Hermosura, Dulzura, Ingenio y Dureza.",
+      goal:"Gana el Rango Maestro de Carisma, Belleza, Dulzura, Ingenio y Dureza.",
       hl:[
-      { cat:"secret", t:"Cómo dominarlos", d:"<ol><li>Cocina <b>Pokoblocks</b> del sabor de cada categoría (mejor en multijugador, salen de más calidad).</li><li>Sube el atributo del Pokémon sin pasarte del máximo y enséñale movimientos que <b>encadenen combos</b> en escena.</li><li>Sube de rango: <b>Normal → Súper → Hiper → Maestro</b> en las 5 categorías.</li></ol> Ganar los 5 Maestros te da un <b>retrato</b> en el museo de Lilycove.", mons:[350], link:L.concursos }
+      { cat:"secret", t:"Cómo dominarlos", d:"<ol><li>Cocina <b>Pokécubos</b> del sabor de cada categoría (mejor en multijugador, salen de más calidad).</li><li>Sube el atributo del Pokémon sin pasarte del máximo y enséñale movimientos que <b>encadenen combos</b> en escena.</li><li>Sube de rango: <b>Normal → Súper → Hiper → Maestro</b> en las 5 categorías.</li></ol> Con una actuación brillante en rango Maestro, tu Pokémon acaba <b>retratado en el Museo de Calagua</b>.", mons:[350], link:L.concursos }
     ]},
     { area:"🏆 POSTGAME · Rincones ocultos", name:"Áreas secretas restantes", emo:"🗺️", mons:[235,360],
       goal:"Visita las zonas que casi nadie encuentra para no dejarte nada.",
       hl:[
       { cat:"secret", t:"🌴 Isla Espejismo (Mirage Island)", d:"Frente a la Ruta 130. Solo aparece los días en que un <b>valor aleatorio diario</b> coincide con el valor oculto de un Pokémon de tu equipo (rarísimo). Pregunta al <b>anciano de Pueblo Oromar</b> si hoy es visible. Dentro: <b>Wynaut</b> salvajes y bayas raras.", mons:[360] },
       { cat:"secret", t:"🎨 Cueva Artesana (Artisan Cave)", d:"Cerca de la Frontera de Batalla. Llena de <b>Smeargle</b> (aprende cualquier movimiento con Esquema) y minerales.", mons:[235] },
-      { cat:"secret", t:"🦴 Pasadizo Desértico (Desert Underpass)", d:"Bajo la casa del Maníaco de los Fósiles (Ruta 114). Tras completar el <b>Pokédex Nacional</b>, aquí reaparece el <b>fósil que NO elegiste</b> en la Torre Espejismo: así consigues ambos.", link:L.islas },
-      { cat:"secret", t:"🏟️ Monte Batalla / Trainer Hill", d:"Cerca de Pueblo Verdegal: retos de combate en cadena por premios. Parte del contenido dependía del <b>e-Reader</b>; el acceso básico sigue disponible.", link:L.islas }
+      { cat:"secret", t:"🦴 Pasadizo Desértico (Desert Underpass)", d:"Bajo la casa del Maníaco de los Fósiles (Ruta 114), abierto tras el Salón de la Fama. Dentro: el <b>fósil que NO elegiste</b> en la Torre Espejismo y el <b>único Ditto salvaje del juego</b> (esencial para criar).", mons:[132], link:L.islas },
+      { cat:"catch", t:"🏞️ Zona Safari ampliada (Johto)", d:"Tras la Liga, la Safari de la Ruta 121 abre <b>dos áreas nuevas con Pokémon de Johto</b>: Mareep, Aipom, Gligar, Snubbull, Stantler, Houndour, Miltank… Imprescindible para el Nacional.", link:L.pokedex },
+      { cat:"secret", t:"🏟️ Colina Desafío (Trainer Hill)", d:"Ruta 111, entre Malvalona y el desierto: retos de combate en cadena contrarreloj por premios. Parte del contenido dependía del <b>e-Reader</b>; el acceso básico sigue disponible.", link:L.islas },
+      { cat:"secret", t:"🦇 Altering Cave (Ruta 103)", d:"Cueva post-liga que solo contiene <b>Zubat</b>: iba a recibir Pokémon por eventos que nunca se distribuyeron. Una curiosidad famosa — entra, ríete y márchate.", link:L.islas }
     ]},
     { area:"🏆 POSTGAME · Perfección", name:"Cría, EVs e IVs (competitivo)", emo:"🥚", mons:[374],
       goal:"Opcional: crea el equipo perfecto para dominar la Frontera.",

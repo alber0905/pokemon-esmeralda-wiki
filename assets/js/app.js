@@ -129,12 +129,18 @@
   $$(".accordion").forEach(function (acc) {
     var head = $(".accordion__head", acc);
     var body = $(".accordion__body", acc);
+    head.setAttribute("tabindex", "0");
+    head.setAttribute("role", "button");
     function setOpen(open) {
       acc.classList.toggle("open", open);
       body.style.maxHeight = open ? body.scrollHeight + "px" : "0px";
+      head.setAttribute("aria-expanded", open ? "true" : "false");
     }
-    if (acc.classList.contains("open")) setOpen(true);
+    setOpen(acc.classList.contains("open"));
     head.addEventListener("click", function () { setOpen(!acc.classList.contains("open")); });
+    head.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setOpen(!acc.classList.contains("open")); }
+    });
     // Recalcular al cambiar tamaño
     window.addEventListener("resize", function () {
       if (acc.classList.contains("open")) body.style.maxHeight = body.scrollHeight + "px";
@@ -145,12 +151,18 @@
   var tabWrap = $("#frontierTabs");
   if (tabWrap) {
     $$(".tab", tabWrap).forEach(function (tab) {
-      tab.addEventListener("click", function () {
+      tab.setAttribute("tabindex", "0");
+      tab.setAttribute("role", "button");
+      function activate() {
         var id = tab.getAttribute("data-tab");
         $$(".tab", tabWrap).forEach(function (t) { t.classList.toggle("active", t === tab); });
         $$(".tab-panel").forEach(function (p) {
           p.classList.toggle("active", p.getAttribute("data-panel") === id);
         });
+      }
+      tab.addEventListener("click", activate);
+      tab.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
       });
     });
   }

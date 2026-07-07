@@ -601,3 +601,13 @@ tbody td b, tbody td strong { color: var(--text); }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* =====================================================================
+   Accesibilidad — foco visible con teclado
+   ===================================================================== */
+:focus-visible {
+  outline: 2px solid var(--gold-500, #f4c430);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.accordion__head:focus-visible, .tab:focus-visible { outline-offset: -2px; }
