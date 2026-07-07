@@ -197,7 +197,7 @@
         "cat": "missable",
         "t": "Elección única (irreversible)",
         "d": "Solo obtienes <b>un inicial por partida</b>: los otros dos requieren intercambio (o PKHeX en emulador). Elige con calma; luego, en Castelia, te darán además el <b>mono elemental</b> que hace ventaja a tu inicial.",
-        "link": "",
+        "link": "emulador",
         "mons": []
       },
       {
@@ -650,7 +650,7 @@
         "cat": "missable",
         "t": "Fósil del Monte Espira (elección única)",
         "d": "Un minero te da <b>un solo fósil</b>: <b>Cubierta</b> (→Tirtouga/Carracosta) o <b>Pluma</b> (→Archen/Archeops). Se revive en el <b>Museo de Nacrene City</b>. La elección es <b>irreversible</b>: para tener el otro necesitas intercambio (o PKHeX en emulador).",
-        "link": "",
+        "link": "emulador",
         "mons": [
           564,
           566
@@ -660,7 +660,7 @@
         "cat": "catch",
         "t": "Fauna de hielo y roca",
         "d": "Cubchoo, Gurdurr, Boldore y (en zonas frías) Cryogonal. Gurdurr evoluciona por intercambio a Conkeldurr.",
-        "link": "",
+        "link": "emulador",
         "mons": [
           613,
           533,
