@@ -16,11 +16,14 @@
   "28": "Sandslash",
   "35": "Clefairy",
   "54": "Psyduck",
+  "55": "Golduck",
   "81": "Magnemite",
   "88": "Grimer",
   "109": "Koffing",
   "131": "Lapras",
   "132": "Ditto",
+  "133": "Eevee",
+  "147": "Dratini",
   "180": "Flaaffy",
   "183": "Marill",
   "221": "Piloswine",
@@ -34,17 +37,28 @@
   "328": "Trapinch",
   "329": "Vibrava",
   "330": "Flygon",
+  "335": "Zangoose",
+  "336": "Seviper",
   "350": "Milotic",
   "377": "Regirock",
   "378": "Regice",
   "379": "Registeel",
+  "380": "Latias",
+  "381": "Latios",
   "442": "Spiritomb",
+  "443": "Gible",
   "445": "Garchomp",
   "447": "Riolu",
   "448": "Lucario",
   "465": "Tangrowth",
+  "468": "Togekiss",
   "471": "Glaceon",
+  "480": "Uxie",
+  "481": "Mesprit",
+  "482": "Azelf",
+  "485": "Heatran",
   "486": "Regigigas",
+  "488": "Cresselia",
   "494": "Victini",
   "495": "Snivy",
   "496": "Servine",
@@ -93,6 +107,7 @@
   "566": "Archen",
   "567": "Archeops",
   "568": "Trubbish",
+  "570": "Zorua",
   "576": "Gothitelle",
   "580": "Ducklett",
   "581": "Swanna",
@@ -170,10 +185,10 @@
   var routeStops = [
   {
     "area": "Ciudad de inicio",
-    "name": "Aspertia City (Ciudad Losar)",
+    "name": "Ciudad Engobe (Aspertia City)",
     "emoji": "🏙️",
     "goal": "Elige inicial, consigue la Pokédex y derrota a Cheren en el 1er gimnasio.",
-    "gym": "Medalla Básica",
+    "gym": "Medalla Base",
     "mons": [
       495,
       498,
@@ -185,7 +200,7 @@
       {
         "cat": "tip",
         "t": "Tu inicial",
-        "d": "Bianca te da a elegir: <b>Snivy</b> (Planta), <b>Tepig</b> (Fuego) u <b>Oshawott</b> (Agua). Todos completan el juego bien; Oshawott lo tiene algo más fácil en los primeros gimnasios.",
+        "d": "Bel (Bianca) te da a elegir: <b>Snivy</b> (Planta), <b>Tepig</b> (Fuego) u <b>Oshawott</b> (Agua). Todos completan el juego bien; Oshawott lo tiene algo más fácil en los primeros gimnasios.",
         "link": "",
         "mons": [
           495,
@@ -196,14 +211,14 @@
       {
         "cat": "missable",
         "t": "Elección única (irreversible)",
-        "d": "Solo obtienes <b>un inicial por partida</b>: los otros dos requieren intercambio (o PKHeX en emulador). Elige con calma; luego, en Castelia, te darán además el <b>mono elemental</b> que hace ventaja a tu inicial.",
+        "d": "Solo obtienes <b>un inicial por partida</b>: los otros dos requieren intercambio (o PKHeX en emulador). Elige con calma; más adelante te regalarán otros Pokémon (el Zorua de N, un Eevee...), pero iniciales solo hay uno.",
         "link": "emulador",
         "mons": []
       },
       {
         "cat": "boss",
         "t": "Gimnasio 1: Cheren",
-        "d": "Tipo Normal. Patrat Nv.11 y <b>Lillipup Nv.13</b>. Golpes fuertes o un tipo Lucha bastan. Da <b>MT83 Ánimo</b> y la Medalla Básica.",
+        "d": "Tipo Normal, en la Escuela de Entrenadores. Patrat Nv.11 y <b>Lillipup Nv.13</b>. Golpes fuertes o un tipo Lucha bastan; no le dejes acumular Avivar. Da <b>MT83 Avivar</b> y la Medalla Base.",
         "link": "gimnasios",
         "mons": [
           504,
@@ -212,8 +227,8 @@
       },
       {
         "cat": "item",
-        "t": "Mirador y Vídeo-Llave",
-        "d": "Habla con todos: consigues la <b>Pokédex</b>, la <b>Vídeo-Llave (C-Gear)</b> y la Lista de Hábitats. No te saltes el mirador de la ciudad.",
+        "t": "Mirador y Pokédex",
+        "d": "Sube al <b>mirador</b> de la ciudad: allí Bel te entrega la <b>Pokédex</b> (con su Lista de Hábitats). Tu madre te dará el resto del equipo básico. Habla con todos antes de salir.",
         "link": "",
         "mons": []
       }
@@ -221,9 +236,9 @@
   },
   {
     "area": "Rutas 19-20",
-    "name": "Rancho Floccesy y Pueblo Floccesy",
+    "name": "Pueblo Ocre y Rancho Ocre (Floccesy)",
     "emoji": "🌾",
-    "goal": "Primeras capturas, echa a Team Plasma del rancho y prueba las Cuevas Ocultas.",
+    "goal": "Primeras capturas, conoce a Mirto, echa al Equipo Plasma del rancho y estrena los claros ocultos.",
     "gym": "",
     "mons": [
       509,
@@ -235,8 +250,8 @@
     "highlights": [
       {
         "cat": "catch",
-        "t": "Riolu (missable/raro)",
-        "d": "La <b>Cueva Oculta</b> del rancho puede contener a <b>Riolu</b>, capturable muy pronto. Es aleatorio: entra y sal para reintentar. ¡No lo dejes pasar!",
+        "t": "Riolu (raro, ¡no lo dejes pasar!)",
+        "d": "El <b>claro oculto</b> del rancho puede contener a <b>Riolu</b> (a veces con Habilidad Oculta), capturable muy pronto. Si está vacío, camina unos cientos de pasos y vuelve a mirar: el contenido se regenera.",
         "link": "secretos",
         "mons": [
           447
@@ -245,7 +260,7 @@
       {
         "cat": "catch",
         "t": "Fauna temprana",
-        "d": "Purrloin, Pidove, Psyduck y Azurill. Buen momento para formar un equipo variado antes de Roxie.",
+        "d": "Purrloin, Pidove, Psyduck, Azurill, Mareep... Buen momento para formar un equipo variado antes de Hiedra. Bel te enseña a capturar en la Ruta 19.",
         "link": "",
         "mons": [
           509,
@@ -256,19 +271,26 @@
       },
       {
         "cat": "boss",
-        "t": "Team Plasma en el rancho",
-        "d": "Ayudas a recuperar al Herdier perdido y te enfrentas a tu rival Hugh y a grunts de Plasma. Combate sencillo pero deja buena experiencia.",
+        "t": "Equipo Plasma en el rancho",
+        "d": "Con tu rival Hugh, ayudas a recuperar al Herdier perdido y os cruzáis con un recluta de Plasma. Combate sencillo pero deja buena experiencia.",
         "link": "",
+        "mons": []
+      },
+      {
+        "cat": "tip",
+        "t": "Mirto, el excampeón",
+        "d": "En Pueblo Ocre vive <b>Mirto</b> (Alder), excampeón de Teselia: te acompaña un rato y te da consejos. En el postgame podrás retarlo en su casa; y al norte del pueblo está la <b>Arboleda Promesa</b> del evento de Keldeo.",
+        "link": "legendarios",
         "mons": []
       }
     ]
   },
   {
     "area": "Ciudad costera",
-    "name": "Virbank City (Ciudad Mayólica)",
+    "name": "Ciudad Hormigón (Virbank City)",
     "emoji": "🎬",
-    "goal": "Explora el Complejo Virbank, rueda en Pokéstar Studios y vence a Roxie.",
-    "gym": "Medalla Tóxica",
+    "goal": "Explora el Complejo Hormigón, vence a Hiedra y debuta en Pokéwood antes de zarpar.",
+    "gym": "Medalla Ponzoña",
     "mons": [
       81,
       88,
@@ -279,8 +301,8 @@
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 2: Roxie",
-        "d": "Tipo Veneno. Koffing Nv.16 y <b>Whirlipede Nv.18</b>. Lleva <b>Psíquico o Tierra</b>. Da <b>MT09 Ecoveneno</b> y la Medalla Tóxica.",
+        "t": "Gimnasio 2: Hiedra (Roxie)",
+        "d": "Tipo Veneno. Koffing Nv.16 y <b>Whirlipede Nv.18</b>. Lleva <b>Psíquico o Tierra</b>. Da <b>MT09 Carga Tóxica</b> y la Medalla Ponzoña.",
         "link": "gimnasios",
         "mons": [
           109,
@@ -289,8 +311,8 @@
       },
       {
         "cat": "catch",
-        "t": "Complejo Virbank",
-        "d": "Zona industrial con Magnemite, Grimer, Koffing y Trubbish; niveles algo más altos, útil para subir rápido.",
+        "t": "Complejo Hormigón",
+        "d": "Zona industrial con Magnemite, Grimer, Koffing y Trubbish; niveles algo más altos, útil para subir rápido antes del gimnasio.",
         "link": "",
         "mons": [
           81,
@@ -301,8 +323,8 @@
       },
       {
         "cat": "secret",
-        "t": "Pokéstar Studios",
-        "d": "Minijuego único: ruedas películas con tu equipo contra atrezo. Totalmente opcional pero da objetos y es exclusivo de esta gen.",
+        "t": "Pokéwood",
+        "d": "El estudio de cine de Teselia (visita obligada de la historia tras la medalla): ruedas películas con tu equipo contra atrezo. Rejugable, da objetos y es exclusivo de esta gen.",
         "link": "secretos",
         "mons": []
       }
@@ -310,33 +332,21 @@
   },
   {
     "area": "Gran ciudad",
-    "name": "Castelia City (Ciudad Porcelana)",
+    "name": "Ciudad Porcelana (Castelia City)",
     "emoji": "🌆",
-    "goal": "Cruza las alcantarillas, consigue tu mono elemental y vence a Burgh.",
-    "gym": "Medalla Insecto",
+    "goal": "Recorre las cloacas con Hugh y vence a Camus en el 3er gimnasio.",
+    "gym": "Medalla Élitro",
     "mons": [
-      511,
-      513,
-      515,
       542,
-      557
+      557,
+      88,
+      133
     ],
     "highlights": [
       {
-        "cat": "item",
-        "t": "Mono elemental de regalo",
-        "d": "Te regalan <b>Pansage/Pansear/Panpour</b> según tu inicial (el que le hace ventaja). Cobertura gratis para los siguientes combates.",
-        "link": "",
-        "mons": [
-          511,
-          513,
-          515
-        ]
-      },
-      {
         "cat": "boss",
-        "t": "Gimnasio 3: Burgh",
-        "d": "Tipo Bicho. Swadloon y Dwebble Nv.22 y <b>Leavanny Nv.24</b>. El <b>Fuego</b> lo arrasa. Da <b>MT76 Estoicidad</b> y la Medalla Insecto.",
+        "t": "Gimnasio 3: Camus (Burgh)",
+        "d": "Tipo Bicho. Swadloon y Dwebble Nv.22 y <b>Leavanny Nv.24</b>. El <b>Fuego</b> lo arrasa; Volador también, salvo a Dwebble (Bicho/Roca). Da <b>MT76 Estoicismo</b> y la Medalla Élitro.",
         "link": "gimnasios",
         "mons": [
           542,
@@ -345,20 +355,29 @@
       },
       {
         "cat": "catch",
-        "t": "Alcantarillas de Castelia",
-        "d": "Team Plasma acecha aquí. Encuentras Grimer, Rattata y objetos escondidos; usa el Rastreador para no dejar nada.",
+        "t": "Cloacas de Ciudad Porcelana",
+        "d": "El Equipo Plasma acecha aquí y lo recorres con Hugh. Encuentras Grimer, Rattata y Zubat, más objetos escondidos por los rincones; algunas zonas cambian según la estación.",
         "link": "",
         "mons": [
           88
+        ]
+      },
+      {
+        "cat": "tip",
+        "t": "Apunta para el postgame: Eevee",
+        "d": "Tras entrar en el Salón de la Fama, <b>Amanita</b> te regala un <b>Eevee con Habilidad Oculta</b> en el edificio de las medallas y el tasanombres. En esta ciudad también está el <b>Café Sonata</b>, donde Meloetta aprende Canto Arcaico.",
+        "link": "secretos",
+        "mons": [
+          133
         ]
       }
     ]
   },
   {
     "area": "Ruta 4 y desierto",
-    "name": "Desierto Resort y Castillo Relic",
+    "name": "Zona Desierto y Castillo Ancestral",
     "emoji": "🏜️",
-    "goal": "Captura fauna del desierto y anota el Castillo Relic para el postgame.",
+    "goal": "Captura fauna del desierto y anota el Castillo Ancestral para el postgame.",
     "gym": "",
     "mons": [
       551,
@@ -384,8 +403,8 @@
       },
       {
         "cat": "missable",
-        "t": "Castillo Relic (nota para luego)",
-        "d": "En su interior más profundo espera <b>Volcarona Nv.35</b>, accesible en el postgame. Recuerda volver: es de los mejores atacantes especiales.",
+        "t": "Castillo Ancestral (nota para luego)",
+        "d": "En su sala más profunda espera <b>Volcarona Nv.35</b>. En N2/B2 la entrada del desierto está cegada por la arena: se llega en el postgame por el <b>Pasadizo Ancestral</b> (desde el PWT). Recuerda volver: es de los mejores atacantes especiales.",
         "link": "legendarios",
         "mons": [
           637
@@ -393,8 +412,8 @@
       },
       {
         "cat": "tip",
-        "t": "Join Avenue",
-        "d": "Se abre camino a <b>Join Avenue</b> (en Fayenza): tu avenida de tiendas. Cuanto más la desarrolles, mejores recompensas.",
+        "t": "Avenida Unión (Join Avenue)",
+        "d": "De camino a Ciudad Mayólica cruzas la <b>Avenida Unión</b>: tu propia galería de tiendas gestionada por visitantes. Cuanto más la desarrolles, mejores recompensas (objetos, niveles, bayas).",
         "link": "secretos",
         "mons": []
       }
@@ -402,10 +421,10 @@
   },
   {
     "area": "Ciudad de ocio",
-    "name": "Nimbasa City (Ciudad Fayenza)",
+    "name": "Ciudad Mayólica (Nimbasa City)",
     "emoji": "🎡",
-    "goal": "Recorre el parque de atracciones y derrota a Elesa.",
-    "gym": "Medalla Voltaje",
+    "goal": "Recorre el parque de atracciones y derrota a Camila.",
+    "gym": "Medalla Voltio",
     "mons": [
       587,
       180,
@@ -415,8 +434,8 @@
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 4: Elesa",
-        "d": "Tipo Eléctrico. Emolga Nv.28 (inmune a Tierra), Flaaffy Nv.28 y <b>Zebstrika Nv.30</b>. Lleva <b>Roca/Hielo</b> para Emolga y Tierra para el resto. Da <b>MT72 Voltiocambio</b> y la Medalla Voltaje.",
+        "t": "Gimnasio 4: Camila (Elesa)",
+        "d": "Tipo Eléctrico, en la pasarela de moda. Emolga Nv.28 (inmune a Tierra), Flaaffy Nv.28 y <b>Zebstrika Nv.30</b>. Lleva <b>Roca/Hielo</b> para Emolga y Tierra para el resto. Da <b>MT72 Voltiocambio</b> y la Medalla Voltio.",
         "link": "gimnasios",
         "mons": [
           587,
@@ -426,8 +445,8 @@
       },
       {
         "cat": "secret",
-        "t": "Metro de Combate y Anville",
-        "d": "Desde la estación llegas a <b>Anville Town</b> (objetos raros) y más adelante al <b>Metro de Combate</b>, gran reto de postgame.",
+        "t": "Metro Batalla y Anville Town",
+        "d": "En la estación de Ciudad Mayólica está el <b>Metro Batalla</b> (rachas de combates por BP, gran reto de postgame) y el tren a <b>Anville Town</b>, un pueblecito ferroviario con objetos raros los fines de semana.",
         "link": "secretos",
         "mons": []
       },
@@ -444,9 +463,9 @@
   },
   {
     "area": "Ruta 5 y puente",
-    "name": "Ruta 5 y Puente Levadizo de Driftveil",
+    "name": "Ruta 5 y el puente levadizo de Ciudad Fayenza",
     "emoji": "🌉",
-    "goal": "Avanza hacia Driftveil capturando en las orillas.",
+    "goal": "Avanza hacia Ciudad Fayenza; Bel te enseña el primer claro oculto en la Ruta 5.",
     "gym": "",
     "mons": [
       580,
@@ -456,7 +475,7 @@
       {
         "cat": "catch",
         "t": "Ducklett y Liepard",
-        "d": "Ducklett (Agua/Volador) aparece en el agua; buen HM-slave y atacante de Vendaval a futuro.",
+        "d": "Ducklett (Agua/Volador) aparece en las sombras que sobrevuelan el puente; buen porteador de MO y atacante de Vendaval a futuro.",
         "link": "",
         "mons": [
           580,
@@ -464,9 +483,16 @@
         ]
       },
       {
+        "cat": "secret",
+        "t": "Tu primer claro oculto",
+        "d": "En la Ruta 5, <b>Bel te enseña los claros ocultos</b>: huecos entre árboles con objetos o Pokémon con Habilidad Oculta. Su contenido se regenera al caminar: revísalos siempre que pases.",
+        "link": "secretos",
+        "mons": []
+      },
+      {
         "cat": "tip",
         "t": "Entrenadores en fila",
-        "d": "El puente y la ruta están llenos de entrenadores: aprovecha para nivelar antes del duro gimnasio de Clay.",
+        "d": "El puente y la ruta están llenos de entrenadores (¡y artistas!): aprovecha para nivelar antes del duro gimnasio de Yakón.",
         "link": "",
         "mons": []
       }
@@ -474,21 +500,20 @@
   },
   {
     "area": "Ciudad mercado",
-    "name": "Driftveil City (Ciudad Esmalte)",
+    "name": "Ciudad Fayenza (Driftveil City)",
     "emoji": "⛏️",
-    "goal": "Descubre el PWT, frena a Team Plasma en el almacén frío y vence a Clay.",
+    "goal": "Vence a Yakón, estrena el PWT en el torneo de la ciudad y recibe el Zorua de N.",
     "gym": "Medalla Temblor",
     "mons": [
       552,
       28,
       530,
-      615,
-      582
+      570
     ],
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 5: Clay",
+        "t": "Gimnasio 5: Yakón (Clay)",
         "d": "Tipo Tierra. Krokorok y Sandslash Nv.31 y <b>Excadrill Nv.33</b> (Tierra/Acero, muy rápido). Lleva <b>Agua/Planta/Lucha</b>. Da <b>MT78 Terratemblor</b> y la Medalla Temblor.",
         "link": "gimnasios",
         "mons": [
@@ -499,19 +524,18 @@
       },
       {
         "cat": "secret",
-        "t": "Torneo Mundial de Combates (PWT)",
-        "d": "El <b>PWT</b> se estrena aquí: torneos contra líderes y campeones de todas las regiones. Contenido estrella del postgame.",
+        "t": "Torneo Mundial Pokémon (PWT)",
+        "d": "El <b>PWT</b> se estrena aquí con el torneo de Fayenza (contra Hugh y Cheren). En el postgame ofrece torneos contra líderes y campeones de todas las regiones. Bajo el recinto se abre el <b>Pasadizo Ancestral</b>.",
         "link": "secretos",
         "mons": []
       },
       {
-        "cat": "catch",
-        "t": "Almacén Frío",
-        "d": "Team Plasma se esconde en el almacén; entre el hielo capturas <b>Cryogonal</b> y Vanillite. Combate importante de historia.",
-        "link": "",
+        "cat": "item",
+        "t": "El Zorua de N (regalo)",
+        "d": "Un antiguo sabio del Equipo Plasma te entrega en la ciudad el <b>Zorua de N (Nv.25)</b>, imposible de capturar en estado salvaje. Después, Hugh y tú asaltáis la <b>Fragata Plasma</b> del puerto.",
+        "link": "secretos",
         "mons": [
-          615,
-          582
+          570
         ]
       }
     ]
@@ -520,33 +544,44 @@
     "area": "Ruta 6 y cueva",
     "name": "Ruta 6 y Cueva Loza (Mistralton Cave)",
     "emoji": "🕳️",
-    "goal": "Explora la Cueva Loza y prepárate para Chargestone.",
+    "goal": "Sube por la Ruta 6 hacia la Cueva Electrorroca; la Cueva Loza queda para cuando tengas Surf.",
     "gym": "",
     "mons": [
       585,
       588,
       590,
-      529
+      610
     ],
     "highlights": [
       {
         "cat": "tip",
-        "t": "Los espadachines (postgame)",
-        "d": "Los <b>tres espadachines</b> son capturas de <b>postgame</b>: <b>Cobalion Nv.45</b> aparece en la <b>Ruta 13</b>, y al tratar con él surgen <b>Virizion</b> (Ruta 11) y <b>Terrakion</b> (Ruta 22). En la Cueva Loza usa <b>Fuerza</b> para llegar a rincones con objetos.",
+        "t": "Los espadachines, durante la historia",
+        "d": "A diferencia de Negro/Blanco 1, los <b>tres espadachines</b> se capturan <b>ya durante la aventura</b>: <b>Cobalion Nv.45</b> en la Ruta 13, <b>Virizion Nv.45</b> en la Ruta 11 y <b>Terrakion Nv.45</b> en la Ruta 22. Si los debilitas, vuelven a Nv.65 tras la Liga.",
         "link": "legendarios",
         "mons": [
-          638
+          638,
+          640,
+          639
         ]
       },
       {
         "cat": "catch",
-        "t": "Fauna de la Ruta 6",
-        "d": "Deerling (cambia de color con la estación), Karrablast y Foongus. Deerling da un Sawsbuck útil y bonito.",
+        "t": "Fauna de la Ruta 6 y regalo",
+        "d": "Deerling (cambia de color con la estación), Karrablast y Foongus (¡ojo, se disfraza de Poké Ball!). En el laboratorio de las estaciones te regalarán más adelante un <b>Deerling con Habilidad Oculta</b> (tras la Pokédex Nacional).",
         "link": "",
         "mons": [
           585,
           588,
           590
+        ]
+      },
+      {
+        "cat": "secret",
+        "t": "Cueva Loza (vuelve con Surf)",
+        "d": "Al oeste de la Ruta 6, cruzando el agua, está la <b>Cueva Loza</b>: guarida de <b>Axew</b> (futuro Haxorus) y objetos escondidos entre rocas con Fuerza. En Negro/Blanco vivía aquí Cobalion; en N2/B2 solo queda su cámara.",
+        "link": "",
+        "mons": [
+          610
         ]
       }
     ]
@@ -580,8 +615,8 @@
       },
       {
         "cat": "tip",
-        "t": "Colress y los imanes",
-        "d": "El científico Colress aparece por la historia. Mueve las rocas imán para abrir paso y descubrir objetos ocultos.",
+        "t": "Acromo y los imanes",
+        "d": "El científico <b>Acromo (Colress)</b> aparece por la historia y te reta. Mueve las rocas imán para abrir paso y descubrir objetos ocultos.",
         "link": "",
         "mons": []
       },
@@ -598,9 +633,9 @@
   },
   {
     "area": "Ciudad aeropuerto",
-    "name": "Mistralton City (Ciudad Loza)",
+    "name": "Ciudad Loza (Mistralton City)",
     "emoji": "✈️",
-    "goal": "Sube la Torre Celeste y vence a Skyla.",
+    "goal": "Sube la Torre de los Cielos y vence a Gerania.",
     "gym": "Medalla Jet",
     "mons": [
       528,
@@ -612,8 +647,8 @@
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 6: Skyla",
-        "d": "Tipo Volador. Swoobat y Skarmory Nv.37 y <b>Swanna Nv.39</b> (usa Vendaval infalible). Lleva un <b>Eléctrico fuerte</b> (x4 a Swanna) y Fuego para Skarmory. Da <b>MT62 Acróbata</b> y la Medalla Jet.",
+        "t": "Gimnasio 6: Gerania (Skyla)",
+        "d": "Tipo Volador. Swoobat y Skarmory Nv.37 y <b>Swanna Nv.39</b>. Lleva un <b>Eléctrico fuerte</b> (x4 a Swanna) y Fuego para Skarmory. Da <b>MT62 Acróbata</b> y la Medalla Jet.",
         "link": "gimnasios",
         "mons": [
           227,
@@ -622,8 +657,8 @@
       },
       {
         "cat": "catch",
-        "t": "Torre Celeste",
-        "d": "Torre-cementerio con <b>Litwick, Elgyem y Golett</b>. En la cima suena la campana ligada a la historia; captura antes de subir.",
+        "t": "Torre de los Cielos (Ruta 7)",
+        "d": "Torre-cementerio con <b>Litwick y Elgyem</b>, difíciles de ver en otros sitios. En la cima puedes tocar la campana; en el postgame ahí arriba aparece <b>Mesprit</b>.",
         "link": "secretos",
         "mons": [
           607,
@@ -633,73 +668,72 @@
     ]
   },
   {
-    "area": "Ruta 7 y montaña",
-    "name": "Ruta 7 y Twist Mountain (Monte Espira)",
-    "emoji": "❄️",
-    "goal": "Cruza la montaña, revive un fósil y sigue hacia el este.",
+    "area": "Rumbo al este",
+    "name": "Vuelo a Pueblo Chamota (Lentimas Town)",
+    "emoji": "🛩️",
+    "goal": "Gerania te lleva en su avión al este de Teselia; el oeste queda para el postgame.",
     "gym": "",
     "mons": [
-      613,
-      614,
-      533,
-      525,
-      564
+      564,
+      566
     ],
     "highlights": [
       {
+        "cat": "tip",
+        "t": "El avión de Gerania",
+        "d": "Tras la 6ª medalla NO se sigue a pie: <b>Gerania te lleva en avión a Pueblo Chamota</b>. La Ruta 7 hacia el norte (Monte Tuerca, Ciudad Teja, Torre Duodraco) está cerrada hasta el postgame.",
+        "link": "",
+        "mons": []
+      },
+      {
         "cat": "missable",
-        "t": "Fósil del Monte Espira (elección única)",
-        "d": "Un minero te da <b>un solo fósil</b>: <b>Cubierta</b> (→Tirtouga/Carracosta) o <b>Pluma</b> (→Archen/Archeops). Se revive en el <b>Museo de Nacrene City</b>. La elección es <b>irreversible</b>: para tener el otro necesitas intercambio (o PKHeX en emulador).",
+        "t": "Fósil a elegir (elección única, postgame)",
+        "d": "Cuando se abra el oeste, <b>Aloe</b> te dará en el <b>museo de Ciudad Esmalte</b> un solo fósil: <b>Cubierta</b> (→Tirtouga/Carracosta) o <b>Pluma</b> (→Archen/Archeops). Es <b>irreversible</b>: para el otro, intercambio o PKHeX. En el <b>Monte Tuerca</b>, un obrero regala además un fósil clásico al día.",
         "link": "emulador",
         "mons": [
           564,
           566
-        ]
-      },
-      {
-        "cat": "catch",
-        "t": "Fauna de hielo y roca",
-        "d": "Cubchoo, Gurdurr, Boldore y (en zonas frías) Cryogonal. Gurdurr evoluciona por intercambio a Conkeldurr.",
-        "link": "emulador",
-        "mons": [
-          613,
-          533,
-          525
         ]
       }
     ]
   },
   {
     "area": "Pueblo volcánico",
-    "name": "Lentimas Town y Monte Reverso",
+    "name": "Pueblo Chamota y Montaña Reversia",
     "emoji": "🌋",
-    "goal": "Atraviesa el volcán hacia Undella y resuelve la Casa Misteriosa.",
+    "goal": "Atraviesa el volcán dormido hacia Pueblo Arenisca y visita la Villa Horroris.",
     "gym": "",
     "mons": [
-      555,
       328,
       329,
       330,
-      631
+      326,
+      227
     ],
     "highlights": [
       {
         "cat": "catch",
-        "t": "Monte Reverso",
-        "d": "Interior volcánico con <b>Darmanitan, Trapinch, Grumpig y Heatmor</b>. Trapinch→Flygon es un pseudo-dragón excelente.",
-        "link": "",
+        "t": "Montaña Reversia",
+        "d": "Volcán dormido con <b>Trapinch, Grumpig (Spoink), Skorupi, Drifblim y Skarmory</b>. Trapinch→Flygon es un pseudodragón excelente. Aquí dormirá <b>Heatran</b> en el postgame (con la Piedra Magma de la Ruta 18).",
+        "link": "legendarios",
         "mons": [
-          555,
           328,
           329,
           330,
-          631
+          326
         ]
       },
       {
         "cat": "secret",
-        "t": "La Casa Misteriosa",
-        "d": "Sidequest de fantasmas con puzle de muñecas cerca de la salida. Resuélvelo para llevarte un objeto útil.",
+        "t": "Villa Horroris (Strange House)",
+        "d": "Casa embrujada con puzle de muñecas y muebles que se mueven, en el desvío de la montaña. Al resolverla, una chica te da la <b>Pluma Lunar</b>: guárdala, sirve para que aparezca <b>Cresselia</b> en el Puente Progreso (postgame).",
+        "link": "secretos",
+        "mons": []
+      },
+      {
+        "cat": "tip",
+        "t": "Tutor de movimientos",
+        "d": "En Pueblo Chamota hay un <b>tutor de movimientos</b> que enseña ataques a cambio de <b>fragmentos</b> de colores (hay otros en Ciudad Fayenza, Ciudad Marga y Ciudad Esmalte). No vendas tus fragmentos.",
         "link": "secretos",
         "mons": []
       }
@@ -707,9 +741,9 @@
   },
   {
     "area": "Pueblo playero",
-    "name": "Undella Town",
+    "name": "Pueblo Arenisca (Undella Town)",
     "emoji": "🏖️",
-    "goal": "Descansa en la playa y anota la villa de Cynthia para el postgame.",
+    "goal": "Descansa en la playa y anota la villa de Catleya (y su invitada Cintia) para el postgame.",
     "gym": "",
     "mons": [
       592,
@@ -721,8 +755,8 @@
     "highlights": [
       {
         "cat": "catch",
-        "t": "Bahía de Undella",
-        "d": "Buceando/surfeando aparecen Frillish, Alomomola, Wailmer y Mantyke; en postgame la bahía se llena de rarezas.",
+        "t": "Bahía Arenisca",
+        "d": "Surfeando aparecen Frillish, Alomomola y Wailmer; en el postgame la bahía se llena de rarezas y desde aquí sale el <b>Acuatúnel</b> hacia Ciudad Marga.",
         "link": "",
         "mons": [
           592,
@@ -733,8 +767,8 @@
       },
       {
         "cat": "missable",
-        "t": "Villa de Cynthia",
-        "d": "En <b>primavera</b> Cynthia está en su villa con un equipo Nv.70+ para un combate opcional durísimo. Vuelve preparado en el postgame.",
+        "t": "Cintia en la villa de Catleya",
+        "d": "En el postgame, la excampeona de Sinnoh <b>Cintia</b> visita la villa y combate <b>solo en primavera</b>: Spiritomb, Milotic, Togekiss, Lucario y Glaceon Nv.76 y <b>Garchomp Nv.78</b>. El duelo opcional más duro del juego.",
         "link": "secretos",
         "mons": [
           445
@@ -744,19 +778,29 @@
   },
   {
     "area": "Pueblo de la leyenda",
-    "name": "Lacunosa Town",
+    "name": "Ruta 13 y Pueblo Ladrillo (Lacunosa Town)",
     "emoji": "🌙",
-    "goal": "Escucha la leyenda de Kyurem y avanza hacia Opelucid.",
+    "goal": "Captura a Cobalion en la Ruta 13 y escucha la leyenda de Kyurem.",
     "gym": "",
     "mons": [
+      638,
       646,
       585
     ],
     "highlights": [
       {
+        "cat": "catch",
+        "t": "¡Cobalion en la Ruta 13!",
+        "d": "En un alto de la <b>Ruta 13</b> te espera <b>Cobalion Nv.45</b>, el primero de los espadachines, capturable ya en la historia. Guarda antes: si lo debilitas, no vuelve hasta que revalides la Liga (a Nv.65).",
+        "link": "legendarios",
+        "mons": [
+          638
+        ]
+      },
+      {
         "cat": "tip",
         "t": "La leyenda de Kyurem",
-        "d": "El pueblo teme a <b>Kyurem</b>, que baja de la montaña a devorar. Es el aviso de la trama final del Abismo Sombrío.",
+        "d": "En Pueblo Ladrillo nadie sale de noche: temen a <b>Kyurem</b>, que baja del Boquete Gigante a devorar. Es el aviso de la trama final.",
         "link": "legendarios",
         "mons": [
           646
@@ -764,8 +808,8 @@
       },
       {
         "cat": "catch",
-        "t": "Rutas 12-13",
-        "d": "De camino aparecen Deerling y Pokémon de agua; entrena antes del enorme salto de nivel de Drayden.",
+        "t": "Ruta 13",
+        "d": "De camino aparecen Deerling y Pokémon de playa, y hay un claro oculto; entrena aquí antes del enorme salto de nivel de Lirio.",
         "link": "",
         "mons": [
           585
@@ -774,10 +818,43 @@
     ]
   },
   {
+    "area": "Rutas 12 y 11",
+    "name": "Puente Villa (Village Bridge)",
+    "emoji": "🎻",
+    "goal": "Cruza la Ruta 12 y el Puente Villa, captura a Virizion en la Ruta 11 y sigue a Ciudad Caolín.",
+    "gym": "",
+    "mons": [
+      640,
+      55,
+      183
+    ],
+    "highlights": [
+      {
+        "cat": "catch",
+        "t": "¡Virizion en la Ruta 11!",
+        "d": "Justo antes de Ciudad Caolín, en la <b>Ruta 11</b>, te espera <b>Virizion Nv.45</b>, el segundo espadachín. Igual que Cobalion: guarda antes de hablarle.",
+        "link": "legendarios",
+        "mons": [
+          640
+        ]
+      },
+      {
+        "cat": "catch",
+        "t": "Puente Villa",
+        "d": "Puente-poblado con músicos (puedes reunir a la banda), la sidequest de los bocadillos y un <b>claro oculto</b>. En la hierba salen Golduck, Marill y Zangoose o Seviper según la versión.",
+        "link": "secretos",
+        "mons": [
+          55,
+          183
+        ]
+      }
+    ]
+  },
+  {
     "area": "Ciudad dragón",
-    "name": "Opelucid City (Ciudad Caolín)",
+    "name": "Ciudad Caolín (Opelucid City)",
     "emoji": "🐉",
-    "goal": "Enfréntate a Drayden en el 7º gimnasio, el pico de dificultad.",
+    "goal": "Enfréntate a Lirio en el 7º gimnasio, el pico de dificultad, y resiste el ataque del Equipo Plasma.",
     "gym": "Medalla Leyenda",
     "mons": [
       621,
@@ -789,8 +866,8 @@
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 7: Drayden",
-        "d": "Tipo Dragón. Druddigon Nv.46, Flygon Nv.46 y <b>Haxorus Nv.48</b>. Lleva <b>Hielo</b> (y ojo con Cola Dragón, que fuerza cambios). Da <b>MT82 Cola Dragón</b> y la Medalla Leyenda.",
+        "t": "Gimnasio 7: Lirio (Drayden)",
+        "d": "Tipo Dragón. Druddigon Nv.46, Flygon Nv.46 y <b>Haxorus Nv.48</b>. Lleva <b>Hielo</b> (y ojo con Cola Dragón, que fuerza cambios, y con la Danza Dragón de Haxorus). Da <b>MT82 Cola Dragón</b> y la Medalla Leyenda.",
         "link": "gimnasios",
         "mons": [
           621,
@@ -799,50 +876,34 @@
         ]
       },
       {
-        "cat": "tip",
-        "t": "Gran salto de nivel",
-        "d": "Del gimnasio 6 al 7 hay un salto enorme; llega sobre Nv.48-50. El Metro/PWT ya activos ayudan a nivelar.",
-        "link": "",
-        "mons": []
-      }
-    ]
-  },
-  {
-    "area": "Ruta 9 y puente",
-    "name": "Ruta 9 y Village Bridge",
-    "emoji": "🛍️",
-    "goal": "Compra en el centro comercial y sigue hacia Humilau.",
-    "gym": "",
-    "mons": [
-      626,
-      587
-    ],
-    "highlights": [
-      {
         "cat": "item",
-        "t": "Centro comercial (Ruta 9)",
-        "d": "Gran tienda con objetos que no encuentras en otros sitios: MT, objetos de mejora y curación en cantidad. Ven con dinero.",
+        "t": "Centro Comercial R9 (Ruta 9)",
+        "d": "Al oeste de la ciudad, en la Ruta 9, está el <b>Centro Comercial R9</b>: MT, objetos de mejora y curación en cantidad (y entrenadores dentro). Ven con dinero.",
         "link": "",
         "mons": []
       },
       {
-        "cat": "catch",
-        "t": "Village Bridge",
-        "d": "Puente-poblado con músicos y una Cueva Oculta cercana; Bouffalant y Emolga rondan la zona.",
-        "link": "secretos",
-        "mons": [
-          626,
-          587
-        ]
+        "cat": "boss",
+        "t": "El Equipo Plasma congela la ciudad",
+        "d": "Tras la medalla, la <b>Fragata Plasma</b> hiela Ciudad Caolín y Ghechis roba la <b>Punta ADN</b> de Lirio. Combates seguidos contra reclutas: cúrate antes de explorar.",
+        "link": "",
+        "mons": []
+      },
+      {
+        "cat": "tip",
+        "t": "Gran salto de nivel",
+        "d": "Del gimnasio 6 al 7 hay un salto enorme; llega sobre Nv.48-50. Los Audino de la hierba alta que tiembla dan muchísima experiencia.",
+        "link": "",
+        "mons": []
       }
     ]
   },
   {
     "area": "Ciudad flotante",
-    "name": "Humilau City (Ciudad Ondina)",
+    "name": "Ciudad Marga (Humilau City)",
     "emoji": "🌊",
-    "goal": "Vence a Marlon, el último líder, y consigue la 8ª medalla.",
-    "gym": "Medalla Onda",
+    "goal": "Vence a Ciprián, el último líder, y consigue la 8ª medalla.",
+    "gym": "Medalla Ola",
     "mons": [
       565,
       321,
@@ -853,8 +914,8 @@
     "highlights": [
       {
         "cat": "boss",
-        "t": "Gimnasio 8: Marlon",
-        "d": "Tipo Agua. Carracosta Nv.49, Wailord Nv.49 y <b>Jellicent Nv.51</b> (inmune a Normal/Lucha). Lleva <b>Eléctrico/Planta</b> y Siniestro/Fantasma para Jellicent. Da <b>MT55 Escaldar</b> y la Medalla Onda.",
+        "t": "Gimnasio 8: Ciprián (Marlon)",
+        "d": "Tipo Agua. Carracosta Nv.49, Wailord Nv.49 y <b>Jellicent Nv.51</b> (inmune a Normal/Lucha). Lleva <b>Eléctrico/Planta</b> y Siniestro/Fantasma para Jellicent. Da <b>MT55 Escaldar</b> y la Medalla Ola.",
         "link": "gimnasios",
         "mons": [
           565,
@@ -863,9 +924,16 @@
         ]
       },
       {
+        "cat": "tip",
+        "t": "Cómo se llega: el Acuatúnel",
+        "d": "A Ciudad Marga se llega desde Pueblo Arenisca cruzando el <b>Acuatúnel</b> (Marine Tube), el túnel submarino con cúpula de cristal. Merece la pena pararse a mirar los Pokémon marinos.",
+        "link": "",
+        "mons": []
+      },
+      {
         "cat": "catch",
-        "t": "Aguas de Humilau",
-        "d": "Surfeando ves Frillish, Alomomola y Mantine; buen sitio para completar tu equipo de agua antes de la recta final.",
+        "t": "Aguas de Ciudad Marga",
+        "d": "Surfeando ves Frillish y Alomomola; buen sitio para completar tu equipo de agua antes de la recta final. Aquí hay otro tutor de movimientos (fragmentos amarillos).",
         "link": "",
         "mons": [
           592,
@@ -876,22 +944,22 @@
   },
   {
     "area": "Recta final",
-    "name": "Cueva Costera, Fragata Plasma y Abismo Sombrío",
+    "name": "Gruta Marina, Fragata Plasma y Boquete Gigante",
     "emoji": "🧊",
-    "goal": "Frena a Team Plasma, enfréntate a Ghetsis y captura a Kyurem.",
+    "goal": "Frena al Equipo Plasma, enfréntate a Ghechis y vence al Kyurem fusionado.",
     "gym": "",
     "mons": [
       603,
       604,
       646,
       635,
-      529
+      530
     ],
     "highlights": [
       {
         "cat": "boss",
-        "t": "Ghetsis y Kyurem",
-        "d": "En el <b>Abismo Sombrío</b>, Team Plasma fusiona a Kyurem y luego Ghetsis te reta con un equipo Nv.50+ (Hydreigon incluido). Combate durísimo: lleva revivir y curas de estado.",
+        "t": "Ghechis y el Kyurem fusionado",
+        "d": "En el <b>Boquete Gigante</b>, Ghechis fusiona a Kyurem con el dragón de N (<b>Kyurem Negro/Blanco Nv.50</b>, imposible de capturar aquí) y después te reta con su equipo Nv.50-52, Hydreigon incluido. Combate durísimo: lleva revivir y curas de estado.",
         "link": "legendarios",
         "mons": [
           646,
@@ -899,9 +967,9 @@
         ]
       },
       {
-        "cat": "catch",
-        "t": "Kyurem (Nv.70)",
-        "d": "Tras la trama, en el cráter interior reaparece <b>Kyurem Nv.70</b>. Debilítalo, paralízalo/congélalo y usa Ultra/Turno Balls. Después obtienes la <b>Punta ADN</b>.",
+        "cat": "tip",
+        "t": "Kyurem, para el postgame",
+        "d": "Kyurem huye tras la batalla. Reaparece a <b>Nv.70</b> en la cueva del cráter <b>cuando hayas capturado a tu Zekrom/Reshiram</b> en la Torre Duodraco. Al conseguirlo obtendrás la <b>Punta ADN</b>.",
         "link": "legendarios",
         "mons": [
           646
@@ -909,21 +977,22 @@
       },
       {
         "cat": "catch",
-        "t": "Cueva Costera",
-        "d": "De camino capturas Tynamo→Eelektrik y Boldore. Eelektross (sin debilidades) es un buen cierre de equipo.",
+        "t": "Gruta Marina (Ruta 21)",
+        "d": "Un <b>Crustle</b> bloquea el paso (combate de historia). Dentro capturas Boldore, Woobat y, con suerte, Tynamo/Eelektrik en el sótano; Excadrill sale de las nubes de polvo. Eelektross (sin debilidades) es un buen cierre de equipo.",
         "link": "",
         "mons": [
           603,
-          604
+          604,
+          530
         ]
       }
     ]
   },
   {
     "area": "Camino a la Liga",
-    "name": "Victory Road (Calle Victoria)",
+    "name": "Ruta 23 y Calle Victoria (Victory Road)",
     "emoji": "🏔️",
-    "goal": "Supera la Calle Victoria y captura a Terrakion antes de la Liga.",
+    "goal": "Captura a Terrakion en la Ruta 22 y supera la Calle Victoria hacia la Liga.",
     "gym": "",
     "mons": [
       639,
@@ -936,7 +1005,7 @@
       {
         "cat": "catch",
         "t": "Terrakion (legendario)",
-        "d": "En la <b>Ruta 22</b> (tras tratar con Cobalion) está <b>Terrakion Nv.45</b>, el tercer espadachín. No sigas de largo.",
+        "d": "En la <b>Ruta 22</b>, junto al Boquete Gigante, te espera <b>Terrakion Nv.45</b>, el tercer espadachín. No sigas de largo: guarda y captúralo.",
         "link": "legendarios",
         "mons": [
           639
@@ -956,7 +1025,7 @@
   },
   {
     "area": "Liga Pokémon",
-    "name": "Pokémon League (Alto Mando y Campeona)",
+    "name": "Liga Pokémon (Alto Mando y Campeona)",
     "emoji": "👑",
     "goal": "Vence al Alto Mando en cualquier orden y a la Campeona Iris.",
     "gym": "",
@@ -971,7 +1040,7 @@
       {
         "cat": "boss",
         "t": "Alto Mando",
-        "d": "Shauntal (Fantasma, as <b>Chandelure</b>), Grimsley (Siniestro, as <b>Bisharp</b>), Caitlin (Psíquico, as <b>Gothitelle</b>) y Marshal (Lucha, as <b>Conkeldurr</b>), todos Nv.56-58. Elige el orden según tus counters.",
+        "d": "Anís (Fantasma, as <b>Chandelure</b>), Aza (Siniestro, as <b>Bisharp</b>), Catleya (Psíquico, as <b>Gothitelle</b>) y Lotto (Lucha, as <b>Conkeldurr</b>), todos Nv.56-58. Elige el orden según tus counters.",
         "link": "liga",
         "mons": [
           609,
@@ -983,7 +1052,7 @@
       {
         "cat": "boss",
         "t": "Campeona Iris",
-        "d": "Equipo Dragón mixto rematado por <b>Haxorus Nv.59</b>. El <b>Hielo</b> arrasa medio equipo, pero reserva Lucha/Tierra para Aggron y Planta/Lucha para Lapras. Lleva antiparálisis.",
+        "d": "Hydreigon, Druddigon, Aggron, Archeops y Lapras Nv.57, rematados por <b>Haxorus Nv.59</b>. El <b>Hielo</b> arrasa medio equipo, pero reserva Lucha/Tierra para Aggron y Planta/Lucha para Lapras. Lleva antiparálisis.",
         "link": "liga",
         "mons": [
           612,
@@ -998,10 +1067,10 @@
 
   var postgameStops = [
   {
-    "area": "Torre norte",
-    "name": "Torre Dragóspira: Zekrom / Reshiram",
+    "area": "Postgame · dragones",
+    "name": "Castillo de N y Torre Duodraco: Zekrom / Reshiram",
     "emoji": "🐲",
-    "goal": "Captura el dragón legendario de tu versión.",
+    "goal": "Vence a N en su castillo y captura el dragón legendario de tu versión.",
     "mons": [
       644,
       643
@@ -1010,7 +1079,7 @@
       {
         "cat": "catch",
         "t": "El dragón de N",
-        "d": "<b>Negro 2 → Zekrom</b> (Piedra Oscura); <b>Blanco 2 → Reshiram</b> (Piedra Clara), ambos Nv.70.",
+        "d": "<b>Negro 2 → Zekrom</b> (Piedra Oscura); <b>Blanco 2 → Reshiram</b> (Piedra Clara), ambos Nv.70 en la Torre Duodraco.",
         "link": "legendarios",
         "mons": [
           644,
@@ -1020,14 +1089,14 @@
       {
         "cat": "tip",
         "t": "Procedimiento",
-        "d": "<ol><li>Completa la historia y consigue la piedra correspondiente.</li><li>Sube a lo alto de la <b>Torre Dragóspira</b> con la piedra en la mochila.</li><li>Interactúa con la piedra para liberar al dragón (Nv.70).</li><li>Si huyes o lo debilitas, <b>reaparece</b> tras volver a entrar en el Salón de la Fama.</li></ol>",
+        "d": "<ol><li>Tras la Liga, en la <b>Calle Victoria</b> un <b>Zoroark</b> te guía por una grieta hasta el <b>Castillo de N</b>.</li><li>Vence al Zekrom/Reshiram de N: se convertirá en la <b>Piedra Oscura/Clara</b> y N te la dará.</li><li>Sube a lo alto de la <b>Torre Duodraco</b> con la piedra e interactúa para liberar al dragón (Nv.70).</li><li>Si huyes o lo debilitas, <b>reaparece</b> tras volver a entrar en el Salón de la Fama.</li></ol> N vuelve a su castillo cada estación con equipos nuevos: rétalo de vez en cuando.",
         "link": "legendarios",
         "mons": []
       }
     ]
   },
   {
-    "area": "Abismo Sombrío",
+    "area": "Boquete Gigante",
     "name": "Kyurem y la fusión con la Punta ADN",
     "emoji": "🧬",
     "goal": "Recaptura a Kyurem y fusiónalo para obtener Kyurem Negro/Blanco.",
@@ -1040,7 +1109,7 @@
       {
         "cat": "secret",
         "t": "Fusión de dragones",
-        "d": "<ol><li>Captura a <b>Kyurem</b> en el cráter interior (Nv.70) y coge la <b>Punta ADN</b>.</li><li>Ten a Zekrom (o Reshiram) en el equipo.</li><li>Usa la Punta ADN sobre Kyurem: se fusiona en <b>Kyurem Negro</b> (con Zekrom) o <b>Kyurem Blanco</b> (con Reshiram).</li><li>Puedes separarlos cuando quieras sin perder al dragón absorbido.</li></ol>",
+        "d": "<ol><li>Con tu Zekrom/Reshiram ya capturado, vuelve al <b>Boquete Gigante</b>: <b>Kyurem</b> espera en la cueva del cráter a Nv.70. Captúralo y obtendrás la <b>Punta ADN</b>.</li><li>Ten a Zekrom (o Reshiram) en el equipo.</li><li>Usa la Punta ADN sobre Kyurem: se fusiona en <b>Kyurem Negro</b> (con Zekrom) o <b>Kyurem Blanco</b> (con Reshiram).</li><li>Puedes separarlos cuando quieras sin perder al dragón absorbido.</li></ol>",
         "link": "legendarios",
         "mons": [
           646
@@ -1049,10 +1118,10 @@
     ]
   },
   {
-    "area": "Cuevas de Teselia",
+    "area": "Rutas 13, 11 y 22",
     "name": "Espadachines: Cobalion, Virizion, Terrakion",
     "emoji": "⚔️",
-    "goal": "Completa el trío de los tres mosqueteros.",
+    "goal": "Completa el trío de espadachines si te lo saltaste en la historia.",
     "mons": [
       638,
       640,
@@ -1061,8 +1130,8 @@
     "highlights": [
       {
         "cat": "catch",
-        "t": "Orden de captura",
-        "d": "<ol><li><b>Cobalion</b> Nv.45 en la <b>Ruta 13</b>.</li><li>Tratar con él activa a <b>Virizion</b> Nv.45 en la <b>Ruta 11</b>.</li><li>Y a <b>Terrakion</b> Nv.45 en la <b>Ruta 22</b>.</li></ol>",
+        "t": "Dónde esperan",
+        "d": "<ol><li><b>Cobalion</b> en la <b>Ruta 13</b>.</li><li><b>Virizion</b> en la <b>Ruta 11</b>.</li><li><b>Terrakion</b> en la <b>Ruta 22</b>.</li></ol> Los tres estaban ya disponibles a Nv.45 durante la historia; si los debilitaste, reaparecen a <b>Nv.65</b> tras revalidar la Liga. Con los tres en el equipo se activa el evento de Keldeo.",
         "link": "legendarios",
         "mons": [
           638,
@@ -1074,9 +1143,9 @@
   },
   {
     "area": "Evento",
-    "name": "Keldeo y Tajo Sagrado",
+    "name": "Keldeo y la Arboleda Promesa",
     "emoji": "🦄",
-    "goal": "Consigue al 4º mosquetero (mítico).",
+    "goal": "Consigue al 4º mosquetero (mítico) y su Forma Brío.",
     "mons": [
       647
     ],
@@ -1084,7 +1153,7 @@
       {
         "cat": "secret",
         "t": "Solo por evento",
-        "d": "<b>Keldeo</b> es de distribución oficial. En emulador: inyecta el regalo (.pgf), edita con PKHeX o usa cheat. Con los tres espadachines en el equipo aprende <b>Tajo Sagrado</b> y pasa a su Forma Brío.",
+        "d": "<b>Keldeo</b> es de distribución oficial. En emulador: inyecta el regalo (.pgf), edita con PKHeX o usa cheat. Llévalo con <b>Cobalion, Virizion y Terrakion</b> a la <b>Arboleda Promesa</b> (norte de Pueblo Ocre): aprenderá <b>Sable Místico</b> y pasará a su Forma Brío.",
         "link": "emulador",
         "mons": [
           647
@@ -1093,10 +1162,10 @@
     ]
   },
   {
-    "area": "Santuario Pradera",
-    "name": "Trío del clima: Tornadus, Thundurus y Landorus",
+    "area": "Santuario Abundancia",
+    "name": "Trío de los genios: Tornadus, Thundurus y Landorus",
     "emoji": "🌪️",
-    "goal": "Reúne a los genios y consigue el Espejo Veraz.",
+    "goal": "Reúne a los genios (por transferencia) y consigue el Espejo Veraz.",
     "mons": [
       641,
       642,
@@ -1104,9 +1173,9 @@
     ],
     "highlights": [
       {
-        "cat": "catch",
-        "t": "Cómo aparece Landorus",
-        "d": "<ol><li>Consigue <b>Tornadus</b> y <b>Thundurus</b> (no nativos: transferencia de Negro/Blanco, Dream Radar o, en emulador, PKHeX/intercambio local).</li><li>Ponlos <b>ambos</b> en el equipo (con tu ID).</li><li>Entra en el <b>Santuario Pradera</b>: aparece <b>Landorus Nv.65</b>.</li></ol>",
+        "cat": "tip",
+        "t": "No se capturan en N2/B2",
+        "d": "A diferencia de Negro/Blanco 1, <b>ninguno de los tres genios aparece salvaje</b> en estos juegos. Se traen de Negro/Blanco (Tornadus era de Negro y Thundurus de Blanco), del <b>Dream Radar</b> de 3DS (en Forma Tótem) o, en emulador, con PKHeX/intercambio local.",
         "link": "legendarios",
         "mons": [
           641,
@@ -1117,7 +1186,7 @@
       {
         "cat": "item",
         "t": "Espejo Veraz",
-        "d": "Lleva a Landorus al santuario y un anciano te dará el <b>Espejo Veraz</b>, que cambia a los tres genios entre Forma Avatar y la más fuerte Forma Tótem.",
+        "d": "Lleva a <b>Landorus</b> al <b>Santuario Abundancia</b> (Ruta 14, con Cascada) y recibirás el <b>Espejo Veraz</b>, que cambia a los tres genios entre Forma Avatar y la más fuerte Forma Tótem.",
         "link": "secretos",
         "mons": [
           645
@@ -1126,7 +1195,7 @@
     ]
   },
   {
-    "area": "Castillo Relic",
+    "area": "Castillo Ancestral",
     "name": "Volcarona en el desierto",
     "emoji": "🔥",
     "goal": "Captura al gran atacante especial de fuego/bicho.",
@@ -1137,7 +1206,7 @@
       {
         "cat": "catch",
         "t": "Al fondo del castillo",
-        "d": "<ol><li>Vuelve al <b>Castillo Relic</b> (Desierto Resort) en el postgame.</li><li>Baja hasta la sala más profunda.</li><li>Te espera <b>Volcarona Nv.35</b>, uno de los mejores especiales del juego. Solo hay uno: guarda antes.</li></ol>",
+        "d": "<ol><li>Entra por el <b>Pasadizo Ancestral</b> (acceso bajo el PWT) — la entrada del desierto está cegada por la arena en N2/B2.</li><li>Avanza hasta la sala del fondo del <b>Castillo Ancestral</b>.</li><li>Te espera <b>Volcarona Nv.35</b>, uno de los mejores especiales del juego. Solo hay uno: guarda antes.</li></ol>",
         "link": "legendarios",
         "mons": [
           637
@@ -1146,7 +1215,7 @@
     ]
   },
   {
-    "area": "Clay Tunnel",
+    "area": "Túnel Yakón",
     "name": "Los colosos Regi y Regigigas",
     "emoji": "🗿",
     "goal": "Reúne al trío Regi y despierta a Regigigas.",
@@ -1160,7 +1229,7 @@
       {
         "cat": "catch",
         "t": "El trío Regi",
-        "d": "<ol><li><b>Regirock</b> Nv.65 en las <b>Ruinas Subterráneas</b> del Clay Tunnel (bajo Ciudad Esmalte; con Fuerza y Surf). Resuelve el puzle de losas.</li><li>Capturarlo te da la <b>Llave de Hierro</b> (Negro 2 → <b>Registeel</b>) o la <b>Llave de Hielo</b> (Blanco 2 → <b>Regice</b>), ambos Nv.65. La llave contraria se recibe por el Unova Link.</li></ol>",
+        "d": "<ol><li><b>Regirock</b> Nv.65 en las <b>Ruinas Subterráneas</b>, al fondo del <b>Túnel Yakón</b> (entre Ciudad Fayenza y el Monte Tuerca). Resuelve el puzle del suelo para abrir la cámara.</li><li>Capturarlo te da la <b>Clave Hierro</b> (Negro 2 → <b>Registeel</b>) o la <b>Clave Iceberg</b> (Blanco 2 → <b>Regice</b>), ambos Nv.65. La clave contraria se recibe por el <b>Nexo Teselia</b> (o con PKHeX).</li></ol>",
         "link": "legendarios",
         "mons": [
           377,
@@ -1171,7 +1240,7 @@
       {
         "cat": "catch",
         "t": "Regigigas",
-        "d": "Con los <b>tres Regi</b> en el equipo, baja a lo más hondo del <b>Monte Espira</b> (Twist Mountain) para despertar a <b>Regigigas Nv.68</b>.",
+        "d": "Con los <b>tres Regi</b> en el equipo, baja a lo más hondo del <b>Monte Tuerca</b> (Twist Mountain) para despertar a <b>Regigigas Nv.68</b>.",
         "link": "legendarios",
         "mons": [
           486
@@ -1180,8 +1249,8 @@
     ]
   },
   {
-    "area": "Ciudad Esmalte",
-    "name": "Torneo Mundial de Combates (PWT)",
+    "area": "Ciudad Fayenza",
+    "name": "Torneo Mundial Pokémon (PWT)",
     "emoji": "🏆",
     "goal": "Compite contra líderes y campeones de todas las regiones.",
     "mons": [],
@@ -1189,15 +1258,15 @@
       {
         "cat": "secret",
         "t": "El gran reto competitivo",
-        "d": "En Driftveil, el <b>PWT</b> ofrece torneos temáticos (Teselia, Kanto, campeones...). Recompensa con BP para comprar objetos raros y MT. Contenido estrella del postgame.",
+        "d": "En Ciudad Fayenza, el <b>PWT</b> ofrece torneos temáticos: líderes de Kanto, Johto, Hoenn, Sinnoh y Teselia, e incluso <b>campeones de todas las generaciones</b>. Recompensa con BP para objetos raros y MT. Contenido estrella del postgame.",
         "link": "secretos",
         "mons": []
       }
     ]
   },
   {
-    "area": "Ciudad Fayenza",
-    "name": "Metro de Combate",
+    "area": "Ciudad Mayólica",
+    "name": "Metro Batalla",
     "emoji": "🚉",
     "goal": "Encadena victorias en el metro para ganar BP.",
     "mons": [],
@@ -1205,7 +1274,7 @@
       {
         "cat": "secret",
         "t": "Rachas y BP",
-        "d": "El <b>Metro de Combate</b> (individual, dobles, multi) es el sucesor de la Torre. Encadena combates para subir tu racha y ganar Puntos de Combate. Sin objetos de curación entre rondas: prepara un equipo autosuficiente.",
+        "d": "El <b>Metro Batalla</b> (individual, dobles, multi) es el sucesor de la Torre Batalla. Encadena combates para subir tu racha y ganar Puntos de Combate. Sin objetos de curación entre rondas: prepara un equipo autosuficiente.",
         "link": "secretos",
         "mons": []
       }
@@ -1213,25 +1282,38 @@
   },
   {
     "area": "Este del mapa",
-    "name": "Torre Negra / Arboleda Blanca",
+    "name": "Rascacielos Negro / Cavernogal Blanco",
     "emoji": "🗼",
-    "goal": "Supera el reto de combates por pisos exclusivo de tu versión.",
-    "mons": [],
+    "goal": "Supera las 10 áreas del reto exclusivo de tu versión y vence a Guayo.",
+    "mons": [
+      443,
+      147
+    ],
     "highlights": [
       {
         "cat": "secret",
         "t": "Reto por versión",
-        "d": "En el postgame se abre un camino hacia la <b>Torre Negra</b> (Negro 2) o la <b>Arboleda Blanca</b> (Blanco 2): oleadas de entrenadores por pisos con jefes al final. Da experiencia y objetos, y sube de rango según tu progreso.",
+        "d": "En <b>Ciudad Negra</b> (Negro 2) se alza el <b>Rascacielos Negro</b> y en el <b>Bosque Blanco</b> (Blanco 2), el <b>Cavernogal Blanco</b>: 10 áreas de entrenadores con jefe final. Da mucha experiencia y objetos, y sí se puede curar entre pisos.",
         "link": "secretos",
         "mons": []
+      },
+      {
+        "cat": "boss",
+        "t": "Guayo y su regalo variocolor",
+        "d": "En el área 10 espera <b>Guayo (Benga)</b>, el nieto de Mirto. Al vencerlo te regala un <b>Gible variocolor</b> (Negro 2) o un <b>Dratini variocolor</b> (Blanco 2): un shiny garantizado.",
+        "link": "secretos",
+        "mons": [
+          443,
+          147
+        ]
       }
     ]
   },
   {
-    "area": "Undella Town",
-    "name": "Combate contra Cynthia",
+    "area": "Pueblo Arenisca",
+    "name": "Combate contra Cintia",
     "emoji": "💎",
-    "goal": "Derrota a la ex-Campeona de Sinnoh en su villa.",
+    "goal": "Derrota a la excampeona de Sinnoh en la villa de Catleya.",
     "mons": [
       445,
       442,
@@ -1243,11 +1325,12 @@
       {
         "cat": "boss",
         "t": "El duelo opcional más duro",
-        "d": "<ol><li>Ve a la <b>villa de Cynthia</b> en Undella <b>en primavera</b>.</li><li>Su equipo (Garchomp, Spiritomb, Lucario, Milotic, Glaceon, Braviary/Eelektross) ronda Nv.70+.</li><li>Lleva coberturas variadas y objetos de sobra: es un test de nivel real.</li></ol>",
+        "d": "<ol><li>Ve a la <b>villa de Catleya</b> en Pueblo Arenisca <b>en primavera</b> (cambia el mes del emulador si hace falta: solo combate en esa estación, una vez al día).</li><li>Su equipo: Spiritomb, Togekiss, Lucario, Milotic y Glaceon <b>Nv.76</b> y <b>Garchomp Nv.78</b> (en revanchas, Nv.80-82).</li><li>Lleva coberturas variadas y objetos de sobra: es un test de nivel real.</li></ol>",
         "link": "secretos",
         "mons": [
           445,
           442,
+          468,
           448,
           350,
           471
@@ -1268,8 +1351,8 @@
     "highlights": [
       {
         "cat": "missable",
-        "t": "Victini (Isla Liberty)",
-        "d": "El <b>Pase Liberty</b> (2011) llevaba a la Isla Liberty a capturar a <b>Victini</b>. En B2W2 la isla es accesible pero <b>Victini ya no aparece</b> sin evento/transferencia. En emulador: inyecta la Carta Regalo (.pgf) o el propio Victini con PKHeX. Si lo llevas a la isla, sale de la Ball y baila.",
+        "t": "Victini (Isla Libertad)",
+        "d": "El <b>Pase Liberty</b> (2011) llevaba a la <b>Isla Libertad</b> a capturar a <b>Victini</b> en Negro/Blanco. En N2/B2 la isla es visitable pero <b>Victini ya no aparece</b> sin evento/transferencia. En emulador: inyecta la Carta Regalo (.pgf) o el propio Victini con PKHeX. Si lo llevas a su sala del faro, sale de la Ball y pasea.",
         "link": "emulador",
         "mons": [
           494
@@ -1278,7 +1361,7 @@
       {
         "cat": "secret",
         "t": "Solo distribución",
-        "d": "<b>Meloetta</b> (aprende Canto Relicto en el Café de Fayenza para su Forma Danza) y <b>Genesect</b> (con Módulos que cambian Tecno Explosión) solo se obtenían por evento.",
+        "d": "<b>Meloetta</b> (aprende <b>Canto Arcaico</b> con el músico del Café Sonata de Ciudad Porcelana para su Forma Danza) y <b>Genesect</b> (con los cartuchos hidroROM/fulgoROM/piroROM/crioROM que cambian el tipo de <b>Tecno Shock</b>) solo se obtenían por evento.",
         "link": "emulador",
         "mons": [
           648,
@@ -1295,11 +1378,57 @@
     ]
   },
   {
-    "area": "Puente Maravilla",
+    "area": "Por toda Teselia",
+    "name": "Legendarios de Sinnoh: Latios/Latias, lagos, Heatran y Cresselia",
+    "emoji": "✨",
+    "goal": "Caza los legendarios de otras regiones repartidos por Teselia.",
+    "mons": [
+      381,
+      482,
+      485,
+      488
+    ],
+    "highlights": [
+      {
+        "cat": "catch",
+        "t": "Latios (N2) / Latias (B2)",
+        "d": "En el <b>Solar de los Sueños</b> (junto a Ciudad Gres) te espera <b>Latios</b> en Negro 2 o <b>Latias</b> en Blanco 2, a Nv.68. Al capturarlo deja el <b>Rocío Bondad</b>.",
+        "link": "legendarios",
+        "mons": [
+          381,
+          380
+        ]
+      },
+      {
+        "cat": "catch",
+        "t": "El trío de los lagos",
+        "d": "Presencia el evento de la cueva de la <b>Ruta 20</b> (Cave of Being) y el trío se reparte por Teselia, a Nv.65: <b>Uxie</b> frente al museo de Ciudad Esmalte, <b>Mesprit</b> en la cima de la Torre de los Cielos y <b>Azelf</b> en la Ruta 23. Pisa la baldosa exacta y responde «Sí».",
+        "link": "legendarios",
+        "mons": [
+          480,
+          481,
+          482
+        ]
+      },
+      {
+        "cat": "catch",
+        "t": "Heatran y Cresselia",
+        "d": "<b>Heatran Nv.68</b>: recoge la <b>Piedra Magma</b> en la Ruta 18 y actívala en la sala profunda de la <b>Montaña Reversia</b>. <b>Cresselia Nv.68</b>: lleva la <b>Pluma Lunar</b> de la Villa Horroris al centro del <b>Puente Progreso</b>.",
+        "link": "legendarios",
+        "mons": [
+          485,
+          488
+        ]
+      }
+    ]
+  },
+  {
+    "area": "Vuelo desde Ciudad Loza",
     "name": "Reserva Natural (Nature Preserve)",
     "emoji": "🌿",
-    "goal": "Explora la reserva secreta con Pokémon poco comunes.",
+    "goal": "Gana el Pase viendo toda la Pokédex de Teselia y caza al Haxorus variocolor.",
     "mons": [
+      612,
       132,
       221,
       465
@@ -1307,10 +1436,11 @@
     "highlights": [
       {
         "cat": "secret",
-        "t": "Cruzando el Puente Maravilla",
-        "d": "Al este, tras el <b>Puente Maravilla</b>, se abre la Reserva Natural: hierba con Pokémon inusuales (Ditto, Tangrowth, Piloswine...) y objetos ocultos. Perfecta para rellenar huecos de la Pokédex.",
+        "t": "El Pase y el Haxorus shiny",
+        "d": "Cuando hayas <b>visto</b> las 297 especies no-míticas de la Pokédex de Teselia, la profesora Encina te da el <b>Pase</b>: vuela desde el aeropuerto de <b>Ciudad Loza</b> a la Reserva Natural. Allí te espera un <b>Haxorus variocolor</b> (shiny garantizado) además de hierba con rarezas (Ditto, Tangrowth, Piloswine...) y objetos ocultos.",
         "link": "pokedex",
         "mons": [
+          612,
           132,
           221,
           465
@@ -1320,15 +1450,15 @@
   },
   {
     "area": "Toda Teselia",
-    "name": "Cuevas Ocultas y Habilidades Ocultas",
+    "name": "Claros ocultos y Habilidades Ocultas",
     "emoji": "🔎",
     "goal": "Farmea Pokémon con Habilidad Oculta y objetos raros.",
     "mons": [],
     "highlights": [
       {
         "cat": "secret",
-        "t": "Contenido rotativo",
-        "d": "<ol><li>Localiza las <b>Cuevas Ocultas</b> repartidas por el mapa.</li><li>Su contenido rota con el tiempo real: ajusta el reloj del emulador para forzar cambios.</li><li>Consigues Pokémon con <b>Habilidad Oculta</b> (Eevee, Rufflet, Riolu...) y objetos raros.</li></ol>",
+        "t": "Contenido que se regenera",
+        "d": "<ol><li>Localiza los <b>claros ocultos</b> repartidos por el mapa (huecos entre árboles).</li><li>Su contenido se <b>regenera al caminar</b> (no depende del reloj): vacíalos y vuelve a pasar.</li><li>Consigues Pokémon con <b>Habilidad Oculta</b> (Riolu, Minccino, Pidove...) y objetos raros.</li></ol>",
         "link": "secretos",
         "mons": []
       }
