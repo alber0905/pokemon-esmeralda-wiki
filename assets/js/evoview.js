@@ -163,20 +163,28 @@
     open(parseInt(t.getAttribute("data-evo"), 10));
   });
 
-  /* ---------- vista Pokédex (#evoDex, en index.html) ---------- */
-  function familyMethods(root) {
+  /* ---------- vista Pokédex (#evoDex, en index.html) ----------
+     Lista plana en orden de la Pokédex de Hoenn: clic → ficha de evolución. */
+  function ownMethods(id) {
+    var ev = EVOS[id] && EVOS[id].ev;
+    if (!ev || !ev.length) return ["none"];
     var ms = {};
-    familyIds(root).forEach(function (id) {
-      (EVOS[id].ev || []).forEach(function (e) { ms[e.m === "beauty" ? "special" : e.m] = 1; });
-    });
-    var keys = Object.keys(ms);
-    return keys.length ? keys : ["none"];
+    ev.forEach(function (e) { ms[e.m === "beauty" ? "special" : e.m] = 1; });
+    return Object.keys(ms);
+  }
+
+  function rowMeta(id) {
+    var ev = EVOS[id] && EVOS[id].ev;
+    if (!ev || !ev.length) return "—";
+    return ev.map(function (e) {
+      var m = METHOD[e.m] || METHOD.special;
+      return m.ic + " " + edgeLabel(e);
+    }).join(" / ");
   }
 
   function initDex() {
     var box = document.getElementById("evoDex");
-    if (!box) return;
-    var roots = (window.EVOS_ORDER || Object.keys(EVOS).map(Number)).filter(function (id) { return !PREV[id]; });
+    if (!box || !window.EVOS_DEX) return;
 
     var chips = [
       ["all", "Todo"], ["level", "📈 Nivel"], ["stone", "💎 Piedra"],
@@ -187,9 +195,14 @@
       '<div class="evo-chips">' + chips.map(function (c, i) {
         return '<span class="evo-chip' + (i === 0 ? " active" : "") + '" data-evofilter="' + c[0] + '">' + c[1] + "</span>";
       }).join("") + "</div>" +
-      '<div class="evo-grid">' + roots.map(function (root) {
-        return '<div class="evo-fam" data-evo="' + root + '" data-methods="' + familyMethods(root).join(" ") + '">' +
-          nodeHTML(root, -1) + "</div>";
+      '<div class="evo-list">' + window.EVOS_DEX.map(function (id, i) {
+        var num = ("00" + (i + 1)).slice(-3);
+        return '<button class="evo-row" type="button" data-evo="' + id + '" data-methods="' + ownMethods(id).join(" ") + '">' +
+          '<span class="evo-row__num">#' + num + "</span>" +
+          '<img src="' + SPRITE(id) + '" alt="" loading="lazy" onerror="this.style.visibility=\'hidden\'">' +
+          "<b>" + esc(name(id)) + "</b>" +
+          '<span class="evo-row__meta">' + esc(rowMeta(id)) + "</span>" +
+          "</button>";
       }).join("") + "</div>";
 
     box.addEventListener("click", function (e) {
@@ -197,9 +210,9 @@
       if (!chip) return;
       var f = chip.getAttribute("data-evofilter");
       box.querySelectorAll("[data-evofilter]").forEach(function (c) { c.classList.toggle("active", c === chip); });
-      box.querySelectorAll(".evo-fam").forEach(function (fam) {
-        var show = f === "all" || fam.getAttribute("data-methods").split(" ").indexOf(f) !== -1;
-        fam.style.display = show ? "" : "none";
+      box.querySelectorAll(".evo-row").forEach(function (row) {
+        var show = f === "all" || row.getAttribute("data-methods").split(" ").indexOf(f) !== -1;
+        row.style.display = show ? "" : "none";
       });
     });
   }
