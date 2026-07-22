@@ -7,6 +7,7 @@
   <meta name="description" content="Guía completa e interactiva para completar Pokémon Esmeralda al 100% en emulador: legendarios, puzzles, islas secretas, Frontera de Batalla, Pokédex, Feebas, concursos y trucos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/evo.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2316a06a' stroke='%23063c28' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%23063c28' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%23063c28' stroke-width='6'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -64,6 +65,7 @@
         <div class="nav-group__title">Post-liga</div>
         <a class="nav-link" href="#frontera"><span class="emo">⚔️</span> Frontera de Batalla</a>
         <a class="nav-link" href="#pokedex"><span class="emo">📕</span> Pokédex completa</a>
+        <a class="nav-link" href="#evoluciones"><span class="emo">🧬</span> Evoluciones</a>
         <a class="nav-link" href="#feebas"><span class="emo">🐟</span> Feebas y Milotic</a>
       </div>
       <div class="nav-group">
@@ -626,6 +628,22 @@
       </ul>
     </section>
 
+    <!-- ============ EVOLUCIONES ============ -->
+    <section id="evoluciones" class="section">
+      <div class="section__head">
+        <span class="section__kicker">Consulta rápida</span>
+        <h2><span class="emo">🧬</span> Evoluciones de Hoenn</h2>
+        <p class="section__intro">Todas las líneas evolutivas de la <b>Pokédex de Hoenn (202)</b>: a qué nivel, con qué piedra o bajo qué condición evoluciona cada Pokémon — y <b>cómo conseguirlo en Esmeralda</b> (dónde está cada piedra, cómo intercambiar en emulador…). Toca cualquier línea para abrir su ficha.</p>
+      </div>
+
+      <div class="callout callout--info">
+        <span class="emo">💡</span>
+        <p><b>Mientras juegas:</b> en la <a href="jugando.html">guía paso a paso</a> puedes <b>tocar cualquier sprite</b> para abrir esta misma ficha, o pulsar <b>Ctrl+K</b> en cualquier página y escribir el nombre del Pokémon.</p>
+      </div>
+
+      <div id="evoDex"></div>
+    </section>
+
     <!-- ============ FEEBAS ============ -->
     <section id="feebas" class="section">
       <div class="section__head">
@@ -868,6 +886,8 @@
 <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/evolutions.js"></script>
+<script src="assets/js/evoview.js"></script>
 <script src="assets/js/search.js"></script>
 </body>
 </html>

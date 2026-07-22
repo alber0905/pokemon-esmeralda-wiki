@@ -46,6 +46,16 @@
       });
     });
 
+    // Líneas evolutivas (si la página carga evolutions.js + evoview.js):
+    // permite consultar CUALQUIER especie aunque no aparezca en el contenido.
+    if (window.EVOS && window.EvoView) {
+      Object.keys(window.EVOS).forEach(function (id) {
+        id = parseInt(id, 10);
+        items.push({ kind: "evo", id: id, sec: "🧬 Evolución",
+                     title: window.EvoView.name(id), body: window.EvoView.summary(id) });
+      });
+    }
+
     return items;
   }
 
@@ -168,9 +178,13 @@
 
   function pick(i) {
     if (i < 0 || i >= results.length) return;
-    var el = results[i].it.el;
+    var it = results[i].it;
     close();
-    setTimeout(function () { reveal(el); }, 60);
+    if (it.kind === "evo") {
+      setTimeout(function () { window.EvoView.open(it.id); }, 60);
+      return;
+    }
+    setTimeout(function () { reveal(it.el); }, 60);
   }
 
   input.addEventListener("input", function () { renderResults(doSearch(index, input.value)); });

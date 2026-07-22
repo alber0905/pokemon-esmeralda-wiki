@@ -7,6 +7,7 @@
   <meta name="description" content="Guía-compañera interactiva para llevar mientras juegas Pokémon Esmeralda: la ruta por Hoenn con solo lo importante y lo no obvio — objetos clave, capturas que merecen la pena y secretos fáciles de perderse.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/companion.css">
+  <link rel="stylesheet" href="assets/css/evo.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2316a06a' stroke='%23063c28' stroke-width='6'/%3E%3Cpath d='M4 50h92' stroke='%23063c28' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23fff' stroke='%23063c28' stroke-width='6'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -60,7 +61,7 @@
 
   <div class="callout callout--info" style="margin-bottom:22px">
     <span class="emo">💡</span>
-    <p><b>Cómo usarla:</b> despliega la zona en la que estés, lee sus fichas y pulsa <b>📍 Estoy aquí</b>. Se guarda en tu navegador, así que al volver retoma donde lo dejaste. ¿Buscas algo concreto? Filtra por <b>⚠️ No perder</b> o <b>🗝️ Secretos</b> para ver de un vistazo lo importante de toda la aventura.</p>
+    <p><b>Cómo usarla:</b> despliega la zona en la que estés, lee sus fichas y pulsa <b>📍 Estoy aquí</b>. Se guarda en tu navegador, así que al volver retoma donde lo dejaste. ¿Buscas algo concreto? Filtra por <b>⚠️ No perder</b> o <b>🗝️ Secretos</b> para ver de un vistazo lo importante de toda la aventura. Y si te encuentras un Pokémon y dudas, <b>🧬 toca cualquier sprite</b> (o búscalo con <b>Ctrl+K</b>) para ver a qué evoluciona, a qué nivel y qué te costaría.</p>
   </div>
 
   <div class="wt-timeline" id="wtTimeline"></div>
@@ -81,7 +82,9 @@
     btn.addEventListener("click", function(){ var n = root.getAttribute("data-theme")==="light"?"dark":"light"; localStorage.setItem(K,n); apply(n); });
   })();
 </script>
+<script src="assets/js/evolutions.js"></script>
 <script src="assets/js/companion.js"></script>
+<script src="assets/js/evoview.js"></script>
 <script src="assets/js/search.js"></script>
 </body>
 </html>

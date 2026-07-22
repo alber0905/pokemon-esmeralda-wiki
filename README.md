@@ -21,6 +21,7 @@ Guía web **completa, visual e interactiva** para completar Pokémon Esmeralda a
 
 ## Características
 
+- 🧬 **Consulta de evoluciones**: toca cualquier sprite (o busca con Ctrl+K) y verás a qué evoluciona ese Pokémon, a qué nivel o con qué piedra/condición, y cómo conseguirlo en Esmeralda. Sección `#evoluciones` con las 202 líneas de Hoenn filtrables por método.
 - ✅ **Seguimiento de progreso**: marca casillas y tu avance se guarda en el navegador (`localStorage`).
 - 📊 Panel con anillo de progreso global y barras por categoría.
 - 📱 **Responsive** (menú lateral colapsable en móvil).

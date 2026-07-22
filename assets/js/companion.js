@@ -54,7 +54,8 @@
     bases:    { t:"Bases y bayas", href:"index.html#bases" },
     objetos:  { t:"Objetos raros", href:"index.html#objetos" },
     cria:     { t:"Cría, EVs e IVs", href:"index.html#cria" },
-    emu:      { t:"Emulador y trucos", href:"index.html#emulador" }
+    emu:      { t:"Emulador y trucos", href:"index.html#emulador" },
+    evos:     { t:"Todas las evoluciones", href:"index.html#evoluciones" }
   };
 
   var STOPS = [
@@ -340,9 +341,9 @@
 
   /* ---------------- Sprite HTML ---------------- */
   function spriteHTML(id, sm) {
-    var nm = NAME[id] || ("#" + id);
+    var nm = NAME[id] || (window.EVOS && window.EVOS[id] ? window.EVOS[id].n : "#" + id);
     return '<span class="wt-sprite' + (sm ? ' wt-sprite--sm' : '') +
-      '" title="' + nm + '"><img src="' + SPRITE(id) + '" alt="' + nm +
+      '" data-evo="' + id + '" title="' + nm + ' · ver evolución"><img src="' + SPRITE(id) + '" alt="' + nm +
       '" loading="lazy" onerror="this.parentNode.classList.add(\'failed\')"><b>' + nm + '</b></span>';
   }
 
@@ -411,6 +412,7 @@
   /* ---------------- Eventos ---------------- */
   timeline.addEventListener("click", function (e) {
     if (e.target.closest(".wt-hl__link")) return; // dejar navegar los enlaces
+    if (e.target.closest("[data-evo]")) return;   // los sprites abren la ficha de evolución (evoview.js)
     var hereBtn = e.target.closest("[data-here]");
     var toggle = e.target.closest("[data-toggle]");
     if (hereBtn) {
