@@ -62,7 +62,7 @@
     { area:"Inicio", name:"Villa Raíz", emo:"🏡", mons:[258,255,252],
       goal:"Coge tu inicial, equípate y sal por la Ruta 101.",
       hl:[
-      { cat:"tip", t:"Elige inicial con criterio", d:"<b>Mudkip</b>→Marshtomp→Swampert (Agua/Tierra): la curva más suave, domina los gimnasios de Roca y Lucha y es <b>inmune al Eléctrico</b> (3.º). <b>Torchic</b>→Blaziken (Fuego/Lucha) pega muchísimo y arrasa el 5.º y 6.º, pero sufre al principio. <b>Treecko</b>→Sceptile (Planta) para reto: rápido pero frágil." },
+      { cat:"tip", t:"Elige inicial con criterio", d:"<b>Mudkip</b>→Marshtomp→Swampert (Agua/Tierra): la curva más suave, domina los gimnasios de Roca y Lucha y es <b>inmune al Eléctrico</b> (3.º). <b>Torchic</b>→Blaziken (Fuego/Lucha) pega muchísimo y arrasa el 5.º y 6.º, pero sufre al principio. <b>Treecko</b>→Sceptile (Planta) para reto: rápido pero frágil. 🧬 <b>Toca cualquier sprite</b> de esta guía para ver a qué evoluciona y cómo.", link:L.evos },
       { cat:"item", t:"Zapatillas de correr + Poción del PC", d:"Tu madre te da las <b>Zapatillas</b> (mantén B para correr). Abre el PC de tu cuarto: hay una <b>Poción</b> gratis." },
       { cat:"tip", t:"Ajusta el reloj interno (RTC) ya", d:"Controla el crecimiento de <b>bayas</b>, la <b>Isla Espejismo</b>, mareas y el <b>Sorteo de Lotería</b>. Ponlo a tu hora real desde el inicio.", link:L.bases }
     ]},

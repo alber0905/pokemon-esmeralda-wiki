@@ -37,6 +37,10 @@
 }
 .evo-sheet__close:hover { background: var(--surface-3); }
 .evo-sheet__body { padding: 16px; overflow-y: auto; }
+.evo-sheet__foot {
+  padding: 10px 16px; border-top: 1px solid var(--border);
+  font-size: 13px; font-weight: 700; text-align: center;
+}
 
 /* móvil: hoja pegada abajo */
 @media (max-width: 640px) {

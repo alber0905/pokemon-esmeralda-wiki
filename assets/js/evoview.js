@@ -123,6 +123,7 @@
         '<button class="evo-sheet__close" id="evoClose" aria-label="Cerrar">✕</button>' +
       "</div>" +
       '<div class="evo-sheet__body" id="evoBody"></div>' +
+      '<div class="evo-sheet__foot"><a href="index.html#evoluciones">🧬 Ver todas las evoluciones de Hoenn →</a></div>' +
     "</div>";
   document.body.appendChild(overlay);
 
@@ -145,7 +146,11 @@
   }
 
   $("#evoClose", overlay).addEventListener("click", close);
-  overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlay) close();
+    // al navegar por un enlace de la ficha (anclas de la misma página incluidas), cerrarla
+    else if (e.target.closest("a")) close();
+  });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && overlay.classList.contains("show")) close();
   });
